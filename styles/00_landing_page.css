@@ -173,6 +173,7 @@ body {
 .hidden-menu ul {
   padding: 0%;
   margin: 0%;
+  list-style: none;
 }
 
 #menu_left {
@@ -217,8 +218,8 @@ body {
 }
 
 .hidden-menu ul li a img {
-  width: 8vw;
-  margin: 5%;
+  height: 8vh;
+  margin: 1vh;
   opacity: 100%;
 }
 
