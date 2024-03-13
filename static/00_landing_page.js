@@ -55,24 +55,17 @@ scrolling_container.addEventListener('scroll', function() {
         console.log('Scrolling...');
         canScroll = false;
 
-        // Fade out the current text first
         text_container.style.opacity = 0; 
 
-        // Wait for the fade-out to complete
         setTimeout(() => {
-            // Change the index and update the text
-            index = (index + 1) % lines.length; // Ensure index wraps around
+            index = (index + 1) % lines.length;
             text_container.innerHTML = lines[index];
 
-            // Fade in the new text
             text_container.style.opacity = 1;
 
-            // Reset scrolling position
             scrolling_container.scrollTop = 0;
 
-            // Wait for the fade-in and display duration
             setTimeout(() => {
-                // Set canScroll to true after the total display time
                 canScroll = true;
             }, 500);
         }, 300);
@@ -86,18 +79,25 @@ scrolling_container.addEventListener('scroll', function() {
 
 
 let menu_shown = 0;
+const video = document.getElementById('background-video');
+const background_image = document.getElementById('background_image');
+
 scrolling_container.addEventListener('click', function() {
     var menu_left = document.getElementById('menu_left');
     var menu_right = document.getElementById('menu_right');
     if (menu_shown===0) {
         menu_left.style.transform = 'translateX(0%)';
         menu_right.style.transform = 'translateX(0%)';
-        scrolling_container.style.opacity = 0.5;
+        scrolling_container.style.opacity = 0;
+        video.style.opacity = 0;
+        background_image.style.filter = 'blur(3vw) saturate(2)';
         menu_shown = 1;
     } else {
         menu_left.style.transform = 'translateX(-100%)';
         menu_right.style.transform = 'translateX(100%)';
         scrolling_container.style.opacity = 0;
+        video.style.opacity = 1;
+        background_image.style.filter = 'none';
         menu_shown = 0;
     }
 

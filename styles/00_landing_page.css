@@ -1,18 +1,15 @@
 
 body {
-  background-image: url('../media/00_landing_page/0001.jpg');
-  background-size: auto;
-  background-position: center;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100vw;
-  background-color: #00000000;
+  height: 100vh;
   flex-direction: column;
   overflow: hidden;
+  background-color: #000000;
 }
 
 
@@ -30,15 +27,44 @@ body {
   z-index: 1;
 }
 
+#background_image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000000;
+  z-index: -10  ;
+}
+
+#background_image img {
+  position: center;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background-size: cover;;
+  object-fit: cover;
+  transition: filter 0.3s ease-in-out;
+}
+
+#video_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 #background-video {
   position: center;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   z-index: -1;
   background-size: cover;
   object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .text_block {
@@ -49,15 +75,15 @@ body {
 
 
 .text_block h1 {
-  font-size: 50px;
+  font-size: calc(20px + 1.5vw);
   margin: 0px;
   text-align: center;
   z-index: 3;
 }
   
 .text_block h2 {
-  font-size: 30px;
-  margin-bottom: 60px;
+  font-size: calc(15px + 1vw);
+  margin-bottom: 4vh;
   text-align: center;
   z-index: 3;
 }
@@ -74,10 +100,10 @@ body {
   flex-direction: column;
   position: fixed;
   justify-content: flex-end;
-  padding-bottom: 4%;
+  padding-bottom: 10vh;
   align-items: center;
   height: 100%;
-  width: 18%;
+  width: 30vw;
   z-index: 4;
   overflow: hidden;
 }
@@ -85,7 +111,7 @@ body {
 #faded_text {
   font-family: "Josefin Sans bold", Arial Black , sans-serif;
   color: rgba(86, 79, 187, 0.5);
-  font-size: 15px;
+  font-size: calc(8px + 0.5vw);
   text-align: center;
   z-index: 3;
   opacity: 0%;
@@ -137,10 +163,11 @@ body {
 
 .hidden-menu {
   position: fixed;
-  width: 20vw;
+  width: 25vw;
   z-index: 100;
   padding: 20px;
   top: 0;
+  list-style: none;
 }
 
 .hidden-menu ul {
@@ -155,7 +182,7 @@ body {
 }
 
 #menu_right {
-  left: 78vw;
+  left: 73vw;
   transform: translateX(100%);
   transition: transform 0.6s ease-in-out;
   align-items: end;
@@ -185,12 +212,12 @@ body {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: "Josefin Sans bold", Arial Black, sans-serif;
-  font-size: 12px;
+  font-size: calc(8px + 0.5vw);
   width: 100%;
 }
 
 .hidden-menu ul li a img {
-  width: 6vw;
+  width: 8vw;
   margin: 5%;
   opacity: 100%;
 }

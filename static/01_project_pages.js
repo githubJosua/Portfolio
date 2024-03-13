@@ -1,8 +1,8 @@
 // HEADERS
 document.querySelectorAll('h1').forEach(function(header) {
-  var words = header.textContent.split(' '); // Split the text content into words
-  var newText = words.join('<br>'); // Join the words with <br> tag
-  header.innerHTML = newText; // Set the new content
+  var words = header.textContent.split(' ');
+  var newText = words.join('<br>');
+  header.innerHTML = newText;
 });
 
 // Scrolling Behaviour
