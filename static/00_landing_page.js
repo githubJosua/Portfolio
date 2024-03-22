@@ -1,3 +1,9 @@
+// transitions
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.style.opacity = 1
+});
+
+
 // type text
 function typeText(element, text_to_type, speed) {
     let charIndex = 0;
@@ -137,12 +143,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const hyperlinks = document.querySelectorAll('a') 
-    hyperlinks.forEach((menu) => {
-        menu.addEventListener('mousemove', (e) => {
+    hyperlinks.forEach((hyperlink) => {
+        hyperlink.addEventListener('mousemove', (e) => {
             customCursor.style.display = 'block';
             customCursor.style.left = `${e.pageX}px`;
             customCursor.style.top = `${e.pageY}px`;
             customCursor.style.backgroundImage = `url(${cursorPath})`;
+        });
+        hyperlink.addEventListener('click', function(e) {
+            document.body.style.opacity = 0
+
+            const link = this.href;
+            e.preventDefault();
+            setTimeout(function() {
+                window.location.href = link
+            }, 500);
         });
     });
 });

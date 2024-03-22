@@ -27,6 +27,11 @@ body, html {
     cursor: none;
 }
 
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
 #title_image {
     width: 100vw;
     height: 100vh;
@@ -45,7 +50,7 @@ body, html {
     display: flex;
     flex-direction: row;
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 #portrait_container {

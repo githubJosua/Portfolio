@@ -14,8 +14,9 @@ body {
   flex-direction: column;
   overflow: hidden;
   background-color: #000000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
-
 
 #landing-page {
   font-family: "Josefin Sans bold", Arial, sans-serif;

@@ -1,7 +1,11 @@
-
+// transitions
 document.addEventListener('DOMContentLoaded', function() {
   const content = document.getElementById('content')
   content.classList.add('fade-in');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.body.style.opacity = 1
 });
 
 

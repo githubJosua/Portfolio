@@ -55,10 +55,15 @@ body, html {
     height: 100vh;
     overflow: hidden;
     -ms-overflow-style: none;
-    background-color: #ffffff;
     color: #000000;
     font-family: "Josefin Sans", sans-serif;
     cursor: url('../media/00_cursor/cursor.png');
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, background-color 1s ease-in-out;
+    background-color: #000000;
 }
 
 #scrolling_container {
