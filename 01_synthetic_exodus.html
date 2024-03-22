@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josua Hefti - Synthetic Exodus</title>
     <link rel="stylesheet" href="styles/01_project_pages.css">
-    <script src="path/to/pageflip.min.js"></script>
 </head>
 <body>
     <a href="00_landing_page.html" class="circle-link"></a>
@@ -30,10 +29,84 @@
             <video id="video" loop poster="media/01_synthetic_exodus/Frame_0.jpg">
                 <source src="media/01_synthetic_exodus/Trailer_final_compressed.mp4" type="video/mp4">
             </video>
+            <img src="media/00_cursor/cursor_right.png" class="play_button" alt="Play">
         </section>
-        <section class="snap_section" id="gallery" loading="lazy">
-            <div class="gallery_item"><img src="media/01_synthetic_exodus/Estab_Shot_Final.jpg"></div>
+        <section class="snap_section" id="image_grid" style="background-color: black;">
+            <div class="grid_column" data-column="1" loading="lazy">
+                <img src="media/01_synthetic_exodus/1_nomad_capsule_1.jpg">
+                <img src="media/01_synthetic_exodus/1_nomad_capsule_2.jpg">
+                <img src="media/01_synthetic_exodus/1_nomad_capsule_3.jpg">
+                <img src="media/01_synthetic_exodus/1_nomad_capsule_4.jpg">
+                <img src="media/01_synthetic_exodus/1_nomad_capsule_5.jpg">
+                <img src="media/01_synthetic_exodus/1_nomad_capsule_6.jpg">
+                <img src="media/01_synthetic_exodus/1_nomad_capsule_7.jpg">
+                <img src="media/01_synthetic_exodus/1_nomad_capsule_8.jpg">
+            </div>
+            <div class="grid_column" data-column="2" loading="lazy">
+                <img src="media/01_synthetic_exodus/2_cultivating_1.jpg">
+                <img src="media/01_synthetic_exodus/2_cultivating_2.jpg">
+                <img src="media/01_synthetic_exodus/2_cultivating_3.jpg">
+                <img src="media/01_synthetic_exodus/2_cultivating_4.jpg">
+                <img src="media/01_synthetic_exodus/2_cultivating_5.jpg">
+                <img src="media/01_synthetic_exodus/2_cultivating_6.jpg">
+            </div>
+            <div class="grid_column" data-column="3" loading="lazy">
+                <img src="media/01_synthetic_exodus/3_orchestrating_1.jpg">
+                <img src="media/01_synthetic_exodus/3_orchestrating_2.jpg">
+                <img src="media/01_synthetic_exodus/3_orchestrating_3.jpg">
+                <img src="media/01_synthetic_exodus/3_orchestrating_4.jpg">
+                <img src="media/01_synthetic_exodus/3_orchestrating_6.jpg">
+                <img src="media/01_synthetic_exodus/3_orchestrating_7.jpg">
+                <img src="media/01_synthetic_exodus/3_orchestrating_8.jpg">
+                <img src="media/01_synthetic_exodus/3_orchestrating_9.jpg">
+            </div>
+            <div class="grid_column" data-column="4" loading="lazy">
+                <img src="media/01_synthetic_exodus/4_sunbathing_1.jpg">
+                <img src="media/01_synthetic_exodus/4_sunbathing_2.jpg">
+                <img src="media/01_synthetic_exodus/4_sunbathing_3.jpg">
+                <img src="media/01_synthetic_exodus/4_sunbathing_4.jpg">
+                <img src="media/01_synthetic_exodus/4_sunbathing_5.jpg">
+                <img src="media/01_synthetic_exodus/4_sunbathing_6.jpg">
+            </div>
+            <div class="grid_column" data-column="5" loading="lazy">
+                <img src="media/01_synthetic_exodus/5_listening_1.jpg">
+                <img src="media/01_synthetic_exodus/5_listening_2.jpg">
+                <img src="media/01_synthetic_exodus/5_listening_3.jpg">
+                <img src="media/01_synthetic_exodus/5_listening_4.jpg">
+                <img src="media/01_synthetic_exodus/5_listening_5.jpg">
+                <img src="media/01_synthetic_exodus/5_listening_6.jpg">
+            </div>
+            <div class="grid_column" data-column="6" loading="lazy">
+                <img src="media/01_synthetic_exodus/6_purifying_1.jpg">
+                <img src="media/01_synthetic_exodus/6_purifying_2.jpg">
+                <img src="media/01_synthetic_exodus/6_purifying_3.jpg">
+                <img src="media/01_synthetic_exodus/6_purifying_4.jpg">
+                <img src="media/01_synthetic_exodus/6_purifying_5.jpg">
+                <img src="media/01_synthetic_exodus/6_purifying_6.jpg">
+            </div>
+            <div class="grid_column" data-column="7" loading="lazy">
+                <img src="media/01_synthetic_exodus/7_aftertasting_1.jpg">
+                <img src="media/01_synthetic_exodus/7_aftertasting_2.jpg">
+                <img src="media/01_synthetic_exodus/7_aftertasting_3.jpg">
+                <img src="media/01_synthetic_exodus/7_aftertasting_4.jpg">
+                <img src="media/01_synthetic_exodus/7_aftertasting_5.jpg">
+                <img src="media/01_synthetic_exodus/7_aftertasting_6.jpg">
+            </div>
+            <div class="grid_column" data-column="8" loading="lazy">
+                <img src="media/01_synthetic_exodus/8_stargazing_1.jpg">
+                <img src="media/01_synthetic_exodus/8_stargazing_2.jpg">
+                <img src="media/01_synthetic_exodus/8_stargazing_3.jpg">
+                <img src="media/01_synthetic_exodus/8_stargazing_4.jpg">
+                <img src="media/01_synthetic_exodus/8_stargazing_5.jpg">
+                <img src="media/01_synthetic_exodus/8_stargazing_6.jpg">
+            </div>
         </section>
+        <div id="gallery" class="modal" style="display:none; position: absolute;">
+            <!-- default images -->
+            <div class="gallery_item"><img src="media/01_synthetic_exodus/1_nomad_capsule_1.jpg"></div>
+            <div class="gallery_item"><img src="media/01_synthetic_exodus/1_nomad_capsule_2.jpg"></div>
+            <div class="gallery_item"><img src="media/01_synthetic_exodus/1_nomad_capsule_3.jpg"></div>
+        </div>
     </div>
     <footer class="page-footer">
         <p>© Josua Hefti. All rights reserved.</p>

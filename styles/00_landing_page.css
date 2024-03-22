@@ -1,3 +1,7 @@
+* {
+  cursor: none !important;
+}
+
 
 body {
   margin: 0;
@@ -67,23 +71,27 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
+#name {
+  position: relative;
+  top: -12vh;
+  color: rgb(86, 79, 187);
+  font-family: "Josefin Sans bold", Arial, sans-serif;
+  z-index: 100;
+  font-size: calc(10px + 2vh);
+  margin-bottom: 4vh;
+  text-align: center;
+}
+
+
 .text_block {
   color: rgb(86, 79, 187);
   font-family: "Josefin Sans bold", Arial, sans-serif;
   z-index: 3;
 }
 
-
 .text_block h1 {
-  font-size: calc(20px + 1.5vw);
+  font-size: calc(15px + 3vh);
   margin: 0px;
-  text-align: center;
-  z-index: 3;
-}
-  
-.text_block h2 {
-  font-size: calc(15px + 1vw);
-  margin-bottom: 4vh;
   text-align: center;
   z-index: 3;
 }
@@ -99,13 +107,23 @@ body {
   display: flex;
   flex-direction: column;
   position: fixed;
-  justify-content: flex-end;
-  padding-bottom: 10vh;
+  bottom: 0;
+  padding-bottom: 5vh;
   align-items: center;
-  height: 100%;
+  justify-content: flex-end;
   width: 30vw;
-  z-index: 4;
+  z-index: 100;
   overflow: hidden;
+}
+
+a:-webkit-any-link {
+  font-family: "Josefin Sans bold", Arial Black , sans-serif;
+  color: rgba(86, 79, 187, 0.5);
+  font-size: calc(8px + 0.5vw);
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #faded_text {
@@ -113,9 +131,10 @@ body {
   color: rgba(86, 79, 187, 0.5);
   font-size: calc(8px + 0.5vw);
   text-align: center;
-  z-index: 3;
+  z-index: 100;
   opacity: 0%;
   transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 #scrolling_container {
@@ -148,7 +167,6 @@ body {
   justify-content: flex-end;
   align-items: center;
   height: 100%;
-  z-index: 4;
 }
 
 #copyright {

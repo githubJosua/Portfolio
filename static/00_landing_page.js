@@ -42,26 +42,30 @@ let text_container = document.querySelector('#faded_text')
 let canScroll = true;
 let timeout;
 let lines = [
-    'Can we be in motion as NOMADS<br>in a SETTLEMENT?<br><br>Can we cast the motion of GLACIERS<br>into SEDIMENT?',
-    'Can a building unfold MOTION<br>through a STORY?<br><br>Can a building UNFOLD<br>to become an INVENTORY?',
-    'Can we form AI into the<br>ROOTS of a city?<br><br>Can we form TREES to<br>ROOT a new city?',
-    'In a time where we take images<br>of OPERAS and TOWERS<br><br>Is there time to imagine a TOILET<br>that grows FLOWERS?'
+    '<a href="01_synthetic_exodus.html" class="question_link" style="cursor: none;">Can we be in motion as NOMADS<br>in a SETTLEMENT?</a>',
+    '<a href="01_glacial_investigations.html" class="question_link">Can we cast the motion of GLACIERS<br>into SEDIMENT?</a>',
+    '<a href="01_pina_bausch.html" class="question_link">Can a building unfold MOTION<br>through a STORY?</a>',
+    '<a href="01_matrix.html" class="question_link">Can a building UNFOLD<br>to become an INVENTORY?</a>',
+    '<a href="01_heilbronn.html" class="question_link">Can we form AI into the<br>ROOTS of a city?</a>',
+    '<a href="01_itree.html" class="question_link">Can we form TREES to<br>ROOT a new city?</a>',
+    '<a href="01_tianfu.html" class="question_link">In a time where we take images<br>of OPERAS and TOWERS</a>',
+    '<a href="01_flower_toilet.html" class="question_link">Is there time to imagine a TOILET<br>that grows FLOWERS?</a>'
 ]
-let index = -1;
+let index = -2;
 
 
 scrolling_container.addEventListener('scroll', function() {
     if (canScroll) {
-        console.log('Scrolling...');
         canScroll = false;
 
         text_container.style.opacity = 0; 
 
         setTimeout(() => {
-            index = (index + 1) % lines.length;
-            text_container.innerHTML = lines[index];
+            index = (index + 2) % lines.length;
+            text_container.innerHTML = `${lines[index]}<br><br>${lines[index + 1]}`;
 
             text_container.style.opacity = 1;
+            text_container.style.cursor = 'none';
 
             scrolling_container.scrollTop = 0;
 
@@ -72,10 +76,6 @@ scrolling_container.addEventListener('scroll', function() {
     }    
 });
 
-
-// document.addEventListener("click", () => {
-    // window.location.href = "https://josuahefti.myportfolio.com/work";
-  // });
 
 
 let menu_shown = 0;
@@ -118,15 +118,31 @@ document.addEventListener('DOMContentLoaded', () => {
     customCursor.style.display = 'none';
   
     const cursorPath = 'media/00_cursor/cursor.png'
+    const squarePath = 'media/00_cursor/square.png'
   
     scrolling_container.addEventListener('mousemove', (e) => {
       customCursor.style.display = 'block';
       customCursor.style.left = `${e.pageX}px`;
       customCursor.style.top = `${e.pageY}px`;
   
-      customCursor.style.backgroundImage = `url(${cursorPath})`;
+      customCursor.style.backgroundImage = `url(${squarePath})`;
     });
-    scrolling_container.addEventListener('mouseleave', () => {
-        customCursor.style.display = 'none';
+
+    const faded_text = document.getElementById('question_block')
+    faded_text.addEventListener('mousemove', (e) => {
+        customCursor.style.display = 'block';
+        customCursor.style.left = `${e.pageX}px`;
+        customCursor.style.top = `${e.pageY}px`;
+        customCursor.style.backgroundImage = `url(${cursorPath})`;
+    });
+
+    const hyperlinks = document.querySelectorAll('a') 
+    hyperlinks.forEach((menu) => {
+        menu.addEventListener('mousemove', (e) => {
+            customCursor.style.display = 'block';
+            customCursor.style.left = `${e.pageX}px`;
+            customCursor.style.top = `${e.pageY}px`;
+            customCursor.style.backgroundImage = `url(${cursorPath})`;
+        });
     });
 });

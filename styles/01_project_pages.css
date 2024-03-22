@@ -12,7 +12,7 @@
 h1 {
     margin-bottom: 1em;
     font-family: "Josefin Sans", sans-serif;
-    font-size: clamp(25px, 3.5vw, 60px);
+    font-size: clamp(25px, 6vh, 60px);
     font-weight: 1000;
     position: absolute;
     right: 5%;
@@ -208,27 +208,66 @@ body, html {
     max-width: 90vw;
 }
 
+.play_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5vw;
+    margin: 1vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #00000020;
+    border-radius: 50%;
+}
+
+
+#image_grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1vw;
+    width: 90vw;
+    padding: 5vh 5vw;
+    align-items: start;
+    overflow: hidden;
+    cursor: none;
+}
+
+.grid_column img {
+    max-width: 100%;
+    max-height: 10vh;
+    margin-bottom: 1vh;
+}
+
+.modal {
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.9);
+}
 
 
 .page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     width: 100vw;
-    height: 4vw;
-    margin-bottom: 2vh;
+    height: 3vw;
 }
 
 .page-footer p {
     font-size: 0.75em;
+    color: #9d7ce9;
 }
 
 
 
 /* ANIMATIONS */
 @media (max-width: 600px) {
-    .gallery-item {
+    .gallery_item {
         flex-basis: 100%;
     }
 }

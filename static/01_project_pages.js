@@ -7,32 +7,37 @@ document.querySelectorAll('h1').forEach(function(header) {
 
 // Scrolling Behaviour
 let scrollTimeout = null;
+let canScroll = true;
 
 function scroll_to_next_section(direction) {
-  if (scrollTimeout !== null) {
-      clearTimeout(scrollTimeout);
-  }
+  if (canScroll) {
+      canScroll = false;
 
-  scrollTimeout = setTimeout(() => {
-      const snapPoints = document.querySelectorAll('.snap_section');
-      let currentSection = document.querySelector('.current_section');
-
-      let targetSection;
-      if (direction === 'down') {
+      setTimeout(() => {
+        const snapPoints = document.querySelectorAll('.snap_section');
+        let currentSection = document.querySelector('.current_section');
+  
+        let targetSection;
+        if (direction === 'down') {
           targetSection = currentSection.nextElementSibling || currentSection; // || -> default if none is given 
-      } else if (direction === 'up') {
+        } else if (direction === 'up') {
           targetSection = currentSection.previousElementSibling || snapPoints[0];
-      } else {
+        } else {
           targetSection = currentSection.nextElementSibling || currentSection;
-      }
-
-      if (targetSection && targetSection !== currentSection) {
+        }
+  
+        if (targetSection && targetSection !== currentSection) {
           targetSection.scrollIntoView({ behavior: 'smooth' });
           
           if (currentSection) currentSection.classList.remove('current_section');
           targetSection.classList.add('current_section');
-      }
-  }, 100); // Delay before execution
+        }
+
+        setTimeout(() => {
+          canScroll = true;
+        }, 500);
+      }, 200);
+  }    
 }
 
 document.addEventListener('wheel', (e) => {
@@ -47,6 +52,7 @@ document.addEventListener('wheel', (e) => {
 const header = document.getElementById('page_header_container');
 const intro = document.getElementById('project_intro_container');
 const gallery = document.getElementById('gallery');
+let currentIndex = 0;
 const video_container = document.getElementById('video_container');
 
 const cursorPaths = {
@@ -63,8 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(customCursor);
   customCursor.style.position = 'absolute';
   customCursor.style.pointerEvents = 'none';
-  customCursor.style.height = '100px';
-  customCursor.style.width = '100px';
+  customCursor.style.height = '50px';
+  customCursor.style.width = '50px';
   customCursor.style.backgroundSize = 'cover';
   customCursor.style.zIndex = '1000';
   customCursor.style.display = 'none';
@@ -139,8 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // VIDEO
   if (video_container) {
     const video = document.getElementById('video');
+    const play_button = document.querySelector('.play_button');
 
     if (video) {  
       video_container.addEventListener('mousemove', (e) => {
@@ -150,8 +158,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (video.paused || video.ended) {
           customCursor.style.backgroundImage = `url(${cursorPaths.right})`;
+          play_button.style.display = 'block';
         } else {
           customCursor.style.backgroundImage = `url(${cursorPaths.cursor})`;
+          play_button.style.display = 'none';
         }
       });
 
@@ -166,49 +176,107 @@ document.addEventListener('DOMContentLoaded', () => {
           video.controlsList.add("nodownload");
       });
 
+      play_button.addEventListener('click', function() {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+      });
+
       video_container.addEventListener('mouseleave', () => {
         customCursor.style.display = 'none';
       });
     }
   }
+
+  // GRID
+  const grid = document.getElementById('image_grid');
+  if (grid) {
+    grid.addEventListener('mousemove', (e) => {
+      customCursor.style.display = 'block';
+      customCursor.style.left = `${e.pageX}px`;
+      customCursor.style.top = `${e.pageY}px`;
+      customCursor.style.backgroundImage = `url(${cursorPaths.cursor})`;
+    });
+
+    const columns = document.querySelectorAll('.grid_column');
+    const close = document.querySelector('.close');
+
+    columns.forEach(column => {
+      column.addEventListener('click', function() {
+        gallery.innerHTML = '';
+        const images = column.querySelectorAll('img');
+  
+        // Create gallery items for each image and append to modal content
+        let imageClones = [] 
+        images.forEach(img => {
+          const galleryItem = document.createElement('div');
+          galleryItem.className = 'gallery_item';
+          const imgClone = img.cloneNode();
+          galleryItem.appendChild(imgClone);
+          gallery.appendChild(galleryItem);
+          imageClones.push(galleryItem)
+        });
+
+        currentIndex = 0;
+        updateGallery(imageClones, currentIndex);
+        gallery.style.display = 'flex';
+      });
+    });
+
+    window.addEventListener('click', (event) => {
+      if (event.target == gallery) {
+        gallery.style.display = 'none';
+      }
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (e.target == gallery) {
+        customCursor.style.display = 'block';
+        customCursor.style.left = `${e.pageX}px`;
+        customCursor.style.top = `${e.pageY}px`;
+        customCursor.style.backgroundImage = `url(${cursorPaths.down})`;
+      }
+    });
+  }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
   if (gallery) {
-    const images = gallery.querySelectorAll('.gallery_item');
-    let currentIndex = 0; // Track the current image
+    let images = gallery.querySelectorAll('.gallery_item');
 
     // Initially set the first image as active
-    updateGallery();
+    updateGallery(images, currentIndex);
 
     gallery.addEventListener('click', (e) => {
-        const galleryRect = gallery.getBoundingClientRect();
-        const mouseXRelative = e.clientX - galleryRect.left;
+      images = gallery.querySelectorAll('.gallery_item');
+      const galleryRect = gallery.getBoundingClientRect();
+      const mouseXRelative = e.clientX - galleryRect.left;
 
-        if (mouseXRelative < galleryRect.width / 2) {
-            // Move to the previous image
-            currentIndex = currentIndex - 1 < 0 ? images.length - 1 : currentIndex - 1;
-        } else {
-            // Move to the next image
-            currentIndex = (currentIndex + 1) % images.length;
-        }
-
-        updateGallery();
+      if (mouseXRelative < galleryRect.width / 2) {
+          // Move to the previous image
+          currentIndex = currentIndex - 1 < 0 ? images.length - 1 : currentIndex - 1;
+      } else {
+          // Move to the next image
+          currentIndex = (currentIndex + 1) % images.length;
+      }
+      
+      updateGallery(images, currentIndex);
     });
-
-    function updateGallery() {
-        images.forEach((img, index) => {
-            img.classList.remove('active', 'next', 'prev');
-
-            if (index === currentIndex) {
-                img.classList.add('active');
-            } else if (index === (currentIndex + 1) % images.length) {
-                img.classList.add('next');
-            } else if (index === (currentIndex - 1 + images.length) % images.length) {
-                img.classList.add('prev');
-            }
-        });
-    }
   }
 });
 
+function updateGallery(images, currentIndex) {
+  images.forEach((img, index) => {
+      img.classList.remove('active', 'next', 'prev');
+
+      if (index === currentIndex) {
+          img.classList.add('active');
+      } else if (index === (currentIndex + 1) % images.length) {
+          img.classList.add('next');
+      } else if (index === (currentIndex - 1 + images.length) % images.length) {
+          img.classList.add('prev');
+      }
+  });
+}
