@@ -65,7 +65,7 @@ body {
 
 #portrait {
     height: auto;
-    width: 30vw;
+    width: 33vw;
     z-index: 50;
 }
 
@@ -98,12 +98,12 @@ h2 {
 }
 
 #description {
-    width: 30vw;
+    width: 33vw;
     text-align: justify;
 }
 
 .quote {
-    width: 30vw;
+    width: 33vw;
     font-style: italic;
     margin: 3vh 0;
     text-align: center;
@@ -111,7 +111,7 @@ h2 {
 
 p {
     font-family: "Josefin Sans", Arial, sans-serif;
-    font-size: clamp(10px, 0.7vw, 17px);
+    font-size: clamp(14px, 0.7vw, 18px);
     color: #fff;
     font-weight: 200;
     line-height: 1.5;

@@ -39,8 +39,8 @@ h3 {
 
 p {
     font-family: "Josefin Sans", Arial, sans-serif;
-    font-size: clamp(10px, 1vw, 17px);
-    font-weight: 200;
+    font-size: clamp(14px, 1vw, 18px);
+    font-weight: 300;
     line-height: 1.5;
     margin: 2em;
     text-align: center;
