@@ -1,8 +1,4 @@
 // transitions
-document.addEventListener('DOMContentLoaded', function() {
-    document.body.style.opacity = 1
-});
-
 window.addEventListener('pageshow', function(event) {
     document.body.style.transition = 'none';
     document.body.style.opacity = 0;
