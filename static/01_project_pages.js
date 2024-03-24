@@ -4,6 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
   document.body.style.backgroundColor = '#fff'
 });
 
+window.addEventListener('pageshow', function(event) {
+  document.body.style.transition = 'none';
+  document.body.style.opacity = 0;
+  document.body.style.backgroundColor = '#000';
+
+  setTimeout(() => {
+      document.body.style.transition = 'opacity 0.5s ease-in-out, background-color 1s ease-in-out';
+      document.body.style.opacity = 1;
+      document.body.style.backgroundColor = '#fff'
+  }, 0);
+});
+
 
 // HEADERS
 document.querySelectorAll('h1').forEach(function(header) {
