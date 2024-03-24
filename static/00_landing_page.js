@@ -174,9 +174,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function checkOrientation() {
     const warning = document.getElementById('warning')
     if (window.innerHeight > window.innerWidth) {
-        warning.style.opacity = 1
+        warning.style.display = 'block'
     } else {
-        warning.style.opacity = 0
+        warning.style.display = 'none'
     }
   }
 
