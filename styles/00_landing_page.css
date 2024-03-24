@@ -245,3 +245,28 @@ a:-webkit-any-link {
 .show-menu {
   transform: translateX(0%);
 }
+
+
+
+#warning {
+  opacity: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+#warning p {
+  font-family: "Josefin Sans bold", Arial, sans-serif;
+  font-size: 4vw;
+  color: rgb(86, 79, 187);
+  height: 100vh;
+  width: 100vw;
+  margin-top: 48vh;
+  text-align: center;
+}

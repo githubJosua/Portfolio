@@ -167,3 +167,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+// warning
+function checkOrientation() {
+    const warning = document.getElementById('warning')
+    if (window.innerHeight > window.innerWidth) {
+        warning.style.opacity = 1
+    } else {
+        warning.style.opacity = 0
+    }
+  }
+
+  // Check on initial load
+  checkOrientation();
+
+  // Add event listener for changes, e.g., when the user rotates their device
+  window.addEventListener('resize', checkOrientation);
