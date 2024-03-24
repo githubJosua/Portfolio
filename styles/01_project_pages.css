@@ -24,7 +24,7 @@ h1 {
 h2 {
     margin-bottom: 1em;
     font-family: "Josefin Sans", Arial, sans-serif;
-    font-size: clamp(18px, 2vw, 40px);
+    font-size: clamp(20px, 3vw, 50px);
     font-weight: 800;
     font-style: italic;
 }
@@ -32,7 +32,7 @@ h2 {
 h3 {
     margin-bottom: 1em;
     font-family: "Josefin Sans", Arial, sans-serif;
-    font-size: clamp(15px, 1.5vw, 25px);
+    font-size: clamp(18px, 1.8vw, 30px);
     font-weight: 500;
     font-style: italic;
 }
@@ -40,7 +40,8 @@ h3 {
 p {
     font-family: "Josefin Sans", Arial, sans-serif;
     font-size: clamp(14px, 1vw, 18px);
-    font-weight: 300;
+    font-weight: 200;
+    color: #646464;
     line-height: 1.5;
     margin: 2em;
     text-align: center;
