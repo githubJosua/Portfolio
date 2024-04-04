@@ -66,7 +66,7 @@ let lines = [
 let index = -2;
 
 
-scrolling_container.addEventListener('scroll', function() {
+function scroll_question() {
     if (canScroll) {
         canScroll = false;
 
@@ -86,8 +86,23 @@ scrolling_container.addEventListener('scroll', function() {
             }, 500);
         }, 300);
     }    
-});
+}
 
+function debounce(func, delay) {
+    let debounceTimer;
+    return function() {
+      const context = this;
+      const args = arguments;
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => func.apply(context, args), delay);
+    }
+}
+
+// Applying debounce to the scroll event listener
+scrolling_container.addEventListener('scroll', debounce((e) => {
+    scroll_question();
+}, 100), {passive: false});
+  
 
 
 let menu_shown = 0;
