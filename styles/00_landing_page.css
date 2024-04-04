@@ -78,7 +78,7 @@ body {
   color: rgb(86, 79, 187);
   font-family: "Josefin Sans bold", Arial, sans-serif;
   z-index: 100;
-  font-size: calc(10px + 2vh);
+  font-size: 3vh;
   margin-bottom: 4vh;
   text-align: center;
 }
@@ -91,15 +91,8 @@ body {
 }
 
 .text_block h1 {
-  font-size: calc(15px + 3vh);
-  margin: 0px;
-  text-align: center;
-  z-index: 3;
-}
-
-.text_block h3 {
-  font-size: 20px;
-  margin-bottom: 25px;
+  font-size: 5vh;
+  margin: 0;
   text-align: center;
   z-index: 3;
 }
@@ -120,7 +113,7 @@ body {
 a:-webkit-any-link {
   font-family: "Josefin Sans bold", Arial Black , sans-serif;
   color: rgba(86, 79, 187, 0.5);
-  font-size: calc(8px + 0.5vw);
+  font-size: 1.5vh;
   text-align: center;
   transition: opacity 0.3s ease-in-out;
   text-decoration: none;
@@ -130,7 +123,7 @@ a:-webkit-any-link {
 #faded_text {
   font-family: "Josefin Sans bold", Arial Black , sans-serif;
   color: rgba(86, 79, 187, 0.5);
-  font-size: calc(8px + 0.5vw);
+  font-size: 1.5vh;
   text-align: center;
   z-index: 100;
   opacity: 0%;
@@ -173,8 +166,8 @@ a:-webkit-any-link {
 #copyright {
   color: rgba(86, 79, 187, 0.5);
   font-family: "Josefin Sans bold", Arial, sans-serif;
-  font-size: 12px;
-  padding: 16px;
+  font-size: 1.5vh;
+  padding: 2vh;
   z-index: 4;
 }
 
@@ -184,7 +177,6 @@ a:-webkit-any-link {
   position: fixed;
   width: 25vw;
   z-index: 100;
-  padding: 20px;
   top: 0;
   list-style: none;
 }
@@ -197,13 +189,13 @@ a:-webkit-any-link {
 
 #menu_left {
   left: 0;
-  transform: translateX(-100%);
+  transform: translateX(-200%);
   transition: transform 0.6s ease-in-out;
 }
 
 #menu_right {
   left: 73vw;
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform 0.6s ease-in-out;
   align-items: end;
 }
@@ -232,7 +224,7 @@ a:-webkit-any-link {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: "Josefin Sans bold", Arial Black, sans-serif;
-  font-size: calc(8px + 0.5vw);
+  font-size: calc(0.75vw + 0.5vh);
   width: 100%;
 }
 
@@ -250,12 +242,10 @@ a:-webkit-any-link {
 
 #warning {
   display: none;
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  background-color: #000;
+  position: fixed;
+  bottom: 25vh;
+  height: 12vh;
+  width: 30vw;
   z-index: 1000;
   justify-content: center;
   align-items: center;
@@ -263,10 +253,8 @@ a:-webkit-any-link {
 
 #warning p {
   font-family: "Josefin Sans bold", Arial, sans-serif;
-  font-size: 4vw;
+  font-size: 1.5vh;
   color: rgb(86, 79, 187);
-  height: 100vh;
-  width: 100vw;
-  margin-top: 48vh;
   text-align: center;
+  justify-self: center;
 }

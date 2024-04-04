@@ -105,8 +105,8 @@ scrolling_container.addEventListener('click', function() {
         background_image.style.filter = 'blur(3vw) saturate(2)';
         menu_shown = 1;
     } else {
-        menu_left.style.transform = 'translateX(-100%)';
-        menu_right.style.transform = 'translateX(100%)';
+        menu_left.style.transform = 'translateX(-200%)';
+        menu_right.style.transform = 'translateX(200%)';
         scrolling_container.style.opacity = 0;
         video.style.opacity = 1;
         background_image.style.filter = 'none';

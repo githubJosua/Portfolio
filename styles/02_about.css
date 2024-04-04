@@ -45,17 +45,19 @@ body {
 #content {
     position: absolute;
     left: 10vw;
-    top: 0;
     width: 80vw;
+    top: 0;
+    height: 100vh;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 #portrait_container {
-    width: 50%;
-    height: 100vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,22 +67,21 @@ body {
 
 #portrait {
     height: auto;
-    width: 33vw;
+    width: 60%;
     z-index: 50;
 }
 
 h1 {
     margin-bottom: 0;
     font-family: "Josefin Sans", sans-serif;
-    font-size: clamp(25px, 6vh, 60px);
+    font-size: calc(1.5vw + 2vh);
     font-weight: 1000;
     text-align: center;
 }
 
 
 #text_container {
-    width: 50%;
-    height: 100vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,18 +93,16 @@ h2 {
     margin-bottom: 2vh;
     margin-top: 0;
     font-family: "Josefin Sans", Arial, sans-serif;
-    font-size: clamp(18px, 2vw, 40px);
+    font-size: calc(1.2vw + 1.5vh);
     font-weight: 800;
     font-style: italic;
 }
 
 #description {
-    width: 33vw;
     text-align: justify;
 }
 
 .quote {
-    width: 33vw;
     font-style: italic;
     margin: 3vh 0;
     text-align: center;
@@ -111,7 +110,7 @@ h2 {
 
 p {
     font-family: "Josefin Sans", Arial, sans-serif;
-    font-size: clamp(14px, 0.7vw, 18px);
+    font-size: calc(0.5vw + 0.8vh);
     color: #fff;
     font-weight: 200;
     line-height: 1.5;
@@ -151,8 +150,8 @@ p {
     position: fixed;
     top: 1.5vw;
     left: 1.5vw;
-    width: 4vw;
-    height: 4vw;
+    width: calc(3vw + 3vh);
+    height: calc(3vw + 3vh);
     background-image: linear-gradient(to right, #c592e7a6, #563c9175, #c592e7a6);
     border: 2px solid #000000;
     border-radius: 50%; /* circle */

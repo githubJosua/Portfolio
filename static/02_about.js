@@ -52,3 +52,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+// arrangement for orientation
+function checkOrientation() {
+  const content = document.getElementById('content')
+  if (window.innerHeight > window.innerWidth) {
+      content.style.flexDirection = 'column'
+  } else {
+    content.style.flexDirection = 'row'
+  }
+}
+
+// Check on initial load
+checkOrientation();
+
+// Add event listener for changes, e.g., when the user rotates their device
+window.addEventListener('resize', checkOrientation);
