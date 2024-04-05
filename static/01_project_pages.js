@@ -50,26 +50,15 @@ function scroll_to_next_section(direction) {
         setTimeout(() => {
           canScroll = true;
         }, 1000);
-      }, 200);
+      }, 250);
   }    
 }
 
-function debounce(func, delay) {
-  let debounceTimer;
-  return function() {
-    const context = this;
-    const args = arguments;
-    clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(() => func.apply(context, args), delay);
-  }
-}
-
-// Applying debounce to the scroll event listener
-document.addEventListener('wheel', debounce((e) => {
+document.addEventListener('wheel', (e) => {
   e.preventDefault();
   const direction = e.deltaY > 0 ? 'down' : 'up';
   scroll_to_next_section(direction);
-}, 100), {passive: false});
+}, {passive: false});
 
 
 
