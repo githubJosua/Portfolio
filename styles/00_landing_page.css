@@ -254,7 +254,8 @@ a:-webkit-any-link {
 #warning p {
   font-family: "Josefin Sans bold", Arial, sans-serif;
   font-size: 1.5vh;
-  color: rgb(86, 79, 187);
+  color: rgb(162, 159, 214);
   text-align: center;
   justify-self: center;
+  opacity: 0.4;
 }
