@@ -1,0 +1,242 @@
+* {
+  cursor: none !important;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #000000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#landing-page {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+#background_image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000000;
+  z-index: -10  ;
+  opacity: 0.5;
+}
+
+#background_image img {
+  position: center;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background-size: cover;;
+  object-fit: cover;
+  transition: filter 0.3s ease-in-out;
+}
+
+#video_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#background-video {
+  position: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.text_block {
+  color: rgb(86, 79, 187);
+  font-family: "Courier New", Arial, sans-serif;
+  z-index: 3;
+}
+
+.text_block h1 {
+  font-size: calc(3vw + 2vh);
+  margin: 0;
+  text-align: center;
+  z-index: 3;
+}
+
+#question_block {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 5vh;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30vw;
+  z-index: 100;
+  overflow: hidden;
+}
+
+
+
+#faded_text {
+  font-family: "Josefin Sans bold", Arial Black , sans-serif;
+  color: rgba(86, 79, 187, 0.5);
+  font-size: 1.5vh;
+  text-align: center;
+  z-index: 100;
+  opacity: 0%;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#scrolling_container {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  background-color: #000000;
+  opacity: 0%;
+  transition: opacity 0.3s;
+  cursor: none;
+}
+
+#scroller {
+  height: 500vh;
+}
+
+
+
+.copyright-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+#copyright {
+  color: rgba(86, 79, 187, 0.5);
+  font-family: "Josefin Sans bold", Arial, sans-serif;
+  font-size: 1.5vh;
+  padding: 2vh;
+  z-index: 4;
+}
+
+
+
+.hidden-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  z-index: 100;
+}
+
+.hidden-menu ul {
+  display: contents; /* Allows direct placement of <li> items in the grid */
+}
+
+.hidden-menu ul li {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  list-style: none;
+}
+
+
+.hidden-menu ul li:nth-child(1) { animation-delay: 0.3s; }
+.hidden-menu ul li:nth-child(4) { animation-delay: 0.6s; }
+.hidden-menu ul li:nth-child(7) { animation-delay: 0.9s; }
+.hidden-menu ul li:nth-child(2) { animation-delay: 1.2s; }
+.hidden-menu ul li:nth-child(8) { animation-delay: 1.5s; }
+.hidden-menu ul li:nth-child(9) { animation-delay: 1.8s; }
+.hidden-menu ul li:nth-child(3) { animation-delay: 2.1s; }
+.hidden-menu ul li:nth-child(12) { animation-delay: 2.4s; }
+.hidden-menu ul li:nth-child(11) { animation-delay: 2.7s; }
+.hidden-menu ul li:nth-child(5) { animation-delay: 3s; }
+.hidden-menu ul li:nth-child(10) { animation-delay: 3.3s; }
+.hidden-menu ul li:nth-child(6) { animation-delay: 3.6s; }
+ 
+@keyframes fadeIn { 
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hidden-menu ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Courier New", Arial, sans-serif;
+  font-size: calc(0.6vw + 0.5vh);
+}
+
+.hidden-menu ul li a img {
+  height: 20vh;
+  margin-bottom: 1vh;
+  opacity: 1;
+}
+
+
+
+#warning {
+  display: none;
+  position: fixed;
+  bottom: 25vh;
+  height: 12vh;
+  width: 30vw;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+#warning p {
+  font-family: "Courier New", Arial, sans-serif;
+  font-size: 1.5vh;
+  color: rgb(162, 159, 214);
+  text-align: center;
+  justify-self: center;
+  opacity: 0.4;
+}
