@@ -188,13 +188,14 @@ a:-webkit-any-link {
 }
 
 #menu_left {
-  left: 0;
+  left: 4vw;
   transform: translateX(-200%);
   transition: transform 0.6s ease-in-out;
 }
 
 #menu_right {
-  left: 73vw;
+  right: 5vw;
+  /*left: 73vw;*/
   transform: translateX(200%);
   transition: transform 0.6s ease-in-out;
   align-items: end;
@@ -236,6 +237,36 @@ a:-webkit-any-link {
 
 .show-menu {
   transform: translateX(0%);
+}
+
+
+.side-label {
+  position: fixed;
+  top: 50%;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 3vh;
+  color: rgba(179, 176, 209, 0.75);
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 3.5vh;
+  letter-spacing: 0.05rem;
+  white-space: pre;
+}
+
+#left-label {
+  left: 2vw;
+  transform: translate(-400%, -50%);
+  transition: transform 0.6s ease-in-out;
+}
+
+#right-label {
+  right: 2vw;
+  transform: translate(400%, -50%);
+  transition: transform 0.6s ease-in-out;
 }
 
 

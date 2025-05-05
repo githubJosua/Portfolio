@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glacial Investigations</title>
+    <link rel="stylesheet" href="styles/01_project_pages.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon.png">
+</head>
+<body>
+    <a href="00_landing_page.html" class="circle-link"></a>
+    <div id="scrolling_container">
+        <header class="snap_section current_section" id="page_header_container" style="background-color: black;">
+            <img src="media/01_opera_duesseldorf/opera_choice.jpg" id="title_image">
+        </header>
+        <footer class="page-footer">
+            <p>// click //</p>
+        </footer>
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = 1
+        });
+
+        // LEFT OR RIGHT
+        const header = document.getElementById('page_header_container');
+
+        const cursorPaths = {
+        left: 'media/00_cursor/cursor_left.png',
+        right: 'media/00_cursor/cursor_right.png',
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Custom Cursor
+            const customCursor = document.createElement('div');
+            document.body.appendChild(customCursor);
+            customCursor.style.position = 'absolute';
+            customCursor.style.pointerEvents = 'none';
+            customCursor.style.height = '100px';
+            customCursor.style.width = '100px';
+            customCursor.style.backgroundSize = 'cover';
+            customCursor.style.zIndex = '1000';
+            customCursor.style.display = 'none';
+
+            header.addEventListener('mousemove', (e) => {
+                const headerRect = header.getBoundingClientRect();
+                const mouseXRelative = e.clientX - headerRect.left;
+            
+                customCursor.style.display = 'block';
+            
+                customCursor.style.left = `${e.pageX}px`;
+                customCursor.style.top = `${e.pageY}px`;
+            
+                // Left / Right
+                if (mouseXRelative < headerRect.width / 2) {
+                    customCursor.style.backgroundImage = `url(${cursorPaths.left})`;
+                } else {
+                    customCursor.style.backgroundImage = `url(${cursorPaths.right})`;
+                }
+            });
+
+            header.addEventListener('click', (e) => {
+                const headerRect = header.getBoundingClientRect();
+                const mouseXRelative = e.clientX - headerRect.left;
+
+                if (mouseXRelative < headerRect.width / 2) {
+                    window.location.href = '01_opera_duesseldorf_park.html';
+                } else {
+                    window.location.href = '01_opera_duesseldorf_city.html';
+                }
+
+                updateGallery();
+            });
+        });
+    </script>
+</body>
+</html>

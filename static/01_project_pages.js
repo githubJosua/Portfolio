@@ -66,6 +66,7 @@ document.addEventListener('wheel', (e) => {
 const header = document.getElementById('page_header_container');
 const intro = document.getElementById('project_intro_container');
 const gallery = document.getElementById('gallery');
+const gallery2 = document.getElementById('gallery2');
 let currentIndex = 0;
 const video_container = document.getElementById('video_container');
 
@@ -117,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scroll_to_next_section('down');
   });
 
+  // IMAGES
   let image_containers = document.querySelectorAll('.image_container')
   image_containers.forEach((image_container) => {
     if (image_container) {
@@ -136,28 +138,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  if (gallery) {
-    gallery.addEventListener('mousemove', (e) => {
-      const galleryRect = gallery.getBoundingClientRect();
-      const mouseXRelative = e.clientX - galleryRect.left;
-  
-      customCursor.style.display = 'block';
-  
-      customCursor.style.left = `${e.pageX}px`;
-      customCursor.style.top = `${e.pageY}px`;
-  
-      // Left / Right
-      if (mouseXRelative < galleryRect.width / 2) {
-          customCursor.style.backgroundImage = `url(${cursorPaths.left})`;
-      } else {
-          customCursor.style.backgroundImage = `url(${cursorPaths.right})`;
-      }
-    });
-  
-    gallery.addEventListener('mouseleave', () => {
-      customCursor.style.display = 'none';
-    });
-  }
+
+  // GALLERIES
+  setupGallery(gallery, customCursor);
+  setupGallery(gallery2, customCursor);
 
   // VIDEO
   if (video_container) {
@@ -257,12 +241,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+});
+
+
+function setupGallery(gallery, customCursor) {
   if (gallery) {
-    let images = gallery.querySelectorAll('.gallery_item');
-
-    // Initially set the first image as active
-    updateGallery(images, currentIndex);
-
     gallery.addEventListener('click', (e) => {
       images = gallery.querySelectorAll('.gallery_item');
       const galleryRect = gallery.getBoundingClientRect();
@@ -278,8 +261,34 @@ document.addEventListener('DOMContentLoaded', () => {
       
       updateGallery(images, currentIndex);
     });
+
+    gallery.addEventListener('mousemove', (e) => {
+      const galleryRect = gallery.getBoundingClientRect();
+      const mouseXRelative = e.clientX - galleryRect.left;
+  
+      customCursor.style.display = 'block';
+  
+      customCursor.style.left = `${e.pageX}px`;
+      customCursor.style.top = `${e.pageY}px`;
+  
+      // Left / Right
+      if (mouseXRelative < galleryRect.width / 2) {
+          customCursor.style.backgroundImage = `url(${cursorPaths.left})`;
+      } else {
+          customCursor.style.backgroundImage = `url(${cursorPaths.right})`;
+      }
+    });
+  
+    gallery.addEventListener('mouseleave', () => {
+      customCursor.style.display = 'none';
+    });
+
+    let images = gallery.querySelectorAll('.gallery_item');
+  
+    // Initially set the first image as active
+    updateGallery(images, currentIndex);
   }
-});
+}  
 
 function updateGallery(images, currentIndex) {
   images.forEach((img, index) => {

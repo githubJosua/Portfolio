@@ -90,7 +90,7 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 2vh;
+    margin-bottom: 0vh;
     margin-top: 0;
     font-family: "Josefin Sans", Arial, sans-serif;
     font-size: calc(1.2vw + 1.5vh);
@@ -104,7 +104,7 @@ h2 {
 
 .quote {
     font-style: italic;
-    margin: 3vh 0;
+    margin: 7vh 0;
     text-align: center;
 }
 

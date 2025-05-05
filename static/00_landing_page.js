@@ -112,9 +112,13 @@ const background_image = document.getElementById('background_image');
 scrolling_container.addEventListener('click', function() {
     var menu_left = document.getElementById('menu_left');
     var menu_right = document.getElementById('menu_right');
+    var label_left = document.getElementById('left-label');
+    var label_right = document.getElementById('right-label');
     if (menu_shown===0) {
         menu_left.style.transform = 'translateX(0%)';
         menu_right.style.transform = 'translateX(0%)';
+        label_left.style.transform = 'translate(0%, -50%)';
+        label_right.style.transform = 'translate(0%, -50%)';
         scrolling_container.style.opacity = 0;
         video.style.opacity = 0;
         background_image.style.filter = 'blur(3vw) saturate(2)';
@@ -122,6 +126,8 @@ scrolling_container.addEventListener('click', function() {
     } else {
         menu_left.style.transform = 'translateX(-200%)';
         menu_right.style.transform = 'translateX(200%)';
+        label_left.style.transform = 'translate(-400%, -50%)';
+        label_right.style.transform = 'translate(400%, -50%)';
         scrolling_container.style.opacity = 0;
         video.style.opacity = 1;
         background_image.style.filter = 'none';
@@ -183,6 +189,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// SIDE LABELS
+document.querySelectorAll('.side-label').forEach(label => {
+    const text = label.dataset.text;
+    label.innerHTML = '';
+    [...text].forEach(char => {
+        const span = document.createElement('span');
+        span.textContent = char;
+        label.appendChild(span);
+    });
+});
 
 
 // warning
