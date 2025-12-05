@@ -19,46 +19,7 @@ document.querySelectorAll('h1').forEach(function(header) {
   header.innerHTML = newText;
 });
 
-// Scrolling Behaviour
-let scrollTimeout = null;
-let canScroll = true;
-
-function scroll_to_next_section(direction) {
-  if (canScroll) {
-      canScroll = false;
-
-      setTimeout(() => {
-        const snapPoints = document.querySelectorAll('.snap_section');
-        let currentSection = document.querySelector('.current_section');
-  
-        let targetSection;
-        if (direction === 'down') {
-          targetSection = currentSection.nextElementSibling || currentSection; // || -> default if none is given 
-        } else if (direction === 'up') {
-          targetSection = currentSection.previousElementSibling || snapPoints[0];
-        } else {
-          targetSection = currentSection.nextElementSibling || currentSection;
-        }
-  
-        if (targetSection && targetSection !== currentSection) {
-          targetSection.scrollIntoView({ behavior: 'smooth' });
-          
-          if (currentSection) currentSection.classList.remove('current_section');
-          targetSection.classList.add('current_section');
-        }
-
-        setTimeout(() => {
-          canScroll = true;
-        }, 1000);
-      }, 250);
-  }    
-}
-
-document.addEventListener('wheel', (e) => {
-  e.preventDefault();
-  const direction = e.deltaY > 0 ? 'down' : 'up';
-  scroll_to_next_section(direction);
-}, {passive: false});
+// Scrolling removed - normal scroll behavior
 
 
 
@@ -100,9 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
   header.addEventListener('mouseleave', () => {
     customCursor.style.display = 'none';
   });
-  header.addEventListener('click', () => {
-    scroll_to_next_section('down');
-  });
 
   intro.addEventListener('mousemove', (e) => {
     customCursor.style.display = 'block';
@@ -113,9 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   intro.addEventListener('mouseleave', () => {
     customCursor.style.display = 'none';
-  });
-  intro.addEventListener('click', () => {
-    scroll_to_next_section('down');
   });
 
   // IMAGES
@@ -131,9 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       image_container.addEventListener('mouseleave', () => {
         customCursor.style.display = 'none';
-      });
-      image_container.addEventListener('click', () => {
-        scroll_to_next_section('down');
       });
     }
   });
