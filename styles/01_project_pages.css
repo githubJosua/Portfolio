@@ -134,6 +134,15 @@ body {
     width: 60vw;
 }
 
+.description_section {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    cursor: none;
+}
+
 .image_container {
     position: relative;
     height: 100vh;

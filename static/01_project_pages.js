@@ -73,6 +73,20 @@ document.addEventListener('DOMContentLoaded', () => {
     customCursor.style.display = 'none';
   });
 
+  // Description sections cursor
+  const descriptionSections = document.querySelectorAll('.description_section');
+  descriptionSections.forEach((section) => {
+    section.addEventListener('mousemove', (e) => {
+      customCursor.style.display = 'block';
+      customCursor.style.left = `${e.pageX}px`;
+      customCursor.style.top = `${e.pageY}px`;
+      customCursor.style.backgroundImage = `url(${cursorPaths.cursor})`;
+    });
+    section.addEventListener('mouseleave', () => {
+      customCursor.style.display = 'none';
+    });
+  });
+
   // IMAGES
   let image_containers = document.querySelectorAll('.image_container')
   image_containers.forEach((image_container) => {

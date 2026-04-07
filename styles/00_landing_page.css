@@ -83,6 +83,19 @@ body {
   text-align: center;
 }
 
+#current_project {
+  position: absolute;
+  top: 70vh;
+  left: 50%; 
+  transform: translateX(-50%);
+  color: rgb(86, 79, 187);
+  font-family: "Josefin Sans bold", Arial, sans-serif;
+  z-index: 100;
+  font-size: 3vh;
+  margin-bottom: 4vh;
+  text-align: center;
+}
+
 
 .text_block {
   color: rgb(86, 79, 187);
