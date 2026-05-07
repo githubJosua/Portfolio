@@ -90,19 +90,6 @@ img {
   transform: translateY(0);
 }
 
-.circle-link {
-    position: absolute;
-    top: 1.5vw;
-    left: 1.5vw;
-    width: calc(3vw + 3vh);
-    height: calc(3vw + 3vh);
-    background-image: linear-gradient(to right, #c592e7a6, #563c9175, #c592e7a6);
-    border: 2px solid #000000;
-    border-radius: 50%; /* circle */
-    z-index: 1000;
-    animation: rotate 10s linear infinite;
-}
-
 /* ============================================
    HERO
    ============================================ */
@@ -142,6 +129,7 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin-top: 10vh;
   margin-bottom: 1rem;
 }
 
@@ -191,6 +179,26 @@ img {
     transform: translateY(8px);
     opacity: 1;
   }
+}
+
+.hero-social {
+  display: block;
+  margin-top: 5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  opacity: 0.65;
+  transition: all 0.3s var(--ease);
+}
+
+.hero-social a {
+  color: var(--orange);
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+
+.hero-social:hover {
+  opacity: 1;
 }
 
 /* ============================================
@@ -1360,11 +1368,131 @@ section {
   }
 }
 
-@keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+/* ============================================
+   GLASSMORPHISM COMMENT BOX
+   ============================================ */
+.comment-card {
+  margin: 0 auto 3rem auto;
+  max-width: 600px;
+  padding: 24px 22px 20px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  color: var(--text);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s var(--ease);
+}
+
+.comment-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--orange), var(--purple));
+  opacity: 0.7;
+}
+
+.comment-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--purple-dim);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+}
+
+.comment-title {
+  font-family: var(--font-head);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  color: var(--text2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comment-title-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--orange);
+}
+
+.comment-input-row {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.comment-input {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-bottom: 1px solid var(--card-border);
+  padding: 0.75rem 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  outline: none;
+  font-family: var(--font-body);
+  transition: all 0.3s var(--ease);
+}
+
+.comment-input::placeholder {
+  color: var(--text-muted);
+}
+
+.comment-input:focus {
+  border-bottom-color: var(--purple);
+  background: rgba(115, 85, 190, 0.05);
+}
+
+.comment-submit {
+  background: transparent;
+  border: 1px solid var(--purple-dim);
+  color: var(--purple);
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  font-family: var(--font-head);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+}
+
+.comment-submit:hover {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: #000;
+  box-shadow: 0 0 20px var(--purple-glow);
+}
+
+.comment-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.comment-sent {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  font-family: var(--font-head);
+  letter-spacing: 0.05em;
+  color: #a0ffb8;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.3s var(--ease);
+  height: 0;
+  overflow: hidden;
+}
+
+.comment-sent.show {
+  opacity: 1;
+  transform: translateY(0);
+  height: auto;
+  margin-top: 1rem;
+}

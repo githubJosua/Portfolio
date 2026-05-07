@@ -484,64 +484,6 @@
               "date": "2026-05-05"
             }
           ]
-        },
-        {
-          "day": 24,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/mist creature/day_24_bw.webp",
-          "imageColor": "media/01_urban_creatures/mist creature/day_24.webp",
-          "blueprint": "media/01_urban_creatures/mist creature/day_24_blueprint.webp",
-          "reference": "media/01_urban_creatures/mist creature/day_24_reference.webp",
-          "prompt": "Isolated high-angle isometric view of a deconstructivist apparatus on a black background. The central volume is a high-density porous metallic lattice that extends radially to contact a surrounding mesh framework. The interior features fragmented, jagged steel scaffolding, sharp mechanical intersections, and suspended platforms. Exterior panels consist of perforated glass and woven moisture-harvesting wire meshes. Capillary networks of varying diameters weave through the structure. Frayed wire bundles blur the silhouette at the edges. Light-emitting fiber-optic clusters line the internal metal pathways. Sharp daylight illumination from above creates high contrast.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Isolated high-angle isometric view of a deconstructivist apparatus on a black background. The central volume is a high-density porous metallic lattice that extends radially to contact a surrounding mesh framework. The interior features fragmented, jagged steel scaffolding, sharp mechanical intersections, and suspended platforms. Exterior panels consist of perforated glass and woven moisture-harvesting wire meshes. Capillary networks of varying diameters weave through the structure. Frayed wire bundles blur the silhouette at the edges. Light-emitting fiber-optic clusters line the internal metal pathways. Sharp daylight illumination from above creates high contrast.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "let those bottom wires drag the ground",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "I don't believe the cable car idea",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "can it be even more ominous?",
-              "date": "2026-05-07"
-            }
-          ]
-        },
-        {
-          "day": 25,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/mist creature/day_25_bw.webp",
-          "imageColor": "media/01_urban_creatures/mist creature/day_25.webp",
-          "blueprint": "media/01_urban_creatures/mist creature/day_25_blueprint.webp",
-          "reference": null,
-          "prompt": "A vertical sectional cut through a deconstructivist apparatus. The interior reveals a fragmented labyrinth of intersecting steel plates, high-tension cables, and a porous metallic foam core that extends to meet the external envelope. The outer facade consists of perforated glass panels and translucent moisture-harvesting screens. Dozens of thick, weighted steel wires descend from the primary chassis to drag along the ground plane. The lighting is cold and clinical, casting deep shadows within the internal structural voids. Dense aerosol vapor emits from the gaps between the sharp metal joints. No organic elements or contextual buildings are visible.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "A vertical sectional cut through a deconstructivist apparatus. The interior reveals a fragmented labyrinth of intersecting steel plates, high-tension cables, and a porous metallic foam core that extends to meet the external envelope. The outer facade consists of perforated glass panels and translucent moisture-harvesting screens. Dozens of thick, weighted steel wires descend from the primary chassis to drag along the ground plane. The lighting is cold and clinical, casting deep shadows within the internal structural voids. Dense aerosol vapor emits from the gaps between the sharp metal joints. No organic elements or contextual buildings are visible.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "let those bottom wires drag the ground",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "I don't believe the cable car idea",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "can it be even more ominous?",
-              "date": "2026-05-07"
-            }
-          ]
         }
       ]
     },
@@ -1164,84 +1106,6 @@
               "date": "2026-05-05"
             }
           ]
-        },
-        {
-          "day": 24,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/glow creature/day_24_bw.webp",
-          "imageColor": "media/01_urban_creatures/glow creature/day_24.webp",
-          "blueprint": "media/01_urban_creatures/glow creature/day_24_blueprint.webp",
-          "reference": "media/01_urban_creatures/glow creature/day_24_reference.webp",
-          "prompt": "A multi-story structural system of translucent marble sheets and rigid glowing panels extending vertically along a street corner. A light-gauge metallic framework spans across the street, bridging the main structure to the opposite facade. Tension wires anchor the main mass to existing balcony rails. The lower structural layers feature pressure-sensitive glass modules that modulate light intensity. A central red-lit volume is surrounded by a lattice of geometric climbable supports integrated into the masonry. The exterior surface consists of faceted pneumatic panels and kinetic glass surfaces that physically shift position. Sharp, geometric intersections of metal and glowing stone create a complex vertical network.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "A multi-story structural system of translucent marble sheets and rigid glowing panels extending vertically along a street corner. A light-gauge metallic framework spans across the street, bridging the main structure to the opposite facade. Tension wires anchor the main mass to existing balcony rails. The lower structural layers feature pressure-sensitive glass modules that modulate light intensity. A central red-lit volume is surrounded by a lattice of geometric climbable supports integrated into the masonry. The exterior surface consists of faceted pneumatic panels and kinetic glass surfaces that physically shift position. Sharp, geometric intersections of metal and glowing stone create a complex vertical network.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "Thin the poles into wire.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "Integrate the human",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "explosion",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "let the structure touch the street",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "TG",
-              "text": "less aggressive more friendly",
-              "date": "2026-05-07"
-            }
-          ]
-        },
-        {
-          "day": 25,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/glow creature/day_25_bw.webp",
-          "imageColor": "media/01_urban_creatures/glow creature/day_25.webp",
-          "blueprint": null,
-          "reference": null,
-          "prompt": "",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Evolution Day 25.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "Thin the poles into wire.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "Integrate the human",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "explosion",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "let the structure touch the street",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "TG",
-              "text": "less aggressive more friendly",
-              "date": "2026-05-07"
-            }
-          ]
         }
       ]
     },
@@ -1833,64 +1697,6 @@
               "date": "2026-05-05"
             }
           ]
-        },
-        {
-          "day": 23,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/crown creature/day_23_bw.webp",
-          "imageColor": "media/01_urban_creatures/crown creature/day_23.webp",
-          "blueprint": "media/01_urban_creatures/crown creature/day_23_blueprint.webp",
-          "reference": "media/01_urban_creatures/crown creature/day_23_reference.webp",
-          "prompt": "Architectural photography of a frameless tensile structure integrated into a Parisian streetscape. A translucent hexagonal filament mesh is suspended without a central frame. The mesh extends directly into the masonry window apertures and secures to the parapets of adjacent rooftops with fractal cable arrays. The tether points are articulated with mechanical dampeners to allow for subtle oscillation. The surface features nested hexagonal patterns of varying scales. High-tension steel cables burst into multi-point clusters where they interface with the urban fabric. Light filters through a translucent solar mesh integrated into the canopy, casting geometric shadows across the pavement and communal seating topography at the base.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Architectural photography of a frameless tensile structure integrated into a Parisian streetscape. A translucent hexagonal filament mesh is suspended without a central frame. The mesh extends directly into the masonry window apertures and secures to the parapets of adjacent rooftops with fractal cable arrays. The tether points are articulated with mechanical dampeners to allow for subtle oscillation. The surface features nested hexagonal patterns of varying scales. High-tension steel cables burst into multi-point clusters where they interface with the urban fabric. Light filters through a translucent solar mesh integrated into the canopy, casting geometric shadows across the pavement and communal seating topography at the base.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "Add white fabric layers.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "BSKY",
-              "text": "Allow lower mesh points to gently descend when people gather.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "make the form more irregular and more oblique",
-              "date": "2026-05-07"
-            }
-          ]
-        },
-        {
-          "day": 24,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/crown creature/day_24_bw.webp",
-          "imageColor": "media/01_urban_creatures/crown creature/day_24.webp",
-          "blueprint": "media/01_urban_creatures/crown creature/day_24_blueprint.webp",
-          "reference": "media/01_urban_creatures/crown creature/day_24_reference.webp",
-          "prompt": "Multi-layered white translucent textile surfaces tensioned by irregular, oblique steel cables. The assembly lacks an external rectangular frame, utilizing direct anchor points within the masonry of neighboring building window frames and rooftop edges. Lower mesh vertices descend toward the stone pavement to define spatial enclosures. Recycled copper hardware secures the intersections. The geometry is non-orthogonal and asymmetric. Sunlight penetrates the overlapping fabric, projecting geometric shadows onto the urban floor.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Multi-layered white translucent textile surfaces tensioned by irregular, oblique steel cables. The assembly lacks an external rectangular frame, utilizing direct anchor points within the masonry of neighboring building window frames and rooftop edges. Lower mesh vertices descend toward the stone pavement to define spatial enclosures. Recycled copper hardware secures the intersections. The geometry is non-orthogonal and asymmetric. Sunlight penetrates the overlapping fabric, projecting geometric shadows onto the urban floor.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "Add white fabric layers.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "BSKY",
-              "text": "Allow lower mesh points to gently descend when people gather.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "make the form more irregular and more oblique",
-              "date": "2026-05-07"
-            }
-          ]
         }
       ]
     },
@@ -2435,64 +2241,6 @@
               "source": "BSKY",
               "text": "make the ends feel like roots",
               "date": "2026-05-05"
-            }
-          ]
-        },
-        {
-          "day": 22,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/smell creature/day_22_bw.webp",
-          "imageColor": "media/01_urban_creatures/smell creature/day_22.webp",
-          "blueprint": null,
-          "reference": null,
-          "prompt": "",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Evolution Day 22.",
-          "feedback": [
-            {
-              "source": "IG",
-              "text": "it should fuse with the facade",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "let it grow vertically along the facade",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "TG",
-              "text": "make less robotic and more architectural",
-              "date": "2026-05-07"
-            }
-          ]
-        },
-        {
-          "day": 23,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/smell creature/day_23_bw.webp",
-          "imageColor": "media/01_urban_creatures/smell creature/day_23.webp",
-          "blueprint": "media/01_urban_creatures/smell creature/day_23_blueprint.webp",
-          "reference": "media/01_urban_creatures/smell creature/day_23_reference.webp",
-          "prompt": "An architectural installation of interlocking aluminum struts and translucent polymer membranes integrated into a limestone facade. The assembly expands horizontally along the ground floor and vertically toward the upper levels. Sleek kinetic structural joints and recessed lighting tracks extend from the primary frame. Rigid steel anchors are embedded directly into the masonry. A fine-gauge lattice membrane penetrates through window frames into the building interior, defining new interior voids. The entire apparatus is elevated 50 centimeters above the pavement on slender pilotis. Complex structural nodes and junction details are visible within the assembly gaps. The terminal points of the lower framework taper into articulated footings.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "An architectural installation of interlocking aluminum struts and translucent polymer membranes integrated into a limestone facade. The assembly expands horizontally along the ground floor and vertically toward the upper levels. Sleek kinetic structural joints and recessed lighting tracks extend from the primary frame. Rigid steel anchors are embedded directly into the masonry. A fine-gauge lattice membrane penetrates through window frames into the building interior, defining new interior voids. The entire apparatus is elevated 50 centimeters above the pavement on slender pilotis. Complex structural nodes and junction details are visible within the assembly gaps. The terminal points of the lower framework taper into articulated footings.",
-          "feedback": [
-            {
-              "source": "IG",
-              "text": "it should fuse with the facade",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "let it grow vertically along the facade",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "TG",
-              "text": "make less robotic and more architectural",
-              "date": "2026-05-07"
             }
           ]
         }
@@ -3068,64 +2816,6 @@
               "date": "2026-05-05"
             }
           ]
-        },
-        {
-          "day": 20,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/voice creature/day_20_bw.webp",
-          "imageColor": "media/01_urban_creatures/voice creature/day_20.webp",
-          "blueprint": null,
-          "reference": "media/01_urban_creatures/voice creature/day_20_reference.webp",
-          "prompt": "A vertical structural fissure within a limestone facade. Transparent borosilicate glass tubes descend vertically through the floor plates, acting as acoustic conduits between levels. Tensile steel wires crisscross the central void, anchored to the masonry by heavy industrial clamps. These wires are grouped in high-density clusters, rigged for kinetic vibration. The external metal cladding is surgically peeled back at the edges, exposing a dense internal network of copper cabling and pneumatic lines. A bundle of heavy-gauge cables radiates from the rooftop, spanning downward to the base. Harsh, directional sunlight creates deep shadows within the deep crevice. Industrial textures of brushed steel and glass. DIY-style bolted plates and jagged outriggers provide structural tension.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "A vertical structural fissure within a limestone facade. Transparent borosilicate glass tubes descend vertically through the floor plates, acting as acoustic conduits between levels. Tensile steel wires crisscross the central void, anchored to the masonry by heavy industrial clamps. These wires are grouped in high-density clusters, rigged for kinetic vibration. The external metal cladding is surgically peeled back at the edges, exposing a dense internal network of copper cabling and pneumatic lines. A bundle of heavy-gauge cables radiates from the rooftop, spanning downward to the base. Harsh, directional sunlight creates deep shadows within the deep crevice. Industrial textures of brushed steel and glass. DIY-style bolted plates and jagged outriggers provide structural tension.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "Put soft fabric fins between the wires to turn wind into gentle movement.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "BSKY",
-              "text": "add spinning metal disks to the wires.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "it should be more pushed into the facade",
-              "date": "2026-05-07"
-            }
-          ]
-        },
-        {
-          "day": 21,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/voice creature/day_21_bw.webp",
-          "imageColor": "media/01_urban_creatures/voice creature/day_21.webp",
-          "blueprint": "media/01_urban_creatures/voice creature/day_21_blueprint.webp",
-          "reference": "media/01_urban_creatures/voice creature/day_21_reference.webp",
-          "prompt": "Vertical steel aperture recessed three meters into a limestone masonry gap. A dense network of high-tension cables spans the height of the opening, supporting rotating brushed-aluminum disks and translucent white polymer membranes. Vertical borosilicate glass conduits bridge the interstitial floor plates. Exposed industrial wiring bundles are routed along the jagged steel outriggers that provide structural tension. Cold white LED strips illuminate the interior conduits. High-contrast architectural lighting on a classic urban facade.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Vertical steel aperture recessed three meters into a limestone masonry gap. A dense network of high-tension cables spans the height of the opening, supporting rotating brushed-aluminum disks and translucent white polymer membranes. Vertical borosilicate glass conduits bridge the interstitial floor plates. Exposed industrial wiring bundles are routed along the jagged steel outriggers that provide structural tension. Cold white LED strips illuminate the interior conduits. High-contrast architectural lighting on a classic urban facade.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "Put soft fabric fins between the wires to turn wind into gentle movement.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "BSKY",
-              "text": "add spinning metal disks to the wires.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "it should be more pushed into the facade",
-              "date": "2026-05-07"
-            }
-          ]
         }
       ]
     },
@@ -3231,54 +2921,6 @@
               "date": "2026-05-05"
             }
           ]
-        },
-        {
-          "day": 5,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/lines creature/day_5_bw.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_5.webp",
-          "blueprint": "media/01_urban_creatures/lines creature/day_5_blueprint.webp",
-          "reference": "media/01_urban_creatures/lines creature/day_5_reference.webp",
-          "prompt": "Faceted geometric metal capsule composed of brushed aluminum panels integrated into a Parisian limestone facade. Deep recessed seams between metal sheets. Floor-embedded luminous glass strips extend from the base and remain flush with the asphalt pavement, emitting a pulsing white and blue rhythmic light. A male figure interacts with the capsule entrance. Minimalist industrial aesthetic with no external mobile machinery or metal fencing. Clear, sharp urban photography during twilight.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Faceted geometric metal capsule composed of brushed aluminum panels integrated into a Parisian limestone facade. Deep recessed seams between metal sheets. Floor-embedded luminous glass strips extend from the base and remain flush with the asphalt pavement, emitting a pulsing white and blue rhythmic light. A male figure interacts with the capsule entrance. Minimalist industrial aesthetic with no external mobile machinery or metal fencing. Clear, sharp urban photography during twilight.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "Make the pavement lines pulsate light when people walk nearby.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "too shy",
-              "date": "2026-05-07"
-            }
-          ]
-        },
-        {
-          "day": 6,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/lines creature/day_6_bw.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_6.webp",
-          "blueprint": "media/01_urban_creatures/lines creature/day_6_blueprint.webp",
-          "reference": "media/01_urban_creatures/lines creature/day_6_reference.webp",
-          "prompt": "An industrial geometric metal capsule integrated into the stone facade of a Haussmann building. The sharp facets of the metal structure extend downward, continuing into the asphalt pavement as embedded luminous glass channels. These ground-integrated paths pulse with white light in response to the movement of pedestrians nearby. A heavy, solid matte-steel drawing unit with a functional, low-profile industrial chassis emerges from the base. A same-sex couple interacts at the capsule entrance. The street is open and devoid of any metal barriers or temporary fencing. The pavement lines are radiant light trails integrated directly into the street surface.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "An industrial geometric metal capsule integrated into the stone facade of a Haussmann building. The sharp facets of the metal structure extend downward, continuing into the asphalt pavement as embedded luminous glass channels. These ground-integrated paths pulse with white light in response to the movement of pedestrians nearby. A heavy, solid matte-steel drawing unit with a functional, low-profile industrial chassis emerges from the base. A same-sex couple interacts at the capsule entrance. The street is open and devoid of any metal barriers or temporary fencing. The pavement lines are radiant light trails integrated directly into the street surface.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "Make the pavement lines pulsate light when people walk nearby.",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "too shy",
-              "date": "2026-05-07"
-            }
-          ]
         }
       ]
     },
@@ -3357,54 +2999,6 @@
               "source": "TG",
               "text": "remove the camera on the upper right corner",
               "date": "2026-05-05"
-            }
-          ]
-        },
-        {
-          "day": 5,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/vision creature/day_5_bw.webp",
-          "imageColor": "media/01_urban_creatures/vision creature/day_5.webp",
-          "blueprint": null,
-          "reference": "media/01_urban_creatures/vision creature/day_5_reference.webp",
-          "prompt": "Side orthographic elevation of a geometric metal device mounted on a streetlamp pole. Structural thin steel wires tensioned between the device and adjacent balconies. Flat, planar glass viewing surfaces unfolded and mapped across the building facade. Dark matte steel housing for internal technology. High-intensity projector lens integrated into the upper frame. Polished aluminum panels. Urban architectural context with stone masonry and iron railings.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Side orthographic elevation of a geometric metal device mounted on a streetlamp pole. Structural thin steel wires tensioned between the device and adjacent balconies. Flat, planar glass viewing surfaces unfolded and mapped across the building facade. Dark matte steel housing for internal technology. High-intensity projector lens integrated into the upper frame. Polished aluminum panels. Urban architectural context with stone masonry and iron railings.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "bend those panels more",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "the projection should be mapped to the building",
-              "date": "2026-05-07"
-            }
-          ]
-        },
-        {
-          "day": 6,
-          "date": "2026-05-07",
-          "image": "media/01_urban_creatures/vision creature/day_6_bw.webp",
-          "imageColor": "media/01_urban_creatures/vision creature/day_6.webp",
-          "blueprint": null,
-          "reference": "media/01_urban_creatures/vision creature/day_6_reference.webp",
-          "prompt": "Architectural top-down orthographic plan of a modular apparatus integrated onto a streetlamp pole. The device features bent aluminum sheets and unfolded dark glass viewing planes. Thin steel tension wires bridge the void between the central module and the stone balconies of the adjacent building. A high-intensity projection beam is calibrated to the facade geometry. The metal casing is a solid, continuous surface on the upper right quadrant, devoid of apertures. The street pavement and classical building cornices are visible beneath the structure.",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Architectural top-down orthographic plan of a modular apparatus integrated onto a streetlamp pole. The device features bent aluminum sheets and unfolded dark glass viewing planes. Thin steel tension wires bridge the void between the central module and the stone balconies of the adjacent building. A high-intensity projection beam is calibrated to the facade geometry. The metal casing is a solid, continuous surface on the upper right quadrant, devoid of apertures. The street pavement and classical building cornices are visible beneath the structure.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "bend those panels more",
-              "date": "2026-05-07"
-            },
-            {
-              "source": "IG",
-              "text": "the projection should be mapped to the building",
-              "date": "2026-05-07"
             }
           ]
         }

@@ -9,6 +9,10 @@
   let activeCreatureIdx = null;
   let panelShowColor = false;
 
+  // ——— Dropbox Configuration ———
+  // Get this from your Dropbox App Console (Permissions: files.content.write)
+  const DROPBOX_ACCESS_TOKEN = 'sl.u.AGekwqkRs6yLb-VUyAGB1ij92hdAZJbo5EJtbel3t4aWFzeIBBdzGG3HbLvcpgmONgL3z2TCrK9HqSWQVFABX2psJ_kEhaoHz7NTuw9RRg3JoxEzjwfZ337ic2vUCPqNjRp8CaBFmCEd7864EM1VV-UGHmda_2bhDoOMIVEj2I3x0THZffKprnfbCUhZMSxR75NiFjWNTcuql_192RzZfd8KEQM-AVT6_DY-c2_JbFMUCGpfIn6nye7j7YTWwLriU2X7S6CT74yf7LobBJnQJR72qDeUK_DfvO-KKoRkPTDW0tKKB9Hy2uAJcwW8741dsUWbUy5qvbrNxqSbkJBjP8zDUS8KnmWGb8RRJZhYO99ZBTwsEfiYI62oa_AfWbjgOgdCtREqyfH-tf4Nojqa8RU90dMkSekwWdFvNp6XnYi6eMX2XhCbSasx2hWtJsjPWU3qBLtTbqnSmPflp9ltoN0zOJ9WfLo_btZHbdA_9-LUQ0VqNzmkMuRNrBjmp1t3vvnPy78Zy-CQZoNN5VXeXUBcsajX85ZeSLvNnh-W5HlR5QC05eUvoUUd5QxkTposUIrW43LaKGKheKXLcgPGya2ep2aN9F9C62S9rBGgi-AeroZ96cNPd8czkAp1vuRfTRyxXqbZti0g5ULNOqfIboCG4ob1XGlkp7ZGDf2CKjSGQ5350Hh0-7qN5rAvuEtYGyq5aV6Hc6phXP7N5NdmlLGtBe9JsgrczsnIf25bzhKWb2wNrq-1-o3q-w9i2r-UfPeZb33zLofMMKHiwYnm3kZU8ChXMuZV1e8l4oAVrRh6yDI5BrL8RQRgLLCQjEFEuwgjlPi6Uu0n5ycgCJjNrpxNkBbpopahzOct2DC2-99dAyU0-lk1jm2CU84ujci9TayHNG_8OdrqPFk4U9aMG_xTFHIXnfaJbLfYK5MlkyTJ2VI8sXkxgrvJ_R8F_fir48m-8ArRY4SCO4D7rqaNoDIDv4hWjqjNRemHldfFx1UGb01zgZv6RNaSb9AyLSwi_FuXGHF7rwazNF--x0r6SiWma55ui59lvY_wkvq3u5KsK9yE5YdACd-kWS0jKqasFiFORb0t7QzuMxceN-Bv8Qqcab8QGq8P_hlTBezb8aZU5bvkkSNlQQl_R_c_UwdHc-yFNRdnaDRcxalCDnXBuu7BMxJU3CXG7A_T_SAh9vs_7g_8OmbKMz9Pf4FddyKBmfEP0QRKkXdOoXYY5nZLsvmNfyxlJbaljUwr1oM-sh1UpuxWNJUrY73zNF8LNebnRPsR-we9Y2gS6DaKhXlDANwkt2HBMVpuDjJ51j3VpPcc7hc0k6vY53eSfZizRsuo8JeWKkPvfGq1pePzfx65hfCgOhpQKGEOtvxo8p4hB2uigBO1yfhJqDH3OgW0pDHHFzFchmOEYPF5jKHzU9eUKH68e-h4cyE7NG3IdonJvoKctg';
+
   // ── Boot ──────────────────────────────────
   document.addEventListener('DOMContentLoaded', async () => {
     await loadData();
@@ -166,6 +170,84 @@
     `;
     innerEl.appendChild(header);
 
+    // ——— Comment box ———
+    const commentCard = document.createElement('div');
+    commentCard.className = 'comment-card';
+    commentCard.innerHTML = `
+      <div class="comment-title">
+        <span class="comment-title-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21a9 9 0 1 0-9-9c0 2.15.95 4.16 2.46 5.68L4 21l5.32-1.46A8.93 8.93 0 0 0 12 21z" />
+            <path d="M12 7L13.29 10.71L17 12L13.29 13.29L12 17L10.71 13.29L7 12L10.71 10.71Z" />
+          </svg>
+        </span>
+        Influence this creature
+      </div>
+      <div class="comment-input-row">
+        <input type="text" class="comment-input" placeholder="I think it should…" />
+        <button class="comment-submit">Send</button>
+      </div>
+      <div class="comment-sent">✓ Sent</div>
+    `;
+    innerEl.appendChild(commentCard);
+
+    const inputEl = commentCard.querySelector('.comment-input');
+    const submitBtn = commentCard.querySelector('.comment-submit');
+    const sentMsg = commentCard.querySelector('.comment-sent');
+
+    const handleSubmit = async () => {
+      const text = inputEl.value.trim();
+      if (!text) return;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      try {
+        // We save each comment as a unique JSON file to avoid needing "Read" permissions.
+        const safeTimestamp = new Date().toISOString().replace(/[:.]/g, '-');
+        const filename = `/Apps/creature_venv/website_comments/comment_${safeTimestamp}.json`;
+
+        const response = await fetch('https://content.dropboxapi.com/2/files/upload', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${DROPBOX_ACCESS_TOKEN}`,
+            'Dropbox-API-Arg': JSON.stringify({
+              path: filename,
+              mode: 'add',
+              autorename: true,
+              mute: true
+            }),
+            'Content-Type': 'application/octet-stream'
+          },
+          body: JSON.stringify({
+            creature_id: creature.id,
+            creature_name: creature.name,
+            comment: text,
+            timestamp: new Date().toISOString()
+          }, null, 2)
+        });
+
+        if (response.ok) {
+          sentMsg.classList.add('show');
+          setTimeout(() => sentMsg.classList.remove('show'), 3000);
+          inputEl.value = '';
+        } else {
+          alert('Could not send comment. Try again.');
+        }
+      } catch (err) {
+        console.error(err);
+        alert('Network error — make sure the server is running.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send';
+      }
+    };
+
+    submitBtn.addEventListener('click', handleSubmit);
+    inputEl.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') handleSubmit();
+    });
+
     // Day entries
     const dayList = document.createElement('div');
     dayList.className = 'day-entries';
@@ -180,7 +262,7 @@
 
     Object.keys(daysByDate).sort().reverse().forEach(date => {
       const itemsInDate = daysByDate[date].slice().reverse();
-      
+
       // Feedback comes from the date, so we take it from the first item
       const feedbackArray = itemsInDate[0].day.feedback;
       let inlineFeedback = '';
@@ -320,7 +402,7 @@
     // Feedback HTML (Current day + previous 2 days)
     const currentDayIdx = creature.days.findIndex(d => d.day === day.day);
     let combinedFeedback = [];
-    
+
     // Accumulate up to 3 days of feedback
     for (let i = 0; i < 3; i++) {
       if (currentDayIdx - i >= 0) {
