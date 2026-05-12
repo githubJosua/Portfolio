@@ -542,6 +542,35 @@
               "date": "2026-05-07"
             }
           ]
+        },
+        {
+          "day": 28,
+          "date": "2026-05-12",
+          "image": "media/01_urban_creatures/mist creature/day_28_bw.webp",
+          "imageColor": "media/01_urban_creatures/mist creature/day_28.webp",
+          "blueprint": "media/01_urban_creatures/mist creature/day_28_blueprint.webp",
+          "reference": "media/01_urban_creatures/mist creature/day_28_reference.webp",
+          "prompt": "A photorealistic architectural installation at Place L\u00e9on Blum, Paris. The central core of the mist creature is skewed at a radical 45-degree angle, creating a violent, gravity-defying asymmetry. The heavy concrete skin features deep, jagged fissures and splintered apertures. A chaotic yet engineered network of massive polished metal pipes and conduits aggressively bursts through these openings, protruding far beyond the shell. The structure is set within a Parisian square with green trees under bright, clear daylight. The aesthetic is a radical, deconstructivist explosion of monumental masonry and heavy-duty mechanical systems.",
+          "angle": "isolated_orthographic side elevation.png",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "The design was shifted from a 'calibrated' integration to a 'radical' eruption, replacing neat geometric cutouts with jagged fissures and increasing the core rotation to an extreme 45-degree skew to emphasize a more violent, deconstructivist impact.",
+          "feedback": [
+            {
+              "source": "BSKY",
+              "text": "Slide the middle parts sideways so they don't line up and look crooked.",
+              "date": "2026-05-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "Tilt the middle and let the inside pipes poke through the outer skin.",
+              "date": "2026-05-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "What if we slice the concrete skin with long, messy gaps and let the metal core push through those holes like it is really trying to escape the shell?",
+              "date": "2026-05-12"
+            }
+          ]
         }
       ]
     },
