@@ -1236,25 +1236,6 @@
       "style": "Architecture photography. Parisian park. Lightweight urban structure integrated to the city. Soft fabric surface of hard metal ropes. Functional-surrealist aesthetic.",
       "days": [
         {
-          "day": 1,
-          "date": "2026-04-17",
-          "image": "media/01_urban_creatures/crown creature/day_1_bw.webp",
-          "imageColor": "media/01_urban_creatures/crown creature/day_1.webp",
-          "blueprint": null,
-          "reference": null,
-          "prompt": "",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Genesis. First form emerged. Evolution Day 1.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "Visceral. Pulse the light by widening the frame\u2019s geometry where cables meet the nodes.",
-              "date": "2026-04-17"
-            }
-          ]
-        },
-        {
           "day": 2,
           "date": "2026-04-18",
           "image": "media/01_urban_creatures/crown creature/day_2_bw.webp",
@@ -1866,6 +1847,25 @@
           "lens": null,
           "mutationSummary": "Architecture evolved.",
           "feedback": []
+        },
+        {
+          "day": 1,
+          "date": "2026-05-15",
+          "image": "media/01_urban_creatures/crown creature/day_1_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_1.webp",
+          "blueprint": "media/01_urban_creatures/crown creature/day_1_blueprint.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_1_reference.webp",
+          "prompt": "Deconstructed hexagonal framework suspended between vertical masonry elevations. The primary structural frame is severed into asymmetric segments, pulled out of alignment. A singular, jagged matte-black beam pierces through the central void, skewering the geometric core. The entire assembly is suspended by high-tension cables anchored to surrounding wall surfaces, eliminating the base. Translucent membranes are tensioned across the gaps, featuring complex fractal perforations and nested geometric voids. High-contrast lighting highlights the sharp edges of the fractured steel and the intricate repetition of the fabric patterns.",
+          "angle": "isolated_isometric axonometry open roof hard shadows.png",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "We severed the frame, pierced the core with a jagged beam, and suspended the geometry from the walls.",
+          "feedback": [
+            {
+              "source": "IG",
+              "text": "make fractal patterns",
+              "date": "2026-05-15"
+            }
+          ]
         }
       ]
     },
