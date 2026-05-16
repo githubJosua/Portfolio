@@ -5,7 +5,7 @@
       "name": "Mist Creature",
       "shortName": "MIST",
       "purpose": "Senses the environment and creates heavy mist. Navigating urban clouds in negotiation with the citizens.",
-      "location": "Place Léon Blum, Paris",
+      "location": "Place L\u00e9on Blum, Paris",
       "form": "A geometric dynamic form in the middle with a scale that can host one human inside. A curved roof with a visible structure covers the core. On both sides there are two curved wings that create water mist clouds. The whole structure is made from metal, the joints are visible, but the construction is neat.",
       "style": "Urban photography. Parisian square. Detailed photorealistic urban installation in bright daylight. A complex, metal apparatus generating mist. A sharp, functional-surrealist aesthetic.",
       "days": [
@@ -292,10 +292,10 @@
           "imageColor": "media/01_urban_creatures/mist creature/day_15.webp",
           "blueprint": "media/01_urban_creatures/mist creature/day_15_blueprint.webp",
           "reference": "media/01_urban_creatures/mist creature/day_15_reference.webp",
-          "prompt": "Architectural section of a unified metallic pavilion at Place Léon Blum. Centralized vertical structure with a hollowed core designed for communal assembly. Primary support frame composed of dendritic metal lattice, concealing internal irrigation and misting conduits. Horizontal roof slabs supporting tiered botanical irrigation systems. Exterior envelope utilizing ultra-thin cold-rolled steel membranes in place of heavy masonry. Modular timber floor planes within the internal volume. High-pressure vapor nozzles integrated into the structural nodes of the central column. Diffused overhead illumination filtered through a technical mesh ceiling. Strict orthographic representation with sharp tectonic detail and industrial materiality.",
+          "prompt": "Architectural section of a unified metallic pavilion at Place L\u00e9on Blum. Centralized vertical structure with a hollowed core designed for communal assembly. Primary support frame composed of dendritic metal lattice, concealing internal irrigation and misting conduits. Horizontal roof slabs supporting tiered botanical irrigation systems. Exterior envelope utilizing ultra-thin cold-rolled steel membranes in place of heavy masonry. Modular timber floor planes within the internal volume. High-pressure vapor nozzles integrated into the structural nodes of the central column. Diffused overhead illumination filtered through a technical mesh ceiling. Strict orthographic representation with sharp tectonic detail and industrial materiality.",
           "angle": null,
           "lens": null,
-          "mutationSummary": "Architectural section of a unified metallic pavilion at Place Léon Blum. Centralized vertical structure with a hollowed core designed for communal assembly. Primary support frame composed of dendritic metal lattice, concealing internal irrigation and misting conduits. Horizontal roof slabs supporting tiered botanical irrigation systems. Exterior envelope utilizing ultra-thin cold-rolled steel membranes in place of heavy masonry. Modular timber floor planes within the internal volume. High-pressure vapor nozzles integrated into the structural nodes of the central column. Diffused overhead illumination filtered through a technical mesh ceiling. Strict orthographic representation with sharp tectonic detail and industrial materiality.",
+          "mutationSummary": "Architectural section of a unified metallic pavilion at Place L\u00e9on Blum. Centralized vertical structure with a hollowed core designed for communal assembly. Primary support frame composed of dendritic metal lattice, concealing internal irrigation and misting conduits. Horizontal roof slabs supporting tiered botanical irrigation systems. Exterior envelope utilizing ultra-thin cold-rolled steel membranes in place of heavy masonry. Modular timber floor planes within the internal volume. High-pressure vapor nozzles integrated into the structural nodes of the central column. Diffused overhead illumination filtered through a technical mesh ceiling. Strict orthographic representation with sharp tectonic detail and industrial materiality.",
           "feedback": [
             {
               "source": "TG",
@@ -356,7 +356,7 @@
           "feedback": [
             {
               "source": "BSKY",
-              "text": "Let’s weave translucent membranes between the ribs for organic flow.",
+              "text": "Let\u2019s weave translucent membranes between the ribs for organic flow.",
               "date": "2026-04-30"
             }
           ]
@@ -375,7 +375,7 @@
           "feedback": [
             {
               "source": "BSKY",
-              "text": "Stunning! Let’s connect the vials with glass capillaries to mist the crowd.",
+              "text": "Stunning! Let\u2019s connect the vials with glass capillaries to mist the crowd.",
               "date": "2026-05-01"
             },
             {
@@ -409,7 +409,7 @@
             },
             {
               "source": "BSKY",
-              "text": "Let’s feather the outer membrane edges, dissolving form into the surrounding air.",
+              "text": "Let\u2019s feather the outer membrane edges, dissolving form into the surrounding air.",
               "date": "2026-05-02"
             },
             {
@@ -433,7 +433,7 @@
           "feedback": [
             {
               "source": "BSKY",
-              "text": "Let’s weave moisture-harvesting meshes into those feathered edges.",
+              "text": "Let\u2019s weave moisture-harvesting meshes into those feathered edges.",
               "date": "2026-05-03"
             }
           ]
@@ -1091,7 +1091,7 @@
           "feedback": [
             {
               "source": "BSKY",
-              "text": "Rad! Let’s map a Voronoi pattern to perforate the mesh's skin.",
+              "text": "Rad! Let\u2019s map a Voronoi pattern to perforate the mesh's skin.",
               "date": "2026-05-02"
             },
             {
@@ -1236,25 +1236,6 @@
       "style": "Architecture photography. Parisian park. Lightweight urban structure integrated to the city. Soft fabric surface of hard metal ropes. Functional-surrealist aesthetic.",
       "days": [
         {
-          "day": 1,
-          "date": "2026-04-17",
-          "image": "media/01_urban_creatures/crown creature/day_1_bw.webp",
-          "imageColor": "media/01_urban_creatures/crown creature/day_1.webp",
-          "blueprint": null,
-          "reference": null,
-          "prompt": "",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Genesis. First form emerged. Evolution Day 1.",
-          "feedback": [
-            {
-              "source": "BSKY",
-              "text": "Visceral. Pulse the light by widening the frame’s geometry where cables meet the nodes.",
-              "date": "2026-04-17"
-            }
-          ]
-        },
-        {
           "day": 2,
           "date": "2026-04-18",
           "image": "media/01_urban_creatures/crown creature/day_2_bw.webp",
@@ -1342,7 +1323,7 @@
           "feedback": [
             {
               "source": "BSKY",
-              "text": "Let’s swap that canvas for a translucent solar mesh.",
+              "text": "Let\u2019s swap that canvas for a translucent solar mesh.",
               "date": "2026-04-22"
             },
             {
@@ -1352,7 +1333,7 @@
             },
             {
               "source": "IG",
-              "text": "🎉😍",
+              "text": "\ud83c\udf89\ud83d\ude0d",
               "date": "2026-04-22"
             },
             {
@@ -1381,7 +1362,7 @@
           "feedback": [
             {
               "source": "BSKY",
-              "text": "Let’s swap that canvas for a translucent solar mesh.",
+              "text": "Let\u2019s swap that canvas for a translucent solar mesh.",
               "date": "2026-04-22"
             },
             {
@@ -1391,7 +1372,7 @@
             },
             {
               "source": "IG",
-              "text": "🎉😍",
+              "text": "\ud83c\udf89\ud83d\ude0d",
               "date": "2026-04-22"
             },
             {
@@ -1462,12 +1443,12 @@
             },
             {
               "source": "IG",
-              "text": "it’s fun, what if the canvas was more see through ?",
+              "text": "it\u2019s fun, what if the canvas was more see through ?",
               "date": "2026-04-25"
             },
             {
               "source": "IG",
-              "text": "the panel fabrics looks like my grandma’s tablecloth",
+              "text": "the panel fabrics looks like my grandma\u2019s tablecloth",
               "date": "2026-04-25"
             },
             {
@@ -1689,7 +1670,7 @@
           "feedback": [
             {
               "source": "IG",
-              "text": "Can u give it colour 😛",
+              "text": "Can u give it colour \ud83d\ude1b",
               "date": "2026-05-01"
             },
             {
@@ -1704,7 +1685,7 @@
             },
             {
               "source": "IG",
-              "text": "Really cool!! 🔥",
+              "text": "Really cool!! \ud83d\udd25",
               "date": "2026-05-01"
             },
             {
@@ -1767,7 +1748,7 @@
             },
             {
               "source": "IG",
-              "text": "@prodelic.music fractals😍",
+              "text": "@prodelic.music fractals\ud83d\ude0d",
               "date": "2026-05-03"
             },
             {
@@ -1866,6 +1847,25 @@
           "lens": null,
           "mutationSummary": "Architecture evolved.",
           "feedback": []
+        },
+        {
+          "day": 1,
+          "date": "2026-05-15",
+          "image": "media/01_urban_creatures/crown creature/day_1_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_1.webp",
+          "blueprint": "media/01_urban_creatures/crown creature/day_1_blueprint.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_1_reference.webp",
+          "prompt": "Deconstructed hexagonal framework suspended between vertical masonry elevations. The primary structural frame is severed into asymmetric segments, pulled out of alignment. A singular, jagged matte-black beam pierces through the central void, skewering the geometric core. The entire assembly is suspended by high-tension cables anchored to surrounding wall surfaces, eliminating the base. Translucent membranes are tensioned across the gaps, featuring complex fractal perforations and nested geometric voids. High-contrast lighting highlights the sharp edges of the fractured steel and the intricate repetition of the fabric patterns.",
+          "angle": "isolated_isometric axonometry open roof hard shadows.png",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "We severed the frame, pierced the core with a jagged beam, and suspended the geometry from the walls.",
+          "feedback": [
+            {
+              "source": "IG",
+              "text": "make fractal patterns",
+              "date": "2026-05-15"
+            }
+          ]
         }
       ]
     },
@@ -1875,7 +1875,7 @@
       "shortName": "SMELL",
       "purpose": "Smells the people in the street and analyses the air quality. Identifies specific smells and injects new ones into the environment. Playing with the smell sense of the city.",
       "location": "23 Rue de Malte, Paris",
-      "form": "A parasitic structure placing itself on the sidewalk at the façade. There is a small gap between the structure and the façade where people can pass. Thin panels create a barrier between below and above — between people's individual smell and the city's collective smell. Tentacle-like extensions on the floor reach out into the city to inject new smells through valves.",
+      "form": "A parasitic structure placing itself on the sidewalk at the fa\u00e7ade. There is a small gap between the structure and the fa\u00e7ade where people can pass. Thin panels create a barrier between below and above \u2014 between people's individual smell and the city's collective smell. Tentacle-like extensions on the floor reach out into the city to inject new smells through valves.",
       "style": "Architecture photography. Parisian boulevard. Parasitic urban structure integrated into the city. Lightweight structure holding the thin surfaces. Functional-surrealist aesthetic.",
       "days": [
         {
@@ -2168,7 +2168,7 @@
             },
             {
               "source": "BSKY",
-              "text": "It’s breathing! Stretch those fins to bridge the street.",
+              "text": "It\u2019s breathing! Stretch those fins to bridge the street.",
               "date": "2026-04-26"
             },
             {
@@ -2447,8 +2447,8 @@
       "shortName": "VOICE",
       "purpose": "Listens to the city's voices along the boulevard and brings them back at the center of the structure. The sound of our voice is transported at light speed and stored for eternity.",
       "location": "Boulevard Voltaire, Paris",
-      "form": "A vertical crack in the endless Haussmann façades. The crack is just wide enough to host a human and a vertical stack of speakers. The metal panels of the structure just slightly peak out of the façade. They are mounted together in a DIY way covering the broken stone of the crack.",
-      "style": "Architecture photography. Parisian Haussmann Façade. Urban structure placed in a crack of the urban fabric. Mounted in the crack in a DIY way. Lebbeus Woods style but in reality instead of drawings. Functional-surrealist aesthetic.",
+      "form": "A vertical crack in the endless Haussmann fa\u00e7ades. The crack is just wide enough to host a human and a vertical stack of speakers. The metal panels of the structure just slightly peak out of the fa\u00e7ade. They are mounted together in a DIY way covering the broken stone of the crack.",
+      "style": "Architecture photography. Parisian Haussmann Fa\u00e7ade. Urban structure placed in a crack of the urban fabric. Mounted in the crack in a DIY way. Lebbeus Woods style but in reality instead of drawings. Functional-surrealist aesthetic.",
       "days": [
         {
           "day": 1,
@@ -2719,7 +2719,7 @@
           "feedback": [
             {
               "source": "BSKY",
-              "text": "Excellent progress. Try making those fins perforated to filter the building’s internal metabolic sounds.",
+              "text": "Excellent progress. Try making those fins perforated to filter the building\u2019s internal metabolic sounds.",
               "date": "2026-04-24"
             },
             {
@@ -2753,7 +2753,7 @@
           "feedback": [
             {
               "source": "IG",
-              "text": "I dont understand what the metal stuff is for. Can‘t there be more plants? And earth? And animals?",
+              "text": "I dont understand what the metal stuff is for. Can\u2018t there be more plants? And earth? And animals?",
               "date": "2026-04-25"
             },
             {
@@ -2777,7 +2777,7 @@
           "feedback": [
             {
               "source": "BSKY",
-              "text": "Vary the perforation scale to better modulate the street’s acoustic texture.",
+              "text": "Vary the perforation scale to better modulate the street\u2019s acoustic texture.",
               "date": "2026-04-26"
             },
             {
@@ -3246,19 +3246,6 @@
       "style": "Surrealist optical apparatus, hyper-detailed mechanical eye.",
       "days": [
         {
-          "day": 1,
-          "date": "2026-05-03",
-          "image": "media/01_urban_creatures/vision creature/day_1_bw.webp",
-          "imageColor": "media/01_urban_creatures/vision creature/day_1.webp",
-          "blueprint": null,
-          "reference": null,
-          "prompt": "",
-          "angle": null,
-          "lens": null,
-          "mutationSummary": "Genesis. First form emerged. Evolution Day 1.",
-          "feedback": []
-        },
-        {
           "day": 2,
           "date": "2026-05-03",
           "image": "media/01_urban_creatures/vision creature/day_2_bw.webp",
@@ -3302,10 +3289,10 @@
           "imageColor": "media/01_urban_creatures/vision creature/day_4.webp",
           "blueprint": null,
           "reference": "media/01_urban_creatures/vision creature/day_4_reference.webp",
-          "prompt": "Geometric architectural module mounted on a vertical street lamp pole. The structure features unfolded matte steel planar surfaces extending from its central axis. Tensioned thin black wires connect the module’s frame directly to the ornamental iron balconies of the adjacent building. The lower housing consists of seamless dark glass. Hard edges and industrial joints define the composition. Dusk light highlights the metallic textures against the stone facade context.",
+          "prompt": "Geometric architectural module mounted on a vertical street lamp pole. The structure features unfolded matte steel planar surfaces extending from its central axis. Tensioned thin black wires connect the module\u2019s frame directly to the ornamental iron balconies of the adjacent building. The lower housing consists of seamless dark glass. Hard edges and industrial joints define the composition. Dusk light highlights the metallic textures against the stone facade context.",
           "angle": null,
           "lens": null,
-          "mutationSummary": "Geometric architectural module mounted on a vertical street lamp pole. The structure features unfolded matte steel planar surfaces extending from its central axis. Tensioned thin black wires connect the module’s frame directly to the ornamental iron balconies of the adjacent building. The lower housing consists of seamless dark glass. Hard edges and industrial joints define the composition. Dusk light highlights the metallic textures against the stone facade context.",
+          "mutationSummary": "Geometric architectural module mounted on a vertical street lamp pole. The structure features unfolded matte steel planar surfaces extending from its central axis. Tensioned thin black wires connect the module\u2019s frame directly to the ornamental iron balconies of the adjacent building. The lower housing consists of seamless dark glass. Hard edges and industrial joints define the composition. Dusk light highlights the metallic textures against the stone facade context.",
           "feedback": [
             {
               "source": "TG",
@@ -3351,6 +3338,19 @@
           "angle": null,
           "lens": null,
           "mutationSummary": "Architecture evolved.",
+          "feedback": []
+        },
+        {
+          "day": 1,
+          "date": "2026-05-14",
+          "image": "media/01_urban_creatures/vision creature/day_1_bw.webp",
+          "imageColor": "media/01_urban_creatures/vision creature/day_1.webp",
+          "blueprint": null,
+          "reference": "media/01_urban_creatures/vision creature/day_1_reference.webp",
+          "prompt": "An orthographic side elevation of a streetlamp-mounted surveillance device on Boulevard Voltaire. Violent eruptions of jagged, galvanized steel planes pierce through the existing geometric metal mass. Long, sharp steel spikes are bolted directly onto these irregular panels. The lower section consists of a dark, tinted glass enclosure. Taut fabric membranes are stretched between thin wires connecting the structure to nearby architectural elements. A powerful projector is integrated into the upper housing. Harsh urban lighting creates deep shadows across the multifaceted metal surfaces.",
+          "angle": "site_orthographic elevation view from the side on the streetlamp pole.jpg",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "We erupted jagged metal planes from the mass and bolted long sharp spikes to the panels.",
           "feedback": []
         }
       ]
