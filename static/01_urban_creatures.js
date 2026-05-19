@@ -422,6 +422,34 @@
       </div>
     `;
 
+    let anchorsHtml = '';
+    let anchorsArray = [];
+    if (day.anchors) {
+      if (Array.isArray(day.anchors)) {
+        anchorsArray = day.anchors;
+      } else if (typeof day.anchors === 'string') {
+        anchorsArray = [day.anchors];
+      }
+    }
+    
+    anchorsArray.forEach((anchorPath) => {
+      if (anchorPath) {
+        let label = 'Anchor';
+        const match = anchorPath.match(/_anchor_(\d+)/);
+        if (match && match[1]) {
+          label = `Anchor (D${match[1]})`;
+        } else {
+          const simpleMatch = anchorPath.match(/day_(\d+)_anchor/);
+          if (simpleMatch && simpleMatch[1]) {
+            label = `Anchor (D${simpleMatch[1]})`;
+          }
+        }
+        anchorsHtml += `<figure><img src="${anchorPath}" loading="lazy"><figcaption>${label}</figcaption></figure>`;
+      }
+    });
+
+    const angleImg = day.angleImage || day.blueprint;
+
     body.innerHTML = `
       <div class="panel-left">
         <div class="panel-row">
@@ -437,9 +465,9 @@
           <div class="panel-row-value">${day.prompt || 'Day 1 — first form emerged from DNA alone.'}</div>
         </div>
         <div class="panel-input-images">
-          ${day.blueprint ? `<figure><img src="${day.blueprint}"><figcaption>Angle</figcaption></figure>` : ''}
+          ${angleImg ? `<figure><img src="${angleImg}"><figcaption>Angle</figcaption></figure>` : ''}
           ${day.reference ? `<figure><img src="${day.reference}"><figcaption>Reference</figcaption></figure>` : ''}
-          <figure><img src="${creature.days[0].imageColor || creature.days[0].image}" loading="lazy"><figcaption>Day 1</figcaption></figure>
+          ${anchorsHtml}
         </div>
       </div>
 
