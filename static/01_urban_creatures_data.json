@@ -1298,111 +1298,28 @@
       "style": "Architectural line drawing, futuristic wireframe overlay.",
       "days": [
         {
-          "day": 11,
-          "date": "2026-05-19",
-          "image": "media/01_urban_creatures/lines creature/day_11_bw.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_11.webp",
-          "reference": "media/01_urban_creatures/lines creature/day_11_reference.webp",
-          "prompt": "",
-          "angle": "site_station perspective close up front drawing bot door half open.png",
-          "lens": "photograph structure roof coop himmelblau.jpg",
-          "mutationSummary": "Softening aggressive spikes into light-emitting geometric folds; ground-integrated luminous lines now track pedestrian movement with clinical, brutalist precision.",
-          "feedback": []
-        },
-        {
-          "day": 10,
-          "date": "2026-05-16",
-          "image": "media/01_urban_creatures/lines creature/day_10.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_10_color.webp",
-          "blueprint": "media/01_urban_creatures/lines creature/day_10_angle.webp",
-          "anchors": "media/01_urban_creatures/lines creature/day_10_anchors.webp",
-          "reference": "media/01_urban_creatures/lines creature/day_10_reference.webp",
-          "prompt": "We removed the ramp and stretched the capsule's sharp points directly into the ground, while the metal skin now pulses and stretches over the door opening.",
-          "mutationSummary": "We removed the ramp and stretched the capsule's sharp points directly into the ground, while the metal skin now pulses and stretches over the door opening.",
-          "feedback": []
-        },
-        {
-          "day": 9,
-          "date": "2026-05-16",
-          "image": "media/01_urban_creatures/lines creature/day_9.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_9_color.webp",
+          "day": 1,
+          "date": "2026-05-03",
+          "image": "media/01_urban_creatures/lines creature/day_1.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_1_color.webp",
           "blueprint": null,
-          "anchors": "media/01_urban_creatures/lines creature/day_9_anchors.webp",
-          "reference": "media/01_urban_creatures/lines creature/day_9_reference.webp",
-          "prompt": "We removed the ramp and evolved the base into sharp structural spikes that pierce the pavement, anchoring the creature directly into the boulevard.",
-          "mutationSummary": "We removed the ramp and evolved the base into sharp structural spikes that pierce the pavement, anchoring the creature directly into the boulevard.",
-          "feedback": []
-        },
-        {
-          "day": 8,
-          "date": "2026-05-16",
-          "image": "media/01_urban_creatures/lines creature/day_8.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_8_color.webp",
-          "blueprint": "media/01_urban_creatures/lines creature/day_8_angle.webp",
           "anchors": null,
-          "reference": "media/01_urban_creatures/lines creature/day_8_reference.webp",
+          "reference": null,
           "prompt": "Architecture evolved.",
           "mutationSummary": "Architecture evolved.",
           "feedback": []
         },
         {
-          "day": 7,
-          "date": "2026-05-16",
-          "image": "media/01_urban_creatures/lines creature/day_7.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_7_color.webp",
-          "blueprint": "media/01_urban_creatures/lines creature/day_7_angle.webp",
+          "day": 2,
+          "date": "2026-05-03",
+          "image": "media/01_urban_creatures/lines creature/day_2.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_2_color.webp",
+          "blueprint": "media/01_urban_creatures/lines creature/day_2_angle.webp",
           "anchors": null,
-          "reference": "media/01_urban_creatures/lines creature/day_7_reference.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_2_reference.webp",
           "prompt": "Architecture evolved.",
           "mutationSummary": "Architecture evolved.",
           "feedback": []
-        },
-        {
-          "day": 6,
-          "date": "2026-05-16",
-          "image": "media/01_urban_creatures/lines creature/day_6.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_6_color.webp",
-          "blueprint": "media/01_urban_creatures/lines creature/day_6_angle.webp",
-          "anchors": null,
-          "reference": "media/01_urban_creatures/lines creature/day_6_reference.webp",
-          "prompt": "Architecture evolved.",
-          "mutationSummary": "Architecture evolved.",
-          "feedback": []
-        },
-        {
-          "day": 5,
-          "date": "2026-05-16",
-          "image": "media/01_urban_creatures/lines creature/day_5.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_5_color.webp",
-          "blueprint": "media/01_urban_creatures/lines creature/day_5_angle.webp",
-          "anchors": null,
-          "reference": "media/01_urban_creatures/lines creature/day_5_reference.webp",
-          "prompt": "Architecture evolved.",
-          "mutationSummary": "Architecture evolved.",
-          "feedback": []
-        },
-        {
-          "day": 4,
-          "date": "2026-05-05",
-          "image": "media/01_urban_creatures/lines creature/day_4.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_4_color.webp",
-          "blueprint": "media/01_urban_creatures/lines creature/day_4_angle.webp",
-          "anchors": null,
-          "reference": "media/01_urban_creatures/lines creature/day_4_reference.webp",
-          "prompt": "Architecture evolved.",
-          "mutationSummary": "Architecture evolved.",
-          "feedback": [
-            {
-              "source": "TG",
-              "text": "the robot shouldn't look like the classic remote controlled car kids play with",
-              "date": "2026-05-05"
-            },
-            {
-              "source": "TG",
-              "text": "remove the robot and also remove the metal barriers",
-              "date": "2026-05-05"
-            }
-          ]
         },
         {
           "day": 3,
@@ -1448,27 +1365,110 @@
           ]
         },
         {
-          "day": 2,
-          "date": "2026-05-03",
-          "image": "media/01_urban_creatures/lines creature/day_2.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_2_color.webp",
-          "blueprint": "media/01_urban_creatures/lines creature/day_2_angle.webp",
+          "day": 4,
+          "date": "2026-05-05",
+          "image": "media/01_urban_creatures/lines creature/day_4.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_4_color.webp",
+          "blueprint": "media/01_urban_creatures/lines creature/day_4_angle.webp",
           "anchors": null,
-          "reference": "media/01_urban_creatures/lines creature/day_2_reference.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_4_reference.webp",
+          "prompt": "Architecture evolved.",
+          "mutationSummary": "Architecture evolved.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "the robot shouldn't look like the classic remote controlled car kids play with",
+              "date": "2026-05-05"
+            },
+            {
+              "source": "TG",
+              "text": "remove the robot and also remove the metal barriers",
+              "date": "2026-05-05"
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2026-05-16",
+          "image": "media/01_urban_creatures/lines creature/day_5.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_5_color.webp",
+          "blueprint": "media/01_urban_creatures/lines creature/day_5_angle.webp",
+          "anchors": null,
+          "reference": "media/01_urban_creatures/lines creature/day_5_reference.webp",
           "prompt": "Architecture evolved.",
           "mutationSummary": "Architecture evolved.",
           "feedback": []
         },
         {
-          "day": 1,
-          "date": "2026-05-03",
-          "image": "media/01_urban_creatures/lines creature/day_1.webp",
-          "imageColor": "media/01_urban_creatures/lines creature/day_1_color.webp",
-          "blueprint": null,
+          "day": 6,
+          "date": "2026-05-16",
+          "image": "media/01_urban_creatures/lines creature/day_6.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_6_color.webp",
+          "blueprint": "media/01_urban_creatures/lines creature/day_6_angle.webp",
           "anchors": null,
-          "reference": null,
+          "reference": "media/01_urban_creatures/lines creature/day_6_reference.webp",
           "prompt": "Architecture evolved.",
           "mutationSummary": "Architecture evolved.",
+          "feedback": []
+        },
+        {
+          "day": 7,
+          "date": "2026-05-16",
+          "image": "media/01_urban_creatures/lines creature/day_7.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_7_color.webp",
+          "blueprint": "media/01_urban_creatures/lines creature/day_7_angle.webp",
+          "anchors": null,
+          "reference": "media/01_urban_creatures/lines creature/day_7_reference.webp",
+          "prompt": "Architecture evolved.",
+          "mutationSummary": "Architecture evolved.",
+          "feedback": []
+        },
+        {
+          "day": 8,
+          "date": "2026-05-16",
+          "image": "media/01_urban_creatures/lines creature/day_8.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_8_color.webp",
+          "blueprint": "media/01_urban_creatures/lines creature/day_8_angle.webp",
+          "anchors": null,
+          "reference": "media/01_urban_creatures/lines creature/day_8_reference.webp",
+          "prompt": "Architecture evolved.",
+          "mutationSummary": "Architecture evolved.",
+          "feedback": []
+        },
+        {
+          "day": 9,
+          "date": "2026-05-16",
+          "image": "media/01_urban_creatures/lines creature/day_9.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_9_color.webp",
+          "blueprint": null,
+          "anchors": "media/01_urban_creatures/lines creature/day_9_anchors.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_9_reference.webp",
+          "prompt": "We removed the ramp and evolved the base into sharp structural spikes that pierce the pavement, anchoring the creature directly into the boulevard.",
+          "mutationSummary": "We removed the ramp and evolved the base into sharp structural spikes that pierce the pavement, anchoring the creature directly into the boulevard.",
+          "feedback": []
+        },
+        {
+          "day": 10,
+          "date": "2026-05-16",
+          "image": "media/01_urban_creatures/lines creature/day_10.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_10_color.webp",
+          "blueprint": "media/01_urban_creatures/lines creature/day_10_angle.webp",
+          "anchors": "media/01_urban_creatures/lines creature/day_10_anchors.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_10_reference.webp",
+          "prompt": "We removed the ramp and stretched the capsule's sharp points directly into the ground, while the metal skin now pulses and stretches over the door opening.",
+          "mutationSummary": "We removed the ramp and stretched the capsule's sharp points directly into the ground, while the metal skin now pulses and stretches over the door opening.",
+          "feedback": []
+        },
+        {
+          "day": 11,
+          "date": "2026-05-19",
+          "image": "media/01_urban_creatures/lines creature/day_11_bw.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_11.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_11_reference.webp",
+          "prompt": "",
+          "angle": "site_station perspective close up front drawing bot door half open.png",
+          "lens": "photograph structure roof coop himmelblau.jpg",
+          "mutationSummary": "Softening aggressive spikes into light-emitting geometric folds; ground-integrated luminous lines now track pedestrian movement with clinical, brutalist precision.",
           "feedback": []
         }
       ]

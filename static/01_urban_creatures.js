@@ -25,6 +25,13 @@
   async function loadData() {
     const res = await fetch('static/01_urban_creatures_data.json');
     DATA = await res.json();
+    if (DATA && DATA.creatures) {
+      DATA.creatures.forEach(creature => {
+        if (creature.days) {
+          creature.days.sort((a, b) => a.day - b.day);
+        }
+      });
+    }
   }
 
   // ── Hero Particle Canvas ──────────────────
