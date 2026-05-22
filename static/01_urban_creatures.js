@@ -246,27 +246,76 @@
     const dayList = document.createElement('div');
     dayList.className = 'day-entries';
 
-    // Group days by date
-    const daysByDate = {};
-    creature.days.forEach((day, dayIdx) => {
-      const d = day.date || `DAY ${day.day}`;
-      if (!daysByDate[d]) daysByDate[d] = [];
-      daysByDate[d].push({ day, dayIdx });
+    // Compile a unique list/set of all dates by combining days.date and creature.feedbackHistory keys
+    const feedbackHistory = creature.feedbackHistory || {};
+    const allDatesSet = new Set();
+
+    if (creature.days) {
+      creature.days.forEach(day => {
+        if (day.date) {
+          allDatesSet.add(day.date);
+        }
+      });
+    }
+
+    Object.keys(feedbackHistory).forEach(date => {
+      allDatesSet.add(date);
     });
 
-    Object.keys(daysByDate).sort().reverse().forEach(date => {
-      const itemsInDate = daysByDate[date].slice().reverse();
+    const sortedDates = Array.from(allDatesSet).sort().reverse();
 
-      // Feedback comes from the date, so we take it from the first item
-      const feedbackArray = itemsInDate[0].day.feedback;
+    sortedDates.forEach(date => {
+      // Combine and deduplicate feedback for this date from both feedbackHistory and creature days
+      const feedbackArray = [];
+      const seenFeedbackTexts = new Set();
+
+      if (feedbackHistory[date] && Array.isArray(feedbackHistory[date])) {
+        feedbackHistory[date].forEach(fb => {
+          if (fb && fb.text) {
+            const normText = fb.text.trim().toLowerCase();
+            if (!seenFeedbackTexts.has(normText)) {
+              seenFeedbackTexts.add(normText);
+              feedbackArray.push(fb);
+            }
+          }
+        });
+      }
+
+      const matchingDays = [];
+      if (creature.days) {
+        creature.days.forEach((day, dayIdx) => {
+          if (day.date === date) {
+            matchingDays.push({ day, dayIdx });
+            
+            if (day.feedback && Array.isArray(day.feedback)) {
+              day.feedback.forEach(fb => {
+                if (fb && fb.text) {
+                  const normText = fb.text.trim().toLowerCase();
+                  if (!seenFeedbackTexts.has(normText)) {
+                    seenFeedbackTexts.add(normText);
+                    feedbackArray.push(fb);
+                  }
+                }
+              });
+            }
+          }
+        });
+      }
+
+      // Display multiple days in descending order (latest day first) if they fall on the same date
+      matchingDays.reverse();
+
       let inlineFeedback = '';
-      if (feedbackArray && feedbackArray.length > 0) {
+      if (feedbackArray.length > 0) {
         const itemsHtml = feedbackArray.map(fb => {
-          const src = fb.source.toLowerCase() === 'bsky' ? 'bsky'
-            : fb.source.toLowerCase() === 'ig' ? 'ig' : 'tg';
+          const sourceStr = (fb && fb.source) ? fb.source.toString() : 'BSKY';
+          const src = sourceStr.toLowerCase() === 'bsky' ? 'bsky'
+            : sourceStr.toLowerCase() === 'ig' ? 'ig'
+            : sourceStr.toLowerCase() === 'tg' ? 'tg' : 'web';
+          const textStr = (fb && fb.text) ? fb.text : '';
           return `<li class="day-card-feedback-item">
-            <span class="badge ${src}">${fb.source}</span>
-            <span class="day-card-feedback-text">"${fb.text}"</span>
+            <span class="badge ${src}">${sourceStr}</span>
+            <span class="day-card-feedback-text">"${textStr}"</span>
           </li>`;
         }).join('');
         inlineFeedback = `
@@ -276,23 +325,35 @@
       }
 
       let groupItemsHtml = '';
-      itemsInDate.forEach(item => {
-        const d = item.day;
+      if (matchingDays.length > 0) {
+        matchingDays.forEach(item => {
+          const d = item.day;
+          groupItemsHtml += `
+            <div class="timeline-item" data-idx="${item.dayIdx}">
+              <div class="day-node">
+                <div class="day-node-dot"></div>
+                <div class="day-node-label">D${d.day}</div>
+              </div>
+              <div class="day-card">
+                <div class="day-card-image">
+                  <img src="${d.imageColor || d.image}" loading="lazy" alt="${creature.name} Day ${d.day}">
+                  <span class="day-card-hint">EXPLORE →</span>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      } else {
+        // Only comments for this date: render empty right side with a line anchor node dot
         groupItemsHtml += `
-          <div class="timeline-item" data-idx="${item.dayIdx}">
+          <div class="timeline-item comment-only-node">
             <div class="day-node">
               <div class="day-node-dot"></div>
-              <div class="day-node-label">D${d.day}</div>
-            </div>
-            <div class="day-card">
-              <div class="day-card-image">
-                <img src="${d.imageColor || d.image}" loading="lazy" alt="${creature.name} Day ${d.day}">
-                <span class="day-card-hint">EXPLORE →</span>
-              </div>
+              <div class="day-node-label" style="opacity: 0.3;">●</div>
             </div>
           </div>
         `;
-      });
+      }
 
       const entry = document.createElement('div');
       entry.className = 'timeline-date-group';
@@ -306,8 +367,8 @@
         </div>
       `;
 
-      // Attach events to all items
-      entry.querySelectorAll('.timeline-item').forEach(el => {
+      // Attach events to all valid days
+      entry.querySelectorAll('.timeline-item[data-idx]').forEach(el => {
         const dayIdx = parseInt(el.getAttribute('data-idx'));
         el.addEventListener('click', () => openDetailPanel(creatureIdx, dayIdx));
       });
@@ -393,16 +454,54 @@
     let imgSrc = day.image;
     if (panelImageState === 'color' && day.imageColor) imgSrc = day.imageColor;
 
-    // Feedback HTML (Current day + previous 2 days)
-    const currentDayIdx = creature.days.findIndex(d => d.day === day.day);
+    // Gather all feedback for this day's date
     let combinedFeedback = [];
+    const seenFeedbackTexts = new Set();
 
-    // Accumulate up to 3 days of feedback
-    for (let i = 0; i < 3; i++) {
-      if (currentDayIdx - i >= 0) {
-        const pastDay = creature.days[currentDayIdx - i];
-        if (pastDay.feedback && pastDay.feedback.length > 0) {
-          combinedFeedback = combinedFeedback.concat(pastDay.feedback);
+    // 1. Add feedback from day.feedback
+    if (day.feedback && Array.isArray(day.feedback)) {
+      day.feedback.forEach(fb => {
+        if (fb && fb.text) {
+          const normText = fb.text.trim().toLowerCase();
+          if (!seenFeedbackTexts.has(normText)) {
+            seenFeedbackTexts.add(normText);
+            combinedFeedback.push(fb);
+          }
+        }
+      });
+    }
+
+    // 2. Add feedback from creature.feedbackHistory for this day's date
+    const feedbackHistory = creature.feedbackHistory || {};
+    if (day.date && feedbackHistory[day.date] && Array.isArray(feedbackHistory[day.date])) {
+      feedbackHistory[day.date].forEach(fb => {
+        if (fb && fb.text) {
+          const normText = fb.text.trim().toLowerCase();
+          if (!seenFeedbackTexts.has(normText)) {
+            seenFeedbackTexts.add(normText);
+            combinedFeedback.push(fb);
+          }
+        }
+      });
+    }
+
+    // 3. Fallback: if no feedback for this day's date, accumulate from previous days to show nearby comments
+    if (combinedFeedback.length === 0) {
+      const currentDayIdx = creature.days.findIndex(d => d.day === day.day);
+      for (let i = 0; i < 3; i++) {
+        if (currentDayIdx - i >= 0) {
+          const pastDay = creature.days[currentDayIdx - i];
+          if (pastDay.feedback && Array.isArray(pastDay.feedback)) {
+            pastDay.feedback.forEach(fb => {
+              if (fb && fb.text) {
+                const normText = fb.text.trim().toLowerCase();
+                if (!seenFeedbackTexts.has(normText)) {
+                  seenFeedbackTexts.add(normText);
+                  combinedFeedback.push(fb);
+                }
+              }
+            });
+          }
         }
       }
     }
@@ -410,11 +509,14 @@
     let feedbackHtml;
     if (combinedFeedback.length > 0) {
       const items = combinedFeedback.map(fb => {
-        const src = fb.source.toLowerCase() === 'bsky' ? 'bsky'
-          : fb.source.toLowerCase() === 'ig' ? 'ig' : 'tg';
+        const sourceStr = (fb && fb.source) ? fb.source.toString() : 'BSKY';
+        const src = sourceStr.toLowerCase() === 'bsky' ? 'bsky'
+          : sourceStr.toLowerCase() === 'ig' ? 'ig'
+          : sourceStr.toLowerCase() === 'tg' ? 'tg' : 'web';
+        const textStr = (fb && fb.text) ? fb.text : (typeof fb === 'string' ? fb : '');
         return `<li class="panel-feedback-item">
-          <span class="badge ${src}">${fb.source}</span>
-          <span class="panel-feedback-text">"${fb.text}"</span>
+          <span class="badge ${src}">${sourceStr}</span>
+          <span class="panel-feedback-text">"${textStr}"</span>
         </li>`;
       }).join('');
       feedbackHtml = `<ul class="panel-feedback-list">${items}</ul>`;
@@ -469,7 +571,7 @@
         </div>
         <div class="panel-row">
           <div class="panel-row-label">Prompt</div>
-          <div class="panel-row-value">${day.prompt || 'Day 1 — first form emerged from DNA alone.'}</div>
+          <div class="panel-row-value">${day.prompt || day.mutationSummary || 'Day 1 — first form emerged from DNA alone.'}</div>
         </div>
         <div class="panel-input-images">
           ${angleImg ? `<figure><img src="${angleImg}"><figcaption>Angle</figcaption></figure>` : ''}
