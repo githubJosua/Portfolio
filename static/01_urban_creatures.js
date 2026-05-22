@@ -454,54 +454,84 @@
     let imgSrc = day.image;
     if (panelImageState === 'color' && day.imageColor) imgSrc = day.imageColor;
 
-    // Gather all feedback for this day's date
+    // Compile sortedDates in the exact same way as the timeline
+    const feedbackHistory = creature.feedbackHistory || {};
+    const allDatesSet = new Set();
+
+    if (creature.days) {
+      creature.days.forEach(d => {
+        if (d.date) {
+          allDatesSet.add(d.date);
+        }
+      });
+    }
+
+    Object.keys(feedbackHistory).forEach(date => {
+      allDatesSet.add(date);
+    });
+
+    const sortedDates = Array.from(allDatesSet).sort().reverse();
+    const currentDateIdx = Math.max(0, sortedDates.indexOf(day.date));
+
     let combinedFeedback = [];
     const seenFeedbackTexts = new Set();
 
-    // 1. Add feedback from day.feedback
-    if (day.feedback && Array.isArray(day.feedback)) {
-      day.feedback.forEach(fb => {
-        if (fb && fb.text) {
-          const normText = fb.text.trim().toLowerCase();
-          if (!seenFeedbackTexts.has(normText)) {
-            seenFeedbackTexts.add(normText);
-            combinedFeedback.push(fb);
+    const addFeedback = (fb) => {
+      if (!fb) return;
+      const text = fb.text ? fb.text : (typeof fb === 'string' ? fb : '');
+      if (!text) return;
+      const normText = text.trim().toLowerCase();
+      if (!seenFeedbackTexts.has(normText)) {
+        seenFeedbackTexts.add(normText);
+        const source = fb.source ? fb.source.toString() : 'BSKY';
+        combinedFeedback.push({ text, source });
+      }
+    };
+
+    const addFeedbackForDate = (date) => {
+      // 1. Add feedback from feedbackHistory for this date
+      if (feedbackHistory[date] && Array.isArray(feedbackHistory[date])) {
+        feedbackHistory[date].forEach(addFeedback);
+      }
+
+      // 2. Add feedback from creature.days that have this date
+      if (creature.days) {
+        creature.days.forEach(d => {
+          if (d.date === date && d.feedback && Array.isArray(d.feedback)) {
+            d.feedback.forEach(addFeedback);
           }
-        }
-      });
+        });
+      }
+    };
+
+    // 1. Gather all feedback from the last three dates (this date + previous 2 dates on timeline)
+    for (let i = 0; i < 3; i++) {
+      const idx = currentDateIdx + i;
+      if (idx < sortedDates.length) {
+        addFeedbackForDate(sortedDates[idx]);
+      }
     }
 
-    // 2. Add feedback from creature.feedbackHistory for this day's date
-    const feedbackHistory = creature.feedbackHistory || {};
-    if (day.date && feedbackHistory[day.date] && Array.isArray(feedbackHistory[day.date])) {
-      feedbackHistory[day.date].forEach(fb => {
-        if (fb && fb.text) {
-          const normText = fb.text.trim().toLowerCase();
-          if (!seenFeedbackTexts.has(normText)) {
-            seenFeedbackTexts.add(normText);
-            combinedFeedback.push(fb);
-          }
+    // 2. Fallback: if we have fewer than 5 comments, search further backwards in history
+    if (combinedFeedback.length < 5) {
+      for (let idx = currentDateIdx + 3; idx < sortedDates.length; idx++) {
+        if (combinedFeedback.length >= 5) break;
+        const date = sortedDates[idx];
+        
+        if (feedbackHistory[date] && Array.isArray(feedbackHistory[date])) {
+          feedbackHistory[date].forEach(fb => {
+            if (combinedFeedback.length < 5) addFeedback(fb);
+          });
         }
-      });
-    }
 
-    // 3. Fallback: if no feedback for this day's date, accumulate from previous days to show nearby comments
-    if (combinedFeedback.length === 0) {
-      const currentDayIdx = creature.days.findIndex(d => d.day === day.day);
-      for (let i = 0; i < 3; i++) {
-        if (currentDayIdx - i >= 0) {
-          const pastDay = creature.days[currentDayIdx - i];
-          if (pastDay.feedback && Array.isArray(pastDay.feedback)) {
-            pastDay.feedback.forEach(fb => {
-              if (fb && fb.text) {
-                const normText = fb.text.trim().toLowerCase();
-                if (!seenFeedbackTexts.has(normText)) {
-                  seenFeedbackTexts.add(normText);
-                  combinedFeedback.push(fb);
-                }
-              }
-            });
-          }
+        if (creature.days) {
+          creature.days.forEach(d => {
+            if (d.date === date && d.feedback && Array.isArray(d.feedback)) {
+              d.feedback.forEach(fb => {
+                if (combinedFeedback.length < 5) addFeedback(fb);
+              });
+            }
+          });
         }
       }
     }
