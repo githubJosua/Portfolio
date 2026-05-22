@@ -2620,10 +2620,10 @@
             "media/01_urban_creatures/glow creature/day_30_anchor_28.webp",
             "media/01_urban_creatures/glow creature/day_30_anchor_29.webp"
           ],
-          "prompt": "A photorealistic Parisian corner featuring a central, sharp-edged geometric structure. Angular stone wedges and shards are actively breaking through the historical building's windows. The core is composed of translucent, semi-transparent marble-like panels that emit a deep red, pulsating light. The structure's base is folded downward, forming minimalist, rigid seating areas for pedestrians. The metal framework is sparse, industrial, and straight-edged\u2014no curves. High-contrast lighting captures the intersection between the heavy, ancient stone architecture and the jagged, neon-invading geometric form, emphasizing the architectural tension and the bleeding of light.",
-          "angle": "site_perspective view from the side.png",
-          "lens": "photograph structure deconstructivist additions.jpg",
-          "mutationSummary": "Sharp stone wedges pierce the Haussmann facade, evolving into glowing translucent membranes that fold to create urban seating.",
+          "prompt": "A photorealistic Parisian street corner at twilight. The central structure is composed of rigid, non-organic geometric forms: sharp, angular stone wedges aggressively piercing the historical windows of the surrounding building. Translucent, rectangular glass panels are embedded within a stark metallic framework, radiating a deep, intense glow that saturates the street. Ensure the aesthetic is brutalist and industrial; avoid all soft, biological, or fluid curves. Emphasize the high-contrast lighting, with the structure acting as a glowing neon parasite against the dark, weathered stone of the Boulevard Voltaire. The ground level features sharp, folded metallic planes extending outward to provide shelter.",
+          "angle": "clay_angle_day_29.png",
+          "lens": "illustration cyberpunk building mystical.jpg",
+          "mutationSummary": "Sharp stone wedges pierce the Parisian facade; glass panels pulse with internal light, creating jagged, luminous urban tension.",
           "feedback": []
         }
       ],
