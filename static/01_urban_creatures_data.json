@@ -5992,6 +5992,24 @@
               "date": "2026-05-21"
             }
           ]
+        },
+        {
+          "day": 28,
+          "date": "2026-05-22",
+          "image": "media/01_urban_creatures/smell creature/day_28_bw.webp",
+          "imageColor": "media/01_urban_creatures/smell creature/day_28.webp",
+          "reference": "media/01_urban_creatures/smell creature/day_28_reference.webp",
+          "angleImage": "media/01_urban_creatures/smell creature/day_28_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/smell creature/day_28_anchor_25.webp",
+            "media/01_urban_creatures/smell creature/day_28_anchor_26.webp",
+            "media/01_urban_creatures/smell creature/day_28_anchor_27.webp"
+          ],
+          "prompt": "A high-fidelity architectural photograph of a parasitic structure attached to a classic Parisian Haussmann facade. The structure is composed of rigid, non-organic, filigree metal components. Large, thin, horizontal aluminum fins extend from a central spine, designed to capture and channel street air. The structure is geometric and deconstructivist, devoid of any fluid or organic shapes. The gears and ground-cracking elements are removed. The surfaces consist of precise, laser-cut metallic grids and porous panels that reflect the ambient light of the boulevard. The scale is monumental, integrated cleanly with the building's stonework, leaving a clear, deliberate gap between the structure and the facade for pedestrian passage. The overall aesthetic is stark, technical, and precise.",
+          "angle": "site_head on street perspective clay day12.png",
+          "lens": "rendering filigree Kinetic Sculpture reaching into the sky.png",
+          "mutationSummary": "Transitioning to a rigid, filigree metallic deconstructivist structure, emphasizing sharp horizontal fins and scent-trapping air chambers.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -6192,6 +6210,11 @@
           {
             "source": "BSKY",
             "text": "puncture the central spine, inviting bats inside.",
+            "date": "2026-04-30"
+          },
+          {
+            "source": "TG",
+            "text": "",
             "date": "2026-04-30"
           }
         ],
