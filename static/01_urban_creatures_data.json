@@ -1104,6 +1104,30 @@
               "date": "2026-05-20"
             }
           ]
+        },
+        {
+          "day": 30,
+          "date": "2026-05-22",
+          "image": "media/01_urban_creatures/crown creature/day_30_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_30.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_30_reference.webp",
+          "angleImage": "media/01_urban_creatures/crown creature/day_30_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/crown creature/day_30_anchor_27.webp",
+            "media/01_urban_creatures/crown creature/day_30_anchor_28.webp",
+            "media/01_urban_creatures/crown creature/day_30_anchor_29.webp"
+          ],
+          "prompt": "An orthographic elevation of the structure rendered with brutalist-industrial precision. The main frame is a sharp, geometric hexagon pierced by a jagged, aggressive steel beam that offsets the central tension cables. The fabric surface features a complex, layered fractal pattern, resembling a rigid, metallic-stitched doily. Materials consist of weathered, eroded concrete nodes contrasted against polished, reflective silver tension wires. Use high-contrast lighting to cast harsh, geometric shadows across the Jardin Truillot ground, highlighting the interplay between the reflective steel and the dark, textured concrete joints.",
+          "angle": "isolated_orthographic elevation back closed roof hard shadows.png",
+          "lens": "model image conceptual destruction to reconstruction.png",
+          "mutationSummary": "Rigid geometric fractals emerge as jagged steel beams pierce the tension fabric, creating sharp, structural, and brutalist shadows.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "wrap it in fabric",
+              "date": "2026-05-22"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -1175,7 +1199,7 @@
         "2026-04-25": [
           {
             "source": "IG",
-            "text": "I quite like the perforations in the fabric but I wonder about the intention behind the pattern and the scale. ",
+            "text": "I quite like the perforations in the fabric but I wonder about the intention behind the pattern and the scale. \n\nIs the intention for nostalgia of the past to sit in contrast to present/future technology? How does the scale work for the human experience? Is it purely visual or is there also an invitation to tactile interaction? How is it to be considered from a distance vs up close?",
             "date": "2026-04-25"
           },
           {
@@ -1235,6 +1259,11 @@
           {
             "source": "BSKY",
             "text": "remnds me of berlin, stretch lace lower",
+            "date": "2026-04-27"
+          },
+          {
+            "source": "TG",
+            "text": "",
             "date": "2026-04-27"
           }
         ],
@@ -1468,6 +1497,13 @@
             "source": "BSKY",
             "text": "Mesh floats.",
             "date": "2026-05-20"
+          }
+        ],
+        "2026-05-22": [
+          {
+            "source": "TG",
+            "text": "wrap it in fabric",
+            "date": "2026-05-22"
           }
         ]
       }
@@ -3430,6 +3466,30 @@
               "date": "2026-05-19"
             }
           ]
+        },
+        {
+          "day": 12,
+          "date": "2026-05-22",
+          "image": "media/01_urban_creatures/lines creature/day_12_bw.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_12.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_12_reference.webp",
+          "angleImage": "media/01_urban_creatures/lines creature/day_12_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/lines creature/day_12_anchor_9.webp",
+            "media/01_urban_creatures/lines creature/day_12_anchor_10.webp",
+            "media/01_urban_creatures/lines creature/day_12_anchor_11.webp"
+          ],
+          "prompt": "A high-contrast, brutalist technical-illustration rendering of the metal capsule embedded directly into the stone masonry of a Parisian building. The structure's sharp metal facets now extend downward, transitioning into luminous, glowing geometric paths etched into the asphalt. The metal skin features intricate, functional perforations that suggest a pulsing, mechanical breathing. The human figure at the entrance is a woman, standing clearly without a backpack. The lighting is desaturated and harsh, emphasizing the industrial orange accents against the weathered, granular stone textures. No ramp present; the geometric base twists directly into the sidewalk, maintaining a solid, non-organic, and strictly hard-edged cybernetic aesthetic.",
+          "angle": "site_station perspective front eye level one person at entrance clay render.png",
+          "lens": "illustration tech parasite structure on building.jpg",
+          "mutationSummary": "Integrating the capsule directly into the Haussmann fa\u00e7ade with luminous, ground-extending geometric facets.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "make the person female and remove the backpack",
+              "date": "2026-05-22"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -3593,6 +3653,13 @@
             "source": "IG",
             "text": "dessine moi un mouton",
             "date": "2026-05-21"
+          }
+        ],
+        "2026-05-22": [
+          {
+            "source": "TG",
+            "text": "make the person female and remove the backpack",
+            "date": "2026-05-22"
           }
         ]
       }
@@ -6010,6 +6077,24 @@
           "lens": "rendering filigree Kinetic Sculpture reaching into the sky.png",
           "mutationSummary": "Transitioning to a rigid, filigree metallic deconstructivist structure, emphasizing sharp horizontal fins and scent-trapping air chambers.",
           "feedback": []
+        },
+        {
+          "day": 29,
+          "date": "2026-05-22",
+          "image": "media/01_urban_creatures/smell creature/day_29_bw.webp",
+          "imageColor": "media/01_urban_creatures/smell creature/day_29.webp",
+          "reference": "media/01_urban_creatures/smell creature/day_29_reference.webp",
+          "angleImage": "media/01_urban_creatures/smell creature/day_29_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/smell creature/day_29_anchor_26.webp",
+            "media/01_urban_creatures/smell creature/day_29_anchor_27.webp",
+            "media/01_urban_creatures/smell creature/day_29_anchor_28.webp"
+          ],
+          "prompt": "A photographic, architectural shot of a deconstructivist metallic structure integrated into a 23 Rue de Malte Haussmann building. Replace all organic curves with sharp, rigid, horizontal aluminum fins and a filigree steel grid. The structure is non-symmetrical, extending horizontally across the facade while maintaining a clear passage for pedestrians. The aesthetic emphasizes clean, industrial lines, avoiding any fluid or biological shapes. Incorporate porous metallic mesh panels and geometric scent-injection nozzles. The lighting is crisp, daylight-driven, casting sharp shadows against the classic stone masonry to emphasize the interplay between the historic facade and the new, rigid, monumental metal intervention.",
+          "angle": "site_straight on eye level view clay day14.png",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "Transitioning to a rigid filigree metallic structure; horizontal expansion along the Haussmann facade with geometric, porous scent-trapping fins.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -7896,6 +7981,24 @@
               "date": "2026-05-21"
             }
           ]
+        },
+        {
+          "day": 29,
+          "date": "2026-05-22",
+          "image": "media/01_urban_creatures/voice creature/day_29_bw.webp",
+          "imageColor": "media/01_urban_creatures/voice creature/day_29.webp",
+          "reference": "media/01_urban_creatures/voice creature/day_29_reference.webp",
+          "angleImage": "media/01_urban_creatures/voice creature/day_29_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/voice creature/day_29_anchor_26.webp",
+            "media/01_urban_creatures/voice creature/day_29_anchor_27.webp",
+            "media/01_urban_creatures/voice creature/day_29_anchor_28.webp"
+          ],
+          "prompt": "A clean, eye-level frontal perspective of a vertical metallic assembly recessed into a Parisian Haussmann facade crack. The structure is now stripped of all chaotic shrapnel, spikes, and pipes. The central stack of speakers is concealed behind meticulously fitted, brushed stainless steel panels that align flush with the stone edge. The design is strictly geometric, utilizing clean modular metallic joints. The atmosphere is calm, daylight-driven, focusing on the precision of the installation within the weathered limestone masonry, emphasizing the silence and order of the new architectural identity.",
+          "angle": "site_straight on eye level view clay day16.png",
+          "lens": "photograph urban color industrial metal facade.jpg",
+          "mutationSummary": "Removed all shrapnel, spikes, and piping to achieve a clean, monolithic, and integrated central speaker structure.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
