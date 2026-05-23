@@ -1128,6 +1128,30 @@
               "date": "2026-05-22"
             }
           ]
+        },
+        {
+          "day": 31,
+          "date": "2026-05-23",
+          "image": "media/01_urban_creatures/crown creature/day_31_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_31.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_31_reference.webp",
+          "angleImage": "media/01_urban_creatures/crown creature/day_31_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/crown creature/day_31_anchor_28.webp",
+            "media/01_urban_creatures/crown creature/day_31_anchor_29.webp",
+            "media/01_urban_creatures/crown creature/day_31_anchor_30.webp"
+          ],
+          "prompt": "A low-angle, eye-level street view capturing a rigid, brutalist-industrial canopy. The structure is pierced by two distinct, aggressive jagged steel beams that skewering the core hexagon. The tensile roof is wrapped in a heavy, semi-translucent industrial fabric, patterned with clean, geometric hexagonal fractals. The materiality contrasts weathered, dark industrial steel against the pale, taut textile membranes. High-contrast, sharp geometric shadows are cast onto the Jardin Truillot ground. The scene emphasizes rigid, non-organic angularity, avoiding any fluid curves, focusing on the mechanical collision of structure and membrane.",
+          "angle": "isolated_orthographic elevation side closed roof hard shadows.png",
+          "lens": "rendering filigree Kinetic Sculpture reaching into the sky.png",
+          "mutationSummary": "Integrating dual jagged beams, draped in heavy translucent mesh, skewering the hexagonal core with sharp, industrial architectural tension.",
+          "feedback": [
+            {
+              "source": "IG",
+              "text": "i like the jagged beam can we have a second one of those",
+              "date": "2026-05-23"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -1504,6 +1528,13 @@
             "source": "TG",
             "text": "wrap it in fabric",
             "date": "2026-05-22"
+          }
+        ],
+        "2026-05-23": [
+          {
+            "source": "IG",
+            "text": "i like the jagged beam can we have a second one of those",
+            "date": "2026-05-23"
           }
         ]
       }
@@ -3490,6 +3521,30 @@
               "date": "2026-05-22"
             }
           ]
+        },
+        {
+          "day": 13,
+          "date": "2026-05-23",
+          "image": "media/01_urban_creatures/lines creature/day_13_bw.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_13.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_13_reference.webp",
+          "angleImage": "media/01_urban_creatures/lines creature/day_13_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/lines creature/day_13_anchor_10.webp",
+            "media/01_urban_creatures/lines creature/day_13_anchor_11.webp",
+            "media/01_urban_creatures/lines creature/day_13_anchor_12.webp"
+          ],
+          "prompt": "A sharp-edged, geometric metal capsule seamlessly merged into the stone masonry of a Haussmann building, appearing as a structural protrusion. The metal skin features modular, high-contrast panels with rhythmic metallic fins. Two distinct, thin white luminous lines emerge from the base, extending precisely along the pavement to organize traffic flow. The lighting is overcast, emphasizing the cold, brutalist-futurist aesthetic of the polished granite and steel interface. No robot is visible; the hub itself acts as the origin point for the street-level path markings.",
+          "angle": "site_eye level perspective from the bike day 1.jpg",
+          "lens": "photograph urban color metal glass facade.jpg",
+          "mutationSummary": "Integrating the capsule into the Haussmann fa\u00e7ade with dual luminous guidance lines etched into the Boulevard Voltaire asphalt.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "zoom in and show a detail of the contruction of this structure",
+              "date": "2026-05-23"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -3660,6 +3715,13 @@
             "source": "TG",
             "text": "make the person female and remove the backpack",
             "date": "2026-05-22"
+          }
+        ],
+        "2026-05-23": [
+          {
+            "source": "TG",
+            "text": "zoom in and show a detail of the contruction of this structure",
+            "date": "2026-05-23"
           }
         ]
       }
@@ -4728,6 +4790,35 @@
               "date": "2026-05-22"
             }
           ]
+        },
+        {
+          "day": 33,
+          "date": "2026-05-23",
+          "image": "media/01_urban_creatures/mist creature/day_33_bw.webp",
+          "imageColor": "media/01_urban_creatures/mist creature/day_33.webp",
+          "reference": "media/01_urban_creatures/mist creature/day_33_reference.webp",
+          "angleImage": "media/01_urban_creatures/mist creature/day_33_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/mist creature/day_33_anchor_30.webp",
+            "media/01_urban_creatures/mist creature/day_33_anchor_31.webp",
+            "media/01_urban_creatures/mist creature/day_33_anchor_32.webp"
+          ],
+          "prompt": "A photorealistic, bright daylight rendering of a Mist Creature structure from a side profile view. The form is strictly non-organic, eschewing roundness for sharp, faceted industrial geometry. The primary structure is composed of overlapping, polished stainless steel and matte aluminum panels, replacing the previous pipe-heavy aesthetic. Fragments of a central mechanical framework emerge through deliberate, geometric gaps in the paneling. The structure is human-scaled, emphasizing crisp, neat joinery and rhythmic structural modularity. No soft curves, no biological growth. The background is a clean, sunny Parisian square with light urban blur to emphasize the technical precision of the apparatus.",
+          "angle": "isolated_side profile perspective view clay day25.png",
+          "lens": "rendering tech color vertical structure with insets.jpg",
+          "mutationSummary": "Shattering the sphere: sharp metal panels now replace messy pipes, creating a focused, angular, panel-heavy structural core.",
+          "feedback": [
+            {
+              "source": "IG",
+              "text": "c\u2019\u00e9tait mieux avant",
+              "date": "2026-05-23"
+            },
+            {
+              "source": "IG",
+              "text": "why so round",
+              "date": "2026-05-23"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -5079,6 +5170,18 @@
             "source": "TG",
             "text": "less pipes more panels",
             "date": "2026-05-22"
+          }
+        ],
+        "2026-05-23": [
+          {
+            "source": "IG",
+            "text": "c\u2019\u00e9tait mieux avant",
+            "date": "2026-05-23"
+          },
+          {
+            "source": "IG",
+            "text": "why so round",
+            "date": "2026-05-23"
           }
         ]
       }
@@ -8054,6 +8157,24 @@
           "angle": "site_straight on eye level view clay day16.png",
           "lens": "photograph urban color industrial metal facade.jpg",
           "mutationSummary": "Removed all shrapnel, spikes, and piping to achieve a clean, monolithic, and integrated central speaker structure.",
+          "feedback": []
+        },
+        {
+          "day": 30,
+          "date": "2026-05-23",
+          "image": "media/01_urban_creatures/voice creature/day_30_bw.webp",
+          "imageColor": "media/01_urban_creatures/voice creature/day_30.webp",
+          "reference": "media/01_urban_creatures/voice creature/day_30_reference.webp",
+          "angleImage": "media/01_urban_creatures/voice creature/day_30_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/voice creature/day_30_anchor_27.webp",
+            "media/01_urban_creatures/voice creature/day_30_anchor_28.webp",
+            "media/01_urban_creatures/voice creature/day_30_anchor_29.webp"
+          ],
+          "prompt": "A high-contrast, eye-level architectural shot showing a vertical, clean metallic structural intervention seamlessly wedged into a Parisian stone Haussmann facade. The design is strictly orthogonal and geometric, featuring smooth, matte-white metal panels that fully conceal the internal speaker stack. All chaotic metallic shrapnel, spikes, and stray piping have been removed. The structure appears as a refined, precise fissure of technology within the historic stone. The lighting is crisp natural daylight, highlighting the tectonic junction where the precise metal plates meet the rough, weathered limestone of the facade. No organic, fluid, or biomorphic elements are present; the aesthetic is functional-surrealist and tectonic.",
+          "angle": "site_straighton eye level perspective clay day20.png",
+          "lens": "photograph structure roof coop himmelblau.jpg",
+          "mutationSummary": "Purging the metal shrapnel and spikes to reveal a clean, minimalist central acoustic aperture within the Haussmann crack.",
           "feedback": []
         }
       ],
