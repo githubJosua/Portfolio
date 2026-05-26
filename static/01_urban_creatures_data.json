@@ -1188,6 +1188,24 @@
           "lens": "building section geometric volumes hard shadows black and white.jpg",
           "mutationSummary": "Integrating dual jagged beams to skew the central hexagonal frame, emphasizing raw industrial tension and rigid structural geometry.",
           "feedback": []
+        },
+        {
+          "day": 34,
+          "date": "2026-05-26",
+          "image": "media/01_urban_creatures/crown creature/day_34_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_34.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_34_reference.webp",
+          "angleImage": "media/01_urban_creatures/crown creature/day_34_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/crown creature/day_34_anchor_31.webp",
+            "media/01_urban_creatures/crown creature/day_34_anchor_32.webp",
+            "media/01_urban_creatures/crown creature/day_34_anchor_33.webp"
+          ],
+          "prompt": "A low-angle, architectural study of a canopy in Jardin Truillot. Two aggressive, jagged steel beams puncture the main hexagonal canopy, skewering the core with industrial precision. The fabric is a clean, white, taut membrane with intricate, nested fractal geometric perforations. The structure is supported by sharp, deconstructivist steel tension cables. Use high-contrast lighting to cast complex geometric shadows on the ground. Maintain a stark, functional-surrealist aesthetic, ensuring no organic or biological curves appear in the mechanical assembly.",
+          "angle": "isolated_eye level perspective of structure clay day7.png",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "Doubled jagged beams pierce the canopy; intricate, clean fractal fabric patterns stretch over tensioned steel lines.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -2808,6 +2826,30 @@
           "lens": "model image city machine.jpg",
           "mutationSummary": "Intricate, sharp-angled mechanical joints reveal the glowing heart of the structure in a high-contrast, industrial, technical display.",
           "feedback": []
+        },
+        {
+          "day": 34,
+          "date": "2026-05-26",
+          "image": "media/01_urban_creatures/glow creature/day_34_bw.webp",
+          "imageColor": "media/01_urban_creatures/glow creature/day_34.webp",
+          "reference": "media/01_urban_creatures/glow creature/day_34_reference.webp",
+          "angleImage": "media/01_urban_creatures/glow creature/day_34_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/glow creature/day_34_anchor_31.webp",
+            "media/01_urban_creatures/glow creature/day_34_anchor_32.webp",
+            "media/01_urban_creatures/glow creature/day_34_anchor_33.webp"
+          ],
+          "prompt": "A hyper-detailed, extreme close-up of the connection points between the structural frame and light-radiating panels. The aesthetic is strictly geometric, hard-edged, and industrial: patinated copper brackets, galvanized steel bolts, and tensioned frosted glass plates. The lighting is sourced from within the assembly, casting a soft, ethereal gradient that emphasizes the precision of the joints. No organic or blob-like forms; all elements must be sharp-angled, rectangular, or triangular, emphasizing an mechanical, steampunk-inspired precision against a stark black background to isolate the materiality and structural logic.",
+          "angle": "isolated_close up perspective of mechanism clay day12.png",
+          "lens": "model image soft deconstructivist lamp.jpg",
+          "mutationSummary": "Intricate kinetic mechanical junctions revealed: Patinated copper meets glowing translucent glass in a rigid, industrial deconstructivist architectural assembly.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "make the image brigther, show the glow from the inside",
+              "date": "2026-05-26"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -3242,6 +3284,13 @@
             "source": "TG",
             "text": "zoom out a bit",
             "date": "2026-05-23"
+          }
+        ],
+        "2026-05-26": [
+          {
+            "source": "TG",
+            "text": "make the image brigther, show the glow from the inside",
+            "date": "2026-05-26"
           }
         ]
       }
@@ -3701,6 +3750,24 @@
           "lens": "model bent metal dynamic curved House.png",
           "mutationSummary": "Revealing the internal mechanical precision; shifting plates and kinetic jointry exposed for deep structural analysis.",
           "feedback": []
+        },
+        {
+          "day": 15,
+          "date": "2026-05-26",
+          "image": "media/01_urban_creatures/lines creature/day_15_bw.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_15.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_15_reference.webp",
+          "angleImage": "media/01_urban_creatures/lines creature/day_15_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/lines creature/day_15_anchor_12.webp",
+            "media/01_urban_creatures/lines creature/day_15_anchor_13.webp",
+            "media/01_urban_creatures/lines creature/day_15_anchor_14.webp"
+          ],
+          "prompt": "A hyper-detailed, close-up macro study of the hub's metallic facade. Feature overlapping, laser-cut steel plates with distinct, rhythmic panel gaps. The material finish is brushed industrial stainless steel reflecting cold, studio-quality light. Highlight the intricate mechanical joinery and bolt patterns where plates converge. Maintain a strictly geometric, Brutalist-futurist aesthetic. The scene should feel like an architectural model detail, showcasing the structural integrity and modular design with sharp focus and high-contrast shadows between the shifting, recessed metallic layers.",
+          "angle": "site_station perspective close up front drawing bot door half open.png",
+          "lens": "model image city machine.jpg",
+          "mutationSummary": "Deep focus on modular metallic plate assembly, emphasizing structural precision, industrial joinery, and the refined tectonic skin of the capsule.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -3878,6 +3945,18 @@
             "source": "TG",
             "text": "zoom in and show a detail of the contruction of this structure",
             "date": "2026-05-23"
+          }
+        ],
+        "2026-05-25": [
+          {
+            "source": "TG",
+            "text": "zoom in and show me only one of the metal plates isolated",
+            "date": "2026-05-25"
+          },
+          {
+            "source": "TG",
+            "text": "zoom in and isolate show one of the metal plates",
+            "date": "2026-05-25"
           }
         ]
       }
@@ -6505,6 +6584,24 @@
           "angle": "site_clay_angle_day_30.png",
           "lens": "model image soft deconstructivist lamp.jpg",
           "mutationSummary": "Breaking rigid symmetry: shifting metallic plates into an asymmetrical, deconstructivist filigree arrangement along the Haussmann facade.",
+          "feedback": []
+        },
+        {
+          "day": 32,
+          "date": "2026-05-26",
+          "image": "media/01_urban_creatures/smell creature/day_32_bw.webp",
+          "imageColor": "media/01_urban_creatures/smell creature/day_32.webp",
+          "reference": "media/01_urban_creatures/smell creature/day_32_reference.webp",
+          "angleImage": "media/01_urban_creatures/smell creature/day_32_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/smell creature/day_32_anchor_29.webp",
+            "media/01_urban_creatures/smell creature/day_32_anchor_30.webp",
+            "media/01_urban_creatures/smell creature/day_32_anchor_31.webp"
+          ],
+          "prompt": "A photographic, high-contrast architectural shot at eye-level. The structure is now a rigid, deconstructivist metal assembly of layered aluminum plates and sharp-angled structural trusses. Shift the composition to be asymmetrical, with metal plates cantilevered at varying heights to break the previous central symmetry. Maintain a clear, thin gap between the structure and the classical stone fa\u00e7ade. The aesthetic is strictly non-biological; emphasize harsh, mechanical joinery, brushed metallic textures, and precise geometric tension. Light should be sharp and dramatic to highlight the depth of the filigree metalwork against the historic Parisian masonry.",
+          "angle": "site_clay_angle_day_28.png",
+          "lens": "model filigree tilted structure balancing geometric forms.jpg",
+          "mutationSummary": "Breaking symmetry through cantilevered aluminum plates and deconstructivist metal filigree integrated into the Haussmann fa\u00e7ade.",
           "feedback": []
         }
       ],
