@@ -1206,6 +1206,30 @@
           "lens": "photograph structure deconstructivist additions.jpg",
           "mutationSummary": "Doubled jagged beams pierce the canopy; intricate, clean fractal fabric patterns stretch over tensioned steel lines.",
           "feedback": []
+        },
+        {
+          "day": 35,
+          "date": "2026-05-27",
+          "image": "media/01_urban_creatures/crown creature/day_35_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_35.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_35_reference.webp",
+          "angleImage": "media/01_urban_creatures/crown creature/day_35_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/crown creature/day_35_anchor_32.webp",
+            "media/01_urban_creatures/crown creature/day_35_anchor_33.webp",
+            "media/01_urban_creatures/crown creature/day_35_anchor_34.webp"
+          ],
+          "prompt": "Render the structure as a closed-roof, high-contrast architectural model. Replace standard fabric with a intricate, laser-cut translucent fractal mesh featuring nested hexagonal patterns. Integrate warm, patinated copper joints at every tension node to contrast the stark geometric steel framework. The roof should appear as a singular, taut surface pulled into an oblique, irregular alignment. Utilize soft, back-lit gradients through the translucent sections to cast sharp, rhythmic shadows on the ground plane, emphasizing the 'doily-like' complexity of the pattern. Ensure the composition remains strictly rigid and industrial, avoiding any organic or biomorphic curvature.",
+          "angle": "isolated_orthographic elevation back closed roof hard shadows.png",
+          "lens": "model image soft deconstructivist lamp.jpg",
+          "mutationSummary": "Evolving into a fractal-patterned, semi-translucent tensile canopy with integrated copper-jointed structural geometry and cascading light-well perforations.",
+          "feedback": [
+            {
+              "source": "IG",
+              "text": "That one is awesome. Can it fly?",
+              "date": "2026-05-27"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -1594,6 +1618,13 @@
             "source": "IG",
             "text": "i like the jagged beam can we have a second one of those",
             "date": "2026-05-23"
+          }
+        ],
+        "2026-05-27": [
+          {
+            "source": "IG",
+            "text": "That one is awesome. Can it fly?",
+            "date": "2026-05-27"
           }
         ]
       }
@@ -2850,6 +2881,24 @@
               "date": "2026-05-26"
             }
           ]
+        },
+        {
+          "day": 35,
+          "date": "2026-05-27",
+          "image": "media/01_urban_creatures/glow creature/day_35_bw.webp",
+          "imageColor": "media/01_urban_creatures/glow creature/day_35.webp",
+          "reference": "media/01_urban_creatures/glow creature/day_35_reference.webp",
+          "angleImage": "media/01_urban_creatures/glow creature/day_35_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/glow creature/day_35_anchor_32.webp",
+            "media/01_urban_creatures/glow creature/day_35_anchor_33.webp",
+            "media/01_urban_creatures/glow creature/day_35_anchor_34.webp"
+          ],
+          "prompt": "A hyper-detailed, high-contrast close-up focusing on the mechanical junctions of the structure. The core features a brilliant, warm amber light source glowing from within, diffusing through translucent glass panels. Exposed, polished chrome structural joints contrast with weathered, industrial metal frames. The composition is sharp, geometric, and precise, avoiding any organic shapes. High-fidelity rendering with dramatic, directional lighting to emphasize the texture of the materials and the intensity of the escaping light, creating a cinematic, tech-focused aesthetic.",
+          "angle": "isolated_close up panels detail.png",
+          "lens": "model image conceptual destruction to reconstruction.png",
+          "mutationSummary": "Intense internal glow permeates modular steel joints and translucent glass, radiating atmosphere from the structure's core outward.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -5096,6 +5145,30 @@
               "date": "2026-05-25"
             }
           ]
+        },
+        {
+          "day": 36,
+          "date": "2026-05-27",
+          "image": "media/01_urban_creatures/mist creature/day_36_bw.webp",
+          "imageColor": "media/01_urban_creatures/mist creature/day_36.webp",
+          "reference": "media/01_urban_creatures/mist creature/day_36_reference.webp",
+          "angleImage": "media/01_urban_creatures/mist creature/day_36_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/mist creature/day_36_anchor_33.webp",
+            "media/01_urban_creatures/mist creature/day_36_anchor_34.webp",
+            "media/01_urban_creatures/mist creature/day_36_anchor_35.webp"
+          ],
+          "prompt": "A sharp, orthographic-inspired perspective emphasizing a fragmented, deconstructivist metal shell. The exterior concrete panels are sliced open to reveal a complex, rhythmic interior of brushed steel ribs and intricate mechanical joints. The structure is non-ellipsoidal, emphasizing sharp planar intersections and angular gaps. Sunlight highlights the precision of the modular panels and the deep, industrial structural framework underneath, avoiding all organic or soft curves. The interior space is clearly visible, showcasing a functional, man-scaled geometric environment with clean, industrial materials.",
+          "angle": "isolated_head on centered cross section clay day11.png",
+          "lens": "model bent metal dynamic curved House.png",
+          "mutationSummary": "Fragmenting the rigid shell to expose a complex, panelized interior core with precision-engineered metal structural connections.",
+          "feedback": [
+            {
+              "source": "IG",
+              "text": "Love the mist in front of the mairie",
+              "date": "2026-05-27"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -5463,9 +5536,33 @@
         ],
         "2026-05-25": [
           {
+            "source": "IG",
+            "text": "more fragmented",
+            "date": "2026-05-25"
+          },
+          {
             "source": "TG",
             "text": "zoom in to show the interior",
             "date": "2026-05-25"
+          }
+        ],
+        "2026-05-26": [
+          {
+            "source": "TG",
+            "text": "does it fly? not really right? show the structure",
+            "date": "2026-05-26"
+          },
+          {
+            "source": "TG",
+            "text": "less machine, more built structure",
+            "date": "2026-05-26"
+          }
+        ],
+        "2026-05-27": [
+          {
+            "source": "IG",
+            "text": "Love the mist in front of the mairie",
+            "date": "2026-05-27"
           }
         ]
       }
@@ -6603,6 +6700,35 @@
           "lens": "model filigree tilted structure balancing geometric forms.jpg",
           "mutationSummary": "Breaking symmetry through cantilevered aluminum plates and deconstructivist metal filigree integrated into the Haussmann fa\u00e7ade.",
           "feedback": []
+        },
+        {
+          "day": 33,
+          "date": "2026-05-27",
+          "image": "media/01_urban_creatures/smell creature/day_33_bw.webp",
+          "imageColor": "media/01_urban_creatures/smell creature/day_33.webp",
+          "reference": "media/01_urban_creatures/smell creature/day_33_reference.webp",
+          "angleImage": "media/01_urban_creatures/smell creature/day_33_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/smell creature/day_33_anchor_30.webp",
+            "media/01_urban_creatures/smell creature/day_33_anchor_31.webp",
+            "media/01_urban_creatures/smell creature/day_33_anchor_32.webp"
+          ],
+          "prompt": "A crisp architectural photograph of 23 Rue de Malte. The structure is composed of jagged, asymmetrical layered metal plates and sharp, deconstructivist industrial beams. The symmetry is intentionally broken by shifting the modular aluminum panels off-axis. Integrate prismatic, color-coded LED nozzles along the structure to visualize scent-mixing. The aesthetic uses a harsh juxtaposition of weathered, oxidized concrete against polished, reflective silver shards. Ensure there is a clear, narrow pedestrian gap between the structure and the stone Haussmann facade. The atmosphere is stark, rigid, and distinctly mechanical, avoiding any organic or soft curves.",
+          "angle": "clay_angle_day_26.png",
+          "lens": "model image conceptual destruction to reconstruction.png",
+          "mutationSummary": "Asymmetrical metallic deconstruction: shifting plates and color-coded atmospheric scent-nodes integrated into a rigorous, non-organic industrial architecture.",
+          "feedback": [
+            {
+              "source": "IG",
+              "text": "Are the smells connected to colours? They should! You know how smells are made up of different ongredients like colours as well?",
+              "date": "2026-05-27"
+            },
+            {
+              "source": "TG",
+              "text": "more asymmetrocal",
+              "date": "2026-05-27"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -7031,6 +7157,18 @@
             "source": "TG",
             "text": "move the metal plates around a bit to break the rigid symmetry",
             "date": "2026-05-24"
+          }
+        ],
+        "2026-05-27": [
+          {
+            "source": "IG",
+            "text": "Are the smells connected to colours? They should! You know how smells are made up of different ongredients like colours as well?",
+            "date": "2026-05-27"
+          },
+          {
+            "source": "TG",
+            "text": "more asymmetrocal",
+            "date": "2026-05-27"
           }
         ]
       }
@@ -8593,6 +8731,30 @@
           "lens": "model image city machine.jpg",
           "mutationSummary": "Refining the crack installation with dynamic, clean-lined metallic panels that conceal speakers, emphasizing a precise architectural integration.",
           "feedback": []
+        },
+        {
+          "day": 33,
+          "date": "2026-05-27",
+          "image": "media/01_urban_creatures/voice creature/day_33_bw.webp",
+          "imageColor": "media/01_urban_creatures/voice creature/day_33.webp",
+          "reference": "media/01_urban_creatures/voice creature/day_33_reference.webp",
+          "angleImage": "media/01_urban_creatures/voice creature/day_33_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/voice creature/day_33_anchor_30.webp",
+            "media/01_urban_creatures/voice creature/day_33_anchor_31.webp",
+            "media/01_urban_creatures/voice creature/day_33_anchor_32.webp"
+          ],
+          "prompt": "A sharp, brutalist-industrial installation embedded within a Parisian Haussmann facade. The structure features clean, layered metallic plates that act as sound-filtering apertures, replacing the previous disorganized shrapnel. The central spine is tilted dynamically to add architectural tension, while the base transitions seamlessly into tiered stone steps for public seating. Use the 'destruction to reconstruction' material aesthetic: weathered, eroded limestone meeting polished, precision-engineered silver and matte-finished steel panels. Ensure the lighting highlights the geometric depth of the void within the facade, emphasizing the integration of the sound-collecting column into the masonry crack.",
+          "angle": "site_straight on eye level view clay day3.png",
+          "lens": "model image conceptual destruction to reconstruction.png",
+          "mutationSummary": "Refining the central auditory core with dynamic metallic fin-plating, integrated acoustic apertures, and a stabilized geometric tilt.",
+          "feedback": [
+            {
+              "source": "IG",
+              "text": "Love one and five",
+              "date": "2026-05-27"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -9040,6 +9202,13 @@
             "source": "TG",
             "text": "kepo the style but make the form more dynamic",
             "date": "2026-05-24"
+          }
+        ],
+        "2026-05-27": [
+          {
+            "source": "IG",
+            "text": "Love one and five",
+            "date": "2026-05-27"
           }
         ]
       }
