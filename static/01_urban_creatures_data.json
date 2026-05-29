@@ -1248,6 +1248,24 @@
           "lens": "model image conceptual destruction to reconstruction.png",
           "mutationSummary": "Implementing fractal mesh patterns and suspended structural skewering to evoke architectural tension and modular rhythmic complexity.",
           "feedback": []
+        },
+        {
+          "day": 37,
+          "date": "2026-05-29",
+          "image": "media/01_urban_creatures/crown creature/day_37_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_37.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_37_reference.webp",
+          "angleImage": "media/01_urban_creatures/crown creature/day_37_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/crown creature/day_37_anchor_34.webp",
+            "media/01_urban_creatures/crown creature/day_37_anchor_35.webp",
+            "media/01_urban_creatures/crown creature/day_37_anchor_36.webp"
+          ],
+          "prompt": "A high-contrast, deconstructivist composition featuring a rigid hexagonal frame. Two jagged steel beams pierce the center, skewering the core geometry. The roof is composed of overlapping, translucent hexagonal fabric panels arranged in a clean, fractal-like nested pattern. Hard, directional studio lighting casts sharp, crisp shadows across the ground plane. The materiality emphasizes matte, distressed metallic planes and high-tension wire rigging, excluding all biological or curved forms. The aesthetic is angular, industrial, and monumentally precise, floating against a deep black, atmospheric void.",
+          "angle": "isolated_topdown birds eye view clay day19.png",
+          "lens": "model geometric plates in tension dark background.jpg",
+          "mutationSummary": "Structural tension redefined: jagged metallic beams pierce the hexagonal void, anchoring a high-contrast, multi-layered geometric canopy.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -2935,6 +2953,35 @@
           "lens": "photograph structure deconstructivist additions.jpg",
           "mutationSummary": "Intensifying internal luminosity through expanded translucent panels and intricate mechanical joints, creating a radiant, high-contrast geometric core.",
           "feedback": []
+        },
+        {
+          "day": 37,
+          "date": "2026-05-29",
+          "image": "media/01_urban_creatures/glow creature/day_37_bw.webp",
+          "imageColor": "media/01_urban_creatures/glow creature/day_37.webp",
+          "reference": "media/01_urban_creatures/glow creature/day_37_reference.webp",
+          "angleImage": "media/01_urban_creatures/glow creature/day_37_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/glow creature/day_37_anchor_34.webp",
+            "media/01_urban_creatures/glow creature/day_37_anchor_35.webp",
+            "media/01_urban_creatures/glow creature/day_37_anchor_36.webp"
+          ],
+          "prompt": "A tight, high-contrast architectural close-up focusing on the junction of intersecting, razor-sharp glass and steel panels. The structure is non-organic and rigidly geometric, defined by brutalist concrete edges. An intense, blindingly bright white-gold light emanates from deep within the core, spilling out through the translucent glass facets. The atmosphere is cinematic and sharp, emphasizing the industrial texture of the metal framing against the radiant, glowing voids. No organic curves; maintain strict, aggressive angular geometry.",
+          "angle": "isolated_close up panels detail.png",
+          "lens": "photograph metal glass building on concrete plinth elegant dynamic form.jpg",
+          "mutationSummary": "Intense internal luminescence pierces through rigid, intersecting structural planes to radiate atmosphere from the geometric core.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "zoom out",
+              "date": "2026-05-29"
+            },
+            {
+              "source": "TG",
+              "text": "remove the crane but keep the rest exactly as it is",
+              "date": "2026-05-29"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -3376,6 +3423,18 @@
             "source": "TG",
             "text": "make the image brigther, show the glow from the inside",
             "date": "2026-05-26"
+          }
+        ],
+        "2026-05-29": [
+          {
+            "source": "TG",
+            "text": "zoom out",
+            "date": "2026-05-29"
+          },
+          {
+            "source": "TG",
+            "text": "remove the crane but keep the rest exactly as it is",
+            "date": "2026-05-29"
           }
         ]
       }
@@ -3871,6 +3930,30 @@
           "lens": "model image conceptual destruction to reconstruction.png",
           "mutationSummary": "Intricate mechanical assembly revealed: shifting tectonic metal plates hide the internal drone, emphasizing rhythmic, precise industrial geometry.",
           "feedback": []
+        },
+        {
+          "day": 17,
+          "date": "2026-05-29",
+          "image": "media/01_urban_creatures/lines creature/day_17_bw.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_17.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_17_reference.webp",
+          "angleImage": "media/01_urban_creatures/lines creature/day_17_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/lines creature/day_17_anchor_14.webp",
+            "media/01_urban_creatures/lines creature/day_17_anchor_15.webp",
+            "media/01_urban_creatures/lines creature/day_17_anchor_16.webp"
+          ],
+          "prompt": "An elevated isometric bird's eye view of the Boulevard Voltaire. The geometric metal capsule has evolved to fully conceal its internal robotic machinery behind a smooth, reflective, multi-faceted titanium shell. The structure is integrated into the Haussmann stone facade, rendered with crisp white steel members and geometric glass paneling from the Coop Himmelblau style. The surrounding asphalt shows only two clean, white, non-glowing traffic lines receding from the base of the hub into the urban grid, emphasizing the hidden, functional nature of the device.",
+          "angle": "site_high angle birds eye view clay day9.png",
+          "lens": "photograph structure roof coop himmelblau.jpg",
+          "mutationSummary": "Evolution toward total concealment: the central machinery is now encapsulated behind seamless, sweeping titanium geometric shielding.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "hide the machinery",
+              "date": "2026-05-29"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -4072,6 +4155,13 @@
             "source": "TG",
             "text": "zoom out",
             "date": "2026-05-27"
+          }
+        ],
+        "2026-05-29": [
+          {
+            "source": "TG",
+            "text": "hide the machinery",
+            "date": "2026-05-29"
           }
         ]
       }
@@ -5269,6 +5359,24 @@
               "date": "2026-05-28"
             }
           ]
+        },
+        {
+          "day": 38,
+          "date": "2026-05-29",
+          "image": "media/01_urban_creatures/mist creature/day_38_bw.webp",
+          "imageColor": "media/01_urban_creatures/mist creature/day_38.webp",
+          "reference": "media/01_urban_creatures/mist creature/day_38_reference.webp",
+          "angleImage": "media/01_urban_creatures/mist creature/day_38_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/mist creature/day_38_anchor_35.webp",
+            "media/01_urban_creatures/mist creature/day_38_anchor_36.webp",
+            "media/01_urban_creatures/mist creature/day_38_anchor_37.webp"
+          ],
+          "prompt": "A photorealistic, detailed architectural study of a deconstructivist structure. The central geometric core is intentionally fragmented, with sharp, angular metallic panels shifting and sliding to expose an intricate, complex inner framework of rigid steel truss-work. The aesthetic is strictly geometric, avoiding all organic or blob-like forms. Visible joinery and crisp, linear articulation characterize the structural assembly. Harsh, high-contrast daylight highlights the depth of the gaps between the shell and the internal components. The background remains a neutral, Parisian urban void to ensure the focus remains on the precise, industrial precision of the machine-like structure. No organic curves, just sharp, intersecting planes and modular rigidity.",
+          "angle": "isolated_head on centered cross section clay day11.png",
+          "lens": "hanging model geometric shapes instable forms.jpg",
+          "mutationSummary": "Evolving into a deconstructivist assembly: fragmenting the shell to reveal inner mechanical joints and rhythmic panelized logic.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -6864,6 +6972,30 @@
           "lens": "photograph structure roof coop himmelblau.jpg",
           "mutationSummary": "Asymmetrical deconstructivist geometry: sharp aluminum fins and porous panels integrated into the Haussmann facade, dispersing color-coded synthetic scents.",
           "feedback": []
+        },
+        {
+          "day": 35,
+          "date": "2026-05-29",
+          "image": "media/01_urban_creatures/smell creature/day_35_bw.webp",
+          "imageColor": "media/01_urban_creatures/smell creature/day_35.webp",
+          "reference": "media/01_urban_creatures/smell creature/day_35_reference.webp",
+          "angleImage": "media/01_urban_creatures/smell creature/day_35_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/smell creature/day_35_anchor_32.webp",
+            "media/01_urban_creatures/smell creature/day_35_anchor_33.webp",
+            "media/01_urban_creatures/smell creature/day_35_anchor_34.webp"
+          ],
+          "prompt": "A photographic wide-angle shot of a rigid, deconstructivist parasitic structure at 23 Rue de Malte. The structure consists of sharp, non-organic cantilevered steel plates and porous aluminum fins that break all previous symmetry. Introduce deliberate asymmetrical displacements of metallic panels. Integrate color-coded glowing LED filaments along the edges of the structural ribs that signify distinct scent profiles (e.g., cool blue for ozone, warm amber for coffee). Ensure the surfaces exhibit high-contrast mottled concrete textures fused with ethereal, transparent glass sections. The structure should avoid any biological curves, maintaining a strict mechanical aesthetic. Sharp, jagged geometric planes extend horizontally and vertically, creating a complex, collision-like urban intervention against the historic Parisian fa\u00e7ade.",
+          "angle": "site_perspective view from the street clay day23.png",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "Asymmetrical deconstructivist geometry: sharp metallic fins and porous panels map scent gradients to specific vibrant color-coded light zones.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "make a top down image",
+              "date": "2026-05-29"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -7304,6 +7436,13 @@
             "source": "TG",
             "text": "more asymmetrocal",
             "date": "2026-05-27"
+          }
+        ],
+        "2026-05-29": [
+          {
+            "source": "TG",
+            "text": "make a top down image",
+            "date": "2026-05-29"
           }
         ]
       }
@@ -8907,6 +9046,24 @@
           "angle": "site_straighton eye level perspective clay day20.png",
           "lens": "rendering tech color isolated cyberpunk station.jpg",
           "mutationSummary": "Re-integrating the clean central spine, tilting the structure sideways, and masking internal speakers behind geometric metal plate arrays.",
+          "feedback": []
+        },
+        {
+          "day": 35,
+          "date": "2026-05-29",
+          "image": "media/01_urban_creatures/voice creature/day_35_bw.webp",
+          "imageColor": "media/01_urban_creatures/voice creature/day_35.webp",
+          "reference": "media/01_urban_creatures/voice creature/day_35_reference.webp",
+          "angleImage": "media/01_urban_creatures/voice creature/day_35_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/voice creature/day_35_anchor_32.webp",
+            "media/01_urban_creatures/voice creature/day_35_anchor_33.webp",
+            "media/01_urban_creatures/voice creature/day_35_anchor_34.webp"
+          ],
+          "prompt": "A crisp, architectural frontal view of a Parisian Haussmann facade. In the central vertical crack, a clean, monolithic structural insert has replaced the previous messy debris. The insert features layered, matte-brushed steel panels with integrated, hidden speaker apertures. The design is strictly geometric and industrial, emphasizing sharp, rhythmic vertical lines that blend into the stone masonry. Lighting is flat and overcast, highlighting the precision-engineered joints of the metal plates against the weathered limestone of the facade. No pipes, no organic growth, no protruding spikes\u2014just a sophisticated, taut, and perfectly aligned metallic insertion.",
+          "angle": "site_straight on eye level view clay day16.png",
+          "lens": "model bent metal dynamic curved House.png",
+          "mutationSummary": "Refining the vertical crack: removing messy shrapnel to prioritize a sleek, monolithic metal spine and integrated acoustic panels.",
           "feedback": []
         }
       ],
