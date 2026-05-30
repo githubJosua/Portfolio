@@ -2982,6 +2982,24 @@
               "date": "2026-05-29"
             }
           ]
+        },
+        {
+          "day": 38,
+          "date": "2026-05-30",
+          "image": "media/01_urban_creatures/glow creature/day_38_bw.webp",
+          "imageColor": "media/01_urban_creatures/glow creature/day_38.webp",
+          "reference": "media/01_urban_creatures/glow creature/day_38_reference.webp",
+          "angleImage": "media/01_urban_creatures/glow creature/day_38_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/glow creature/day_38_anchor_35.webp",
+            "media/01_urban_creatures/glow creature/day_38_anchor_36.webp",
+            "media/01_urban_creatures/glow creature/day_38_anchor_37.webp"
+          ],
+          "prompt": "A high-angle, orthographic-leaning perspective of the Boulevard Voltaire corner. The central structure is a clean, sharp-edged geometric form, devoid of robotic hinges or crane supports. It features expanded, translucent glass panels that glow with an intense, warm inner light. The geometry is strictly angular\u2014faceted, crystalline, and rigid. The surrounding Haussmann architecture remains stark and classical, acting as a high-contrast backdrop to the brilliant, glowing geometric core. Lighting is clear and cinematic, emphasizing the sharp material juxtaposition between the historic stone facades and the modern, illuminated, glass-and-steel geometric intervention.",
+          "angle": "site_top down architectural floorplan with building.png",
+          "lens": "photograph structure roof coop himmelblau.jpg",
+          "mutationSummary": "Structure expands into a luminous, geometric public canopy, stripped of mechanical arms, radiating intense atmospheric light from within.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -3954,6 +3972,24 @@
               "date": "2026-05-29"
             }
           ]
+        },
+        {
+          "day": 18,
+          "date": "2026-05-30",
+          "image": "media/01_urban_creatures/lines creature/day_18_bw.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_18.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_18_reference.webp",
+          "angleImage": "media/01_urban_creatures/lines creature/day_18_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/lines creature/day_18_anchor_15.webp",
+            "media/01_urban_creatures/lines creature/day_18_anchor_16.webp",
+            "media/01_urban_creatures/lines creature/day_18_anchor_17.webp"
+          ],
+          "prompt": "A high-angle isometric view of the geometric capsule docked against the Haussmann stone facade. The entire mechanical assembly is now completely concealed behind a sleek, modular stainless-steel exoskeleton. The facade features precise, red-accented paneling and rigid, faceted geometry that integrates flush with the sidewalk. The lighting is crisp, natural daylight, emphasizing the sharp structural edges and the absence of exposed internal machinery, creating a monumental, unified monolith that maintains its functional urban purpose.",
+          "angle": "site_clay_angle_day_12.png",
+          "lens": "rendering tech color vertical structure with insets.jpg",
+          "mutationSummary": "Encasing the hub in an opaque geometric veil to conceal interior mechanics, refining the silhouette for the boulevard.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -5376,6 +5412,24 @@
           "angle": "isolated_head on centered cross section clay day11.png",
           "lens": "hanging model geometric shapes instable forms.jpg",
           "mutationSummary": "Evolving into a deconstructivist assembly: fragmenting the shell to reveal inner mechanical joints and rhythmic panelized logic.",
+          "feedback": []
+        },
+        {
+          "day": 39,
+          "date": "2026-05-30",
+          "image": "media/01_urban_creatures/mist creature/day_39_bw.webp",
+          "imageColor": "media/01_urban_creatures/mist creature/day_39.webp",
+          "reference": "media/01_urban_creatures/mist creature/day_39_reference.webp",
+          "angleImage": "media/01_urban_creatures/mist creature/day_39_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/mist creature/day_39_anchor_36.webp",
+            "media/01_urban_creatures/mist creature/day_39_anchor_37.webp",
+            "media/01_urban_creatures/mist creature/day_39_anchor_38.webp"
+          ],
+          "prompt": "A sharp, orthographic sectional view capturing the Mist Creature's core. The outer shell is deconstructed into jagged, overlapping brushed-steel plates with intentional, messy gaps. Beneath the skin, the mechanical core is revealed as a rigorous, linear assembly of intersecting structural steel beams and recessed high-tech manifolds. The transition between internal and external is direct; internal pipes puncture the outer skin at sharp, non-orthogonal angles. Use a high-contrast, bright daylight aesthetic to emphasize the precision of the joints, the sharp geometry of the structural skeleton, and the raw industrial aesthetic of the metal assemblies, avoiding all soft or biological curves.",
+          "angle": "isolated_technical cutaway elevation view clay day4.png",
+          "lens": "model filigree tilted structure balancing geometric forms.jpg",
+          "mutationSummary": "Deconstructivist architectural shift, exposing internal technical joints through fragmented, sharp-edged steel panels and deliberate structural tension.",
           "feedback": []
         }
       ],
@@ -6996,6 +7050,24 @@
               "date": "2026-05-29"
             }
           ]
+        },
+        {
+          "day": 36,
+          "date": "2026-05-30",
+          "image": "media/01_urban_creatures/smell creature/day_36_bw.webp",
+          "imageColor": "media/01_urban_creatures/smell creature/day_36.webp",
+          "reference": "media/01_urban_creatures/smell creature/day_36_reference.webp",
+          "angleImage": "media/01_urban_creatures/smell creature/day_36_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/smell creature/day_36_anchor_33.webp",
+            "media/01_urban_creatures/smell creature/day_36_anchor_34.webp",
+            "media/01_urban_creatures/smell creature/day_36_anchor_35.webp"
+          ],
+          "prompt": "A top-down, bird's-eye architectural study rendered in a surrealist collage aesthetic with oxidized corten steel and sharp, geometric white masonry. The structure is non-symmetrical, sprawling horizontally along the Haussmann facade. Intricate, porous aluminum mesh panels are arranged in a deconstructivist pattern, featuring subtle color gradients indicating distinct scent ingredients. Thin, rigid metal ribs branch out, integrating with the sidewalk but avoiding organic forms. The lighting is flat and even to emphasize the high-concept structural dynamism, with no shadows or blur. The structure remains detached from the facade to allow pedestrian passage, emphasizing a sharp, surgical geometry rather than organic growth.",
+          "angle": "site_top down aerial view clay day8.png",
+          "lens": "illustration parasite building lebbeus woods.jpg",
+          "mutationSummary": "Asymmetrical deconstructivist metallic structure featuring porous, color-coded olfactory panels and sharp, industrial geometric fins.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -9064,6 +9136,24 @@
           "angle": "site_straight on eye level view clay day16.png",
           "lens": "model bent metal dynamic curved House.png",
           "mutationSummary": "Refining the vertical crack: removing messy shrapnel to prioritize a sleek, monolithic metal spine and integrated acoustic panels.",
+          "feedback": []
+        },
+        {
+          "day": 36,
+          "date": "2026-05-30",
+          "image": "media/01_urban_creatures/voice creature/day_36_bw.webp",
+          "imageColor": "media/01_urban_creatures/voice creature/day_36.webp",
+          "reference": "media/01_urban_creatures/voice creature/day_36_reference.webp",
+          "angleImage": "media/01_urban_creatures/voice creature/day_36_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/voice creature/day_36_anchor_33.webp",
+            "media/01_urban_creatures/voice creature/day_36_anchor_34.webp",
+            "media/01_urban_creatures/voice creature/day_36_anchor_35.webp"
+          ],
+          "prompt": "Architectural photography of an urban intervention in a narrow Haussmann crack. The structure features a vertical, monolithic spine of brushed steel panels that conceal the speaker stack, emphasizing clean, geometric lines. The metallic panels are flush with the stone, creating a seamless, taut interface. The central aperture is subtly tilted, projecting a sense of balanced instability. The lighting is crisp and even, highlighting the stark material contrast between the weathered Parisian limestone and the sharp, industrial precision of the new metallic plating. Avoid all organic or fluid shapes, focusing on rigid, tectonic assembly and sharp, orthogonal joinery.",
+          "angle": "site_high angle aerial perspective clay day6.png",
+          "lens": "illustration parasite building lebbeus woods.jpg",
+          "mutationSummary": "Refining the vertical spine by integrating clean metallic cladding and minimalist geometry to harmonize with the Haussmann fa\u00e7ade.",
           "feedback": []
         }
       ],
