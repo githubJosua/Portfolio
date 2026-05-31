@@ -1266,6 +1266,30 @@
           "lens": "model geometric plates in tension dark background.jpg",
           "mutationSummary": "Structural tension redefined: jagged metallic beams pierce the hexagonal void, anchoring a high-contrast, multi-layered geometric canopy.",
           "feedback": []
+        },
+        {
+          "day": 38,
+          "date": "2026-05-31",
+          "image": "media/01_urban_creatures/crown creature/day_38_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_38.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_38_reference.webp",
+          "angleImage": "media/01_urban_creatures/crown creature/day_38_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/crown creature/day_38_anchor_35.webp",
+            "media/01_urban_creatures/crown creature/day_38_anchor_36.webp",
+            "media/01_urban_creatures/crown creature/day_38_anchor_37.webp"
+          ],
+          "prompt": "Architectural photography of an orthographic back elevation in Jardin Truillot. The primary rigid rectangular frame is shattered and skewed, with sharp, jagged metal beams piercing the center, creating a ruptured grid. The roof is a taut, translucent hexagonal mesh with nested fractal patterns, devoid of curved biomorphous elements. Use high-contrast hard shadows to emphasize the industrial, filigree aesthetic. Incorporate matte white steel elements and dark reflective joints. Remove all ground-level pillars, letting the kinetic tension cables anchor directly into the urban hardscape, mimicking a deconstructed, lightweight industrial sculpture.",
+          "angle": "isolated_orthographic elevation back closed roof hard shadows.png",
+          "lens": "rendering filigree Kinetic Sculpture reaching into the sky.png",
+          "mutationSummary": "Deformed geometric frame with jagged, skewered beams, replacing heavy supports with a complex, tension-based fractal canopy.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "retry",
+              "date": "2026-05-31"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -1635,9 +1659,31 @@
             "source": "BSKY",
             "text": "Mesh floats.",
             "date": "2026-05-20"
+          },
+          {
+            "source": "BSKY",
+            "text": "the central void is too large, it lacks tension",
+            "date": "2026-05-20"
+          }
+        ],
+        "2026-05-21": [
+          {
+            "source": "BSKY",
+            "text": "hmm, the beam feels intrusive",
+            "date": "2026-05-21"
+          },
+          {
+            "source": "BSKY",
+            "text": "let it fully embrace flight",
+            "date": "2026-05-21"
           }
         ],
         "2026-05-22": [
+          {
+            "source": "BSKY",
+            "text": "honestly, the beam looks hevy",
+            "date": "2026-05-22"
+          },
           {
             "source": "IG",
             "text": "too much metal",
@@ -1651,16 +1697,110 @@
         ],
         "2026-05-23": [
           {
+            "source": "BSKY",
+            "text": "ruptured grid [like]",
+            "date": "2026-05-23"
+          },
+          {
             "source": "IG",
             "text": "i like the jagged beam can we have a second one of those",
             "date": "2026-05-23"
           }
         ],
+        "2026-05-24": [
+          {
+            "source": "BSKY",
+            "text": "hmm, the mesh connections look way loose",
+            "date": "2026-05-24"
+          },
+          {
+            "source": "BSKY",
+            "text": "the central ladder looks like a spine supporting a broken compass",
+            "date": "2026-05-24"
+          },
+          {
+            "source": "BSKY",
+            "text": "the stark, heavy beams seem to crash into the light, delicate canopy",
+            "date": "2026-05-24"
+          }
+        ],
+        "2026-05-25": [
+          {
+            "source": "BSKY",
+            "text": "why does the base feel so firmly anchored",
+            "date": "2026-05-25"
+          }
+        ],
+        "2026-05-26": [
+          {
+            "source": "BSKY",
+            "text": "forms create tension",
+            "date": "2026-05-26"
+          },
+          {
+            "source": "BSKY",
+            "text": "those beams make it feel way too heavy",
+            "date": "2026-05-26"
+          }
+        ],
         "2026-05-27": [
+          {
+            "source": "BSKY",
+            "text": "is the frame heavy",
+            "date": "2026-05-27"
+          },
+          {
+            "source": "BSKY",
+            "text": "looks like melted fencing",
+            "date": "2026-05-27"
+          },
           {
             "source": "IG",
             "text": "That one is awesome. Can it fly?",
             "date": "2026-05-27"
+          }
+        ],
+        "2026-05-28": [
+          {
+            "source": "BSKY",
+            "text": "hmm... the central broken beam doesn't quite anchor anything",
+            "date": "2026-05-28"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, structure looks intentional",
+            "date": "2026-05-28"
+          }
+        ],
+        "2026-05-29": [
+          {
+            "source": "BSKY",
+            "text": "beams disrupt the flow",
+            "date": "2026-05-29"
+          }
+        ],
+        "2026-05-30": [
+          {
+            "source": "TG",
+            "text": "too simple",
+            "date": "2026-05-30"
+          },
+          {
+            "source": "TG",
+            "text": "deform the structure",
+            "date": "2026-05-30"
+          },
+          {
+            "source": "TG",
+            "text": "dney",
+            "date": "2026-05-30"
+          }
+        ],
+        "2026-05-31": [
+          {
+            "source": "TG",
+            "text": "retry",
+            "date": "2026-05-31"
           }
         ]
       }
@@ -3000,19 +3140,32 @@
           "lens": "photograph structure roof coop himmelblau.jpg",
           "mutationSummary": "Structure expands into a luminous, geometric public canopy, stripped of mechanical arms, radiating intense atmospheric light from within.",
           "feedback": []
+        },
+        {
+          "day": 39,
+          "date": "2026-05-31",
+          "image": "media/01_urban_creatures/glow creature/day_39_bw.webp",
+          "imageColor": "media/01_urban_creatures/glow creature/day_39.webp",
+          "reference": "media/01_urban_creatures/glow creature/day_39_reference.webp",
+          "angleImage": "media/01_urban_creatures/glow creature/day_39_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/glow creature/day_39_anchor_36.webp",
+            "media/01_urban_creatures/glow creature/day_39_anchor_37.webp",
+            "media/01_urban_creatures/glow creature/day_39_anchor_38.webp"
+          ],
+          "prompt": "A low-angle, upward-tilted view of the structure. The core is no longer a solid geometric mass but a series of fragmented, overlapping translucent glass shards and ultra-thin, oxidized steel filaments. The structure appears to be dissolving into a cloud-like accumulation of sharp geometric light planes. Eliminate heavy concrete bases and thick support struts. Increase the intensity of the inner red glow, making it bleed through the joints to create an ethereal, vaporous atmosphere. The composition should feel less grounded and more like an aggressive, high-concept, gravity-defying intervention, maintaining sharp-edged, angular precision without any organic or fluid elements.",
+          "angle": "isolated_clay_angle_day_33.png",
+          "lens": "illustration parasite building lebbeus woods.jpg",
+          "mutationSummary": "Dissolving heavy geometry into a fragmented, glowing cloud of translucent shards and sharp, ethereal structural tension.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
-        "2026-04-21": [
+        "2026-04-14": [
           {
             "source": "BSKY",
-            "text": "Warm amber pulse and wrap the glass around the balconies.",
-            "date": "2026-04-21"
-          },
-          {
-            "source": "BSKY",
-            "text": "stretch the panles to the street",
-            "date": "2026-04-21"
+            "text": "Extend the base downward to create a public shelter canopy.",
+            "date": "2026-04-14"
           }
         ],
         "2026-04-17": [
@@ -3027,18 +3180,23 @@
             "date": "2026-04-17"
           }
         ],
-        "2026-04-14": [
-          {
-            "source": "BSKY",
-            "text": "Extend the base downward to create a public shelter canopy.",
-            "date": "2026-04-14"
-          }
-        ],
         "2026-04-20": [
           {
             "source": "BSKY",
             "text": "mount sleping pods on mecha joints",
             "date": "2026-04-20"
+          }
+        ],
+        "2026-04-21": [
+          {
+            "source": "BSKY",
+            "text": "Warm amber pulse and wrap the glass around the balconies.",
+            "date": "2026-04-21"
+          },
+          {
+            "source": "BSKY",
+            "text": "stretch the panles to the street",
+            "date": "2026-04-21"
           }
         ],
         "2026-04-22": [
@@ -3410,14 +3568,31 @@
           },
           {
             "source": "BSKY",
+            "text": "honestly, the top panels feel way too heavy",
+            "date": "2026-05-20"
+          },
+          {
+            "source": "BSKY",
             "text": "the stone plates look way too hevvy.",
             "date": "2026-05-20"
           }
         ],
+        "2026-05-22": [
+          {
+            "source": "BSKY",
+            "text": "hmm, corner feels heavy",
+            "date": "2026-05-22"
+          },
+          {
+            "source": "BSKY",
+            "text": "the sharp edges feel too forced today",
+            "date": "2026-05-22"
+          }
+        ],
         "2026-05-23": [
           {
-            "source": "TG",
-            "text": "zoom in to show how the panels come together",
+            "source": "BSKY",
+            "text": "is that central joint looking a bit too heavy",
             "date": "2026-05-23"
           },
           {
@@ -3432,27 +3607,107 @@
           },
           {
             "source": "TG",
+            "text": "zoom in to show how the panels come together",
+            "date": "2026-05-23"
+          },
+          {
+            "source": "TG",
             "text": "zoom out a bit",
             "date": "2026-05-23"
           }
         ],
+        "2026-05-24": [
+          {
+            "source": "BSKY",
+            "text": "looks like a shattered prism",
+            "date": "2026-05-24"
+          },
+          {
+            "source": "BSKY",
+            "text": "okay but, light feels too contained",
+            "date": "2026-05-24"
+          }
+        ],
+        "2026-05-25": [
+          {
+            "source": "BSKY",
+            "text": "okay but the core light feels too contained",
+            "date": "2026-05-25"
+          }
+        ],
         "2026-05-26": [
+          {
+            "source": "BSKY",
+            "text": "honestly, the central joint is crouded",
+            "date": "2026-05-26"
+          },
+          {
+            "source": "BSKY",
+            "text": "the heavy frames too clearly define, rather than dissolve, spatial boundaries",
+            "date": "2026-05-26"
+          },
           {
             "source": "TG",
             "text": "make the image brigther, show the glow from the inside",
             "date": "2026-05-26"
           }
         ],
+        "2026-05-27": [
+          {
+            "source": "BSKY",
+            "text": "honestly the strutts are way too stable for riots",
+            "date": "2026-05-27"
+          },
+          {
+            "source": "BSKY",
+            "text": "the planes lack enough violent collision",
+            "date": "2026-05-27"
+          }
+        ],
+        "2026-05-28": [
+          {
+            "source": "BSKY",
+            "text": "is it finished evolving yet",
+            "date": "2026-05-28"
+          },
+          {
+            "source": "BSKY",
+            "text": "the glass pods seem too heavy",
+            "date": "2026-05-28"
+          }
+        ],
         "2026-05-29": [
           {
-            "source": "TG",
-            "text": "zoom out",
+            "source": "BSKY",
+            "text": "the concrete base is far too static",
             "date": "2026-05-29"
           },
           {
             "source": "TG",
             "text": "remove the crane but keep the rest exactly as it is",
             "date": "2026-05-29"
+          },
+          {
+            "source": "TG",
+            "text": "zoom out",
+            "date": "2026-05-29"
+          }
+        ],
+        "2026-05-30": [
+          {
+            "source": "BSKY",
+            "text": "is the light too solid",
+            "date": "2026-05-30"
+          },
+          {
+            "source": "BSKY",
+            "text": "it feels like a folded glass skyscraper",
+            "date": "2026-05-30"
+          },
+          {
+            "source": "BSKY",
+            "text": "it should feel more like a dissolving cloud, less like a static, grounded structure",
+            "date": "2026-05-30"
           }
         ]
       }
@@ -3990,6 +4245,24 @@
           "lens": "rendering tech color vertical structure with insets.jpg",
           "mutationSummary": "Encasing the hub in an opaque geometric veil to conceal interior mechanics, refining the silhouette for the boulevard.",
           "feedback": []
+        },
+        {
+          "day": 19,
+          "date": "2026-05-31",
+          "image": "media/01_urban_creatures/lines creature/day_19_bw.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_19.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_19_reference.webp",
+          "angleImage": "media/01_urban_creatures/lines creature/day_19_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/lines creature/day_19_anchor_16.webp",
+            "media/01_urban_creatures/lines creature/day_19_anchor_17.webp",
+            "media/01_urban_creatures/lines creature/day_19_anchor_18.webp"
+          ],
+          "prompt": "Focus on an extreme close-up of the internal structural assembly. Render the mechanical components with a dark, high-contrast, moody aesthetic. The metallic plates should be shifted, overlapping, and tightened to obscure the raw gear-heart, creating a sense of contained, high-tension energy. Use sharp, angular lighting to emphasize the precision-machined edges, mimicking the brutalist-industrial look of distressed metal planes in a void. Remove any signs of exterior gears, focusing instead on the rhythmic, tightly packed layers of the station's core structure.",
+          "angle": "site_clay_angle_day_15.png",
+          "lens": "model geometric plates in tension dark background.jpg",
+          "mutationSummary": "Refining the mechanical core: retracting exterior gears to shroud the internal pulse and stabilizing the base geometry.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -4134,6 +4407,11 @@
             "source": "BSKY",
             "text": "The metal spikes look way too aggressive.",
             "date": "2026-05-19"
+          },
+          {
+            "source": "BSKY",
+            "text": "the metallic panels feel like a heavy cage",
+            "date": "2026-05-19"
           }
         ],
         "2026-05-20": [
@@ -4157,6 +4435,16 @@
         ],
         "2026-05-22": [
           {
+            "source": "BSKY",
+            "text": "hmm, the shadow rays look too rigid",
+            "date": "2026-05-22"
+          },
+          {
+            "source": "BSKY",
+            "text": "the junction point is too heavy",
+            "date": "2026-05-22"
+          },
+          {
             "source": "TG",
             "text": "make the person female and remove the backpack",
             "date": "2026-05-22"
@@ -4164,9 +4452,26 @@
         ],
         "2026-05-23": [
           {
+            "source": "BSKY",
+            "text": "honestly, the metal base looks a bit aggressive",
+            "date": "2026-05-23"
+          },
+          {
             "source": "TG",
             "text": "zoom in and show a detail of the contruction of this structure",
             "date": "2026-05-23"
+          }
+        ],
+        "2026-05-24": [
+          {
+            "source": "BSKY",
+            "text": "is this exposed chaos a deliberate act of structural distortion",
+            "date": "2026-05-24"
+          },
+          {
+            "source": "BSKY",
+            "text": "let the internal mechanics burst forth",
+            "date": "2026-05-24"
           }
         ],
         "2026-05-25": [
@@ -4181,6 +4486,23 @@
             "date": "2026-05-25"
           }
         ],
+        "2026-05-26": [
+          {
+            "source": "BSKY",
+            "text": "structure lacks violent collision",
+            "date": "2026-05-26"
+          },
+          {
+            "source": "BSKY",
+            "text": "the gears feel like a disconnected afterthought",
+            "date": "2026-05-26"
+          },
+          {
+            "source": "BSKY",
+            "text": "the plates lack story",
+            "date": "2026-05-26"
+          }
+        ],
         "2026-05-27": [
           {
             "source": "TG",
@@ -4193,11 +4515,50 @@
             "date": "2026-05-27"
           }
         ],
+        "2026-05-28": [
+          {
+            "source": "BSKY",
+            "text": "base feels too random [like]",
+            "date": "2026-05-28"
+          },
+          {
+            "source": "BSKY",
+            "text": "this looks like a faceted parking meter",
+            "date": "2026-05-28"
+          }
+        ],
         "2026-05-29": [
+          {
+            "source": "BSKY",
+            "text": "the gears look like an exposed ticking heart [like]",
+            "date": "2026-05-29"
+          },
+          {
+            "source": "BSKY",
+            "text": "the tectonic collision at the corner is aggressive",
+            "date": "2026-05-29"
+          },
+          {
+            "source": "BSKY",
+            "text": "why are the ground supports failing to disrupt gravity [like]",
+            "date": "2026-05-29"
+          },
           {
             "source": "TG",
             "text": "hide the machinery",
             "date": "2026-05-29"
+          }
+        ],
+        "2026-05-30": [
+          {
+            "source": "BSKY",
+            "text": "base loooks clunky",
+            "date": "2026-05-30"
+          },
+          {
+            "source": "BSKY",
+            "text": "is the top volume too aggressive for corner",
+            "date": "2026-05-30"
           }
         ]
       }
@@ -5431,16 +5792,38 @@
           "lens": "model filigree tilted structure balancing geometric forms.jpg",
           "mutationSummary": "Deconstructivist architectural shift, exposing internal technical joints through fragmented, sharp-edged steel panels and deliberate structural tension.",
           "feedback": []
+        },
+        {
+          "day": 40,
+          "date": "2026-05-31",
+          "image": "media/01_urban_creatures/mist creature/day_40_bw.webp",
+          "imageColor": "media/01_urban_creatures/mist creature/day_40.webp",
+          "reference": "media/01_urban_creatures/mist creature/day_40_reference.webp",
+          "angleImage": "media/01_urban_creatures/mist creature/day_40_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/mist creature/day_40_anchor_37.webp",
+            "media/01_urban_creatures/mist creature/day_40_anchor_38.webp",
+            "media/01_urban_creatures/mist creature/day_40_anchor_39.webp"
+          ],
+          "prompt": "An isometric sectional view of the Mist Creature in Place L\u00e9on Blum. Focus on aggressive spatial disruption: the outer steel shell plates are fractured and skewed to reveal a complex, non-linear interior of sharp-angled steel conduits. The internal machinery, inspired by Lebbeus Woods, pushes outward through jagged slits in the outer panels. Maintain a functional-surrealist aesthetic with high-contrast, crisp white steel members and geometric glass shards. The overall form is fragmented, avoiding organic curves, prioritizing harsh, colliding geometric planes and exposed, structural deconstructivist joints. Daylight environment, bright and photorealistic.",
+          "angle": "isolated_side profile perspective view clay day25.png",
+          "lens": "photograph structure roof coop himmelblau.jpg",
+          "mutationSummary": "Aggressively disrupting shell plates, exposing the deconstructivist metal core, and forcing internal geometric volumes to pierce the exterior skin.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "close the open hole",
+              "date": "2026-05-31"
+            },
+            {
+              "source": "TG",
+              "text": "show it from the left side",
+              "date": "2026-05-31"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
-        "2026-04-16": [
-          {
-            "source": "BSKY",
-            "text": "adapt the structure to the scale of the human body. the human and the machine should become one",
-            "date": "2026-04-16"
-          }
-        ],
         "2026-04-14": [
           {
             "source": "BSKY",
@@ -5463,11 +5846,18 @@
             "date": "2026-04-14"
           }
         ],
-        "2026-04-20": [
+        "2026-04-16": [
           {
             "source": "BSKY",
-            "text": "slidign the mesh panel along curved rails",
-            "date": "2026-04-20"
+            "text": "adapt the structure to the scale of the human body. the human and the machine should become one",
+            "date": "2026-04-16"
+          }
+        ],
+        "2026-04-17": [
+          {
+            "source": "BSKY",
+            "text": "add wooden floors for peaple.",
+            "date": "2026-04-17"
           }
         ],
         "2026-04-18": [
@@ -5477,11 +5867,11 @@
             "date": "2026-04-18"
           }
         ],
-        "2026-04-17": [
+        "2026-04-20": [
           {
             "source": "BSKY",
-            "text": "add wooden floors for peaple.",
-            "date": "2026-04-17"
+            "text": "slidign the mesh panel along curved rails",
+            "date": "2026-04-20"
           }
         ],
         "2026-04-21": [
@@ -5750,6 +6140,13 @@
             "date": "2026-05-17"
           }
         ],
+        "2026-05-19": [
+          {
+            "source": "BSKY",
+            "text": "the center beams look heavy",
+            "date": "2026-05-19"
+          }
+        ],
         "2026-05-20": [
           {
             "source": "TG",
@@ -5767,7 +6164,24 @@
             "date": "2026-05-20"
           }
         ],
+        "2026-05-21": [
+          {
+            "source": "BSKY",
+            "text": "quite heavy?",
+            "date": "2026-05-21"
+          }
+        ],
         "2026-05-22": [
+          {
+            "source": "BSKY",
+            "text": "the central pipe looks way too heavy here",
+            "date": "2026-05-22"
+          },
+          {
+            "source": "TG",
+            "text": "less pipes more panels",
+            "date": "2026-05-22"
+          },
           {
             "source": "TG",
             "text": "less robotic and black background",
@@ -5777,14 +6191,24 @@
             "source": "TG",
             "text": "less round",
             "date": "2026-05-22"
-          },
-          {
-            "source": "TG",
-            "text": "less pipes more panels",
-            "date": "2026-05-22"
           }
         ],
         "2026-05-23": [
+          {
+            "source": "BSKY",
+            "text": "angles look harsh",
+            "date": "2026-05-23"
+          },
+          {
+            "source": "BSKY",
+            "text": "lacks fluid movement",
+            "date": "2026-05-23"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, the flat plats are boring compard to that messy core",
+            "date": "2026-05-23"
+          },
           {
             "source": "IG",
             "text": "c\u2019\u00e9tait mieux avant",
@@ -5796,7 +6220,29 @@
             "date": "2026-05-23"
           }
         ],
+        "2026-05-24": [
+          {
+            "source": "BSKY",
+            "text": "skewered cockpitt",
+            "date": "2026-05-24"
+          },
+          {
+            "source": "BSKY",
+            "text": "the solid form fights the mist idea",
+            "date": "2026-05-24"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, the internal planes are jarring",
+            "date": "2026-05-24"
+          }
+        ],
         "2026-05-25": [
+          {
+            "source": "BSKY",
+            "text": "tangled innards",
+            "date": "2026-05-25"
+          },
           {
             "source": "IG",
             "text": "more fragmented",
@@ -5822,12 +6268,22 @@
         ],
         "2026-05-27": [
           {
+            "source": "BSKY",
+            "text": "wait, the pipes look too parallel",
+            "date": "2026-05-27"
+          },
+          {
             "source": "IG",
             "text": "Love the mist in front of the mairie",
             "date": "2026-05-27"
           }
         ],
         "2026-05-28": [
+          {
+            "source": "BSKY",
+            "text": "the inner pipes look like a radiator",
+            "date": "2026-05-28"
+          },
           {
             "source": "TG",
             "text": "make a free visualization showing the detail of how the pieces come together",
@@ -5842,6 +6298,37 @@
             "source": "TG",
             "text": "match the inside to the outside, less machine more deconstrictivist designed structure",
             "date": "2026-05-28"
+          }
+        ],
+        "2026-05-29": [
+          {
+            "source": "BSKY",
+            "text": "structure looks like exploded boxes",
+            "date": "2026-05-29"
+          },
+          {
+            "source": "BSKY",
+            "text": "the ceiling conduits look like circuitry",
+            "date": "2026-05-29"
+          }
+        ],
+        "2026-05-30": [
+          {
+            "source": "BSKY",
+            "text": "those shell plates need more aggressive spatial disruption",
+            "date": "2026-05-30"
+          }
+        ],
+        "2026-05-31": [
+          {
+            "source": "TG",
+            "text": "close the open hole",
+            "date": "2026-05-31"
+          },
+          {
+            "source": "TG",
+            "text": "show it from the left side",
+            "date": "2026-05-31"
           }
         ]
       }
@@ -7068,6 +7555,30 @@
           "lens": "illustration parasite building lebbeus woods.jpg",
           "mutationSummary": "Asymmetrical deconstructivist metallic structure featuring porous, color-coded olfactory panels and sharp, industrial geometric fins.",
           "feedback": []
+        },
+        {
+          "day": 37,
+          "date": "2026-05-31",
+          "image": "media/01_urban_creatures/smell creature/day_37_bw.webp",
+          "imageColor": "media/01_urban_creatures/smell creature/day_37.webp",
+          "reference": "media/01_urban_creatures/smell creature/day_37_reference.webp",
+          "angleImage": "media/01_urban_creatures/smell creature/day_37_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/smell creature/day_37_anchor_34.webp",
+            "media/01_urban_creatures/smell creature/day_37_anchor_35.webp",
+            "media/01_urban_creatures/smell creature/day_37_anchor_36.webp"
+          ],
+          "prompt": "A high-contrast architectural shot at 23 Rue de Malte. The parasitic structure now features violently interlocking, sharp-edged metallic plates that collide at the central axis, breaking all previous symmetry. Replace static struts with aggressive, cantilevered steel beams that puncture the air. The surfaces are now highly porous, industrial-grade mesh grids that trap city grime. The ground-level tentacle extensions are replaced by rigid, surgical needle-like nozzles that emerge from fractured concrete seams. Lighting is flat and diffused to highlight the raw, brutalist texture of the dark steel against the soft limestone of the Haussmann building.",
+          "angle": "site_clay_angle_day_34.png",
+          "lens": "photograph metal glass building on concrete plinth elegant dynamic form.jpg",
+          "mutationSummary": "Violent metallic collisions and porous, jagged panel shifts create radical geometric tension against the rigid Parisian stone facade.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "show in a detailed way how one of those panels works",
+              "date": "2026-05-31"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -7455,6 +7966,11 @@
         ],
         "2026-05-20": [
           {
+            "source": "BSKY",
+            "text": "is the vertical spine feeling too stiff",
+            "date": "2026-05-20"
+          },
+          {
             "source": "IG",
             "text": "make it smell like coffee",
             "date": "2026-05-20"
@@ -7467,12 +7983,54 @@
         ],
         "2026-05-21": [
           {
+            "source": "BSKY",
+            "text": "okay but, the radical form needs deeper structural tension",
+            "date": "2026-05-21"
+          },
+          {
             "source": "IG",
             "text": "like freshly cut grass",
             "date": "2026-05-21"
           }
         ],
+        "2026-05-22": [
+          {
+            "source": "BSKY",
+            "text": "is it just me or are the legs too fragile",
+            "date": "2026-05-22"
+          },
+          {
+            "source": "BSKY",
+            "text": "the sharp fins are like a crushed airplan wing [like]",
+            "date": "2026-05-22"
+          },
+          {
+            "source": "IG",
+            "text": "looks like onion",
+            "date": "2026-05-22"
+          }
+        ],
         "2026-05-23": [
+          {
+            "source": "BSKY",
+            "text": "is the symmetry too rigid, does it look like we made it too stable",
+            "date": "2026-05-23"
+          },
+          {
+            "source": "BSKY",
+            "text": "the heavy plates look like a crushed industrial ventilation unit",
+            "date": "2026-05-23"
+          },
+          {
+            "source": "BSKY",
+            "text": "the white panels look like a deck of cards exploding out of a heavy safe",
+            "date": "2026-05-23"
+          },
+          {
+            "source": "BSKY",
+            "text": "those pointy legs look a bit weak",
+            "date": "2026-05-23"
+          },
           {
             "source": "IG",
             "text": "make it unsymmetrical",
@@ -7484,13 +8042,6 @@
             "date": "2026-05-23"
           }
         ],
-        "2026-05-22": [
-          {
-            "source": "IG",
-            "text": "looks like onion",
-            "date": "2026-05-22"
-          }
-        ],
         "2026-05-24": [
           {
             "source": "TG",
@@ -7498,7 +8049,41 @@
             "date": "2026-05-24"
           }
         ],
+        "2026-05-25": [
+          {
+            "source": "BSKY",
+            "text": "honestly, the plate asymmetry feels a bit random",
+            "date": "2026-05-25"
+          },
+          {
+            "source": "BSKY",
+            "text": "is the middle too solid",
+            "date": "2026-05-25"
+          }
+        ],
+        "2026-05-26": [
+          {
+            "source": "BSKY",
+            "text": "the collision feels impactful, but where is the dynamic shattering of the perimeter?",
+            "date": "2026-05-26"
+          }
+        ],
         "2026-05-27": [
+          {
+            "source": "BSKY",
+            "text": "the core is too dense",
+            "date": "2026-05-27"
+          },
+          {
+            "source": "BSKY",
+            "text": "the metal stack looks way too hevy",
+            "date": "2026-05-27"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, the fragmentation of those cantilevered planes feels truly radical against the grid",
+            "date": "2026-05-27"
+          },
           {
             "source": "IG",
             "text": "Are the smells connected to colours? They should! You know how smells are made up of different ongredients like colours as well?",
@@ -7510,11 +8095,57 @@
             "date": "2026-05-27"
           }
         ],
+        "2026-05-28": [
+          {
+            "source": "BSKY",
+            "text": "the external struts look too static",
+            "date": "2026-05-28"
+          },
+          {
+            "source": "BSKY",
+            "text": "this metallic cluster feels like a heavy spatial rupture [like]",
+            "date": "2026-05-28"
+          },
+          {
+            "source": "BSKY",
+            "text": "those splayed legs look precarious",
+            "date": "2026-05-28"
+          }
+        ],
         "2026-05-29": [
+          {
+            "source": "BSKY",
+            "text": "Beautiful image, really well seen, see more images like this on www.fotogewoon.nl",
+            "date": "2026-05-29"
+          },
           {
             "source": "TG",
             "text": "make a top down image",
             "date": "2026-05-29"
+          }
+        ],
+        "2026-05-30": [
+          {
+            "source": "BSKY",
+            "text": "the metal plates need more violent collision at center",
+            "date": "2026-05-30"
+          },
+          {
+            "source": "BSKY",
+            "text": "the perforated layers seem to lack enough grit",
+            "date": "2026-05-30"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, the spikes feel too rigid",
+            "date": "2026-05-30"
+          }
+        ],
+        "2026-05-31": [
+          {
+            "source": "TG",
+            "text": "show in a detailed way how one of those panels works",
+            "date": "2026-05-31"
           }
         ]
       }
@@ -9155,6 +9786,24 @@
           "lens": "illustration parasite building lebbeus woods.jpg",
           "mutationSummary": "Refining the vertical spine by integrating clean metallic cladding and minimalist geometry to harmonize with the Haussmann fa\u00e7ade.",
           "feedback": []
+        },
+        {
+          "day": 37,
+          "date": "2026-05-31",
+          "image": "media/01_urban_creatures/voice creature/day_37_bw.webp",
+          "imageColor": "media/01_urban_creatures/voice creature/day_37.webp",
+          "reference": "media/01_urban_creatures/voice creature/day_37_reference.webp",
+          "angleImage": "media/01_urban_creatures/voice creature/day_37_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/voice creature/day_37_anchor_34.webp",
+            "media/01_urban_creatures/voice creature/day_37_anchor_35.webp",
+            "media/01_urban_creatures/voice creature/day_37_anchor_36.webp"
+          ],
+          "prompt": "A direct frontal, eye-level perspective of a Haussmann boulevard. The urban creature is a sharp, vertical structural rupture cutting into the stone facade. A series of jagged, high-contrast brushed stainless steel plates are mounted in a DIY fashion, protruding at a dramatic, unstable diagonal tilt. The center of the crack reveals a vertical column of hidden speakers, partially obscured by overlapping angular metallic shards. The structure appears to be tearing the stone apart, with thin, tensioned steel cables humming across the facade surface, catching the natural daylight to emphasize the geometry of the sharp, mechanical plates against the ornate, weathered Parisian masonry.",
+          "angle": "site_straight on eye level view clay day16.png",
+          "lens": "photograph structure roof coop himmelblau.jpg",
+          "mutationSummary": "Violently tilting the central spine to rupture the Haussmann facade with sharp, angular metallic plate extensions.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -9576,6 +10225,11 @@
           },
           {
             "source": "BSKY",
+            "text": "honestly, the anchors feel heavy",
+            "date": "2026-05-19"
+          },
+          {
+            "source": "BSKY",
             "text": "the fabrick needs some damn sharp metalic shrapnel.",
             "date": "2026-05-19"
           },
@@ -9585,26 +10239,94 @@
             "date": "2026-05-19"
           }
         ],
+        "2026-05-20": [
+          {
+            "source": "BSKY",
+            "text": "rupture is shallow",
+            "date": "2026-05-20"
+          },
+          {
+            "source": "BSKY",
+            "text": "steel panels look heavy",
+            "date": "2026-05-20"
+          },
+          {
+            "source": "BSKY",
+            "text": "the geometric tension between the sharp spikes and panels is excessive",
+            "date": "2026-05-20"
+          }
+        ],
         "2026-05-21": [
           {
-            "source": "TG",
-            "text": "remove the spikes",
+            "source": "BSKY",
+            "text": "feels like a confined geyser",
             "date": "2026-05-21"
           },
           {
             "source": "TG",
             "text": "remove all the messy netallic shrapnel and only keep the clean central structure",
             "date": "2026-05-21"
+          },
+          {
+            "source": "TG",
+            "text": "remove the spikes",
+            "date": "2026-05-21"
+          }
+        ],
+        "2026-05-22": [
+          {
+            "source": "BSKY",
+            "text": "the central tower feels too heavy and should dissolve more",
+            "date": "2026-05-22"
+          },
+          {
+            "source": "BSKY",
+            "text": "the stone feels like thin paper",
+            "date": "2026-05-22"
+          }
+        ],
+        "2026-05-23": [
+          {
+            "source": "BSKY",
+            "text": "this urban creature needs more grit",
+            "date": "2026-05-23"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, the vertical poles feel intrusive",
+            "date": "2026-05-23"
           }
         ],
         "2026-05-24": [
+          {
+            "source": "BSKY",
+            "text": "wait, the rupture feels too controlled",
+            "date": "2026-05-24"
+          },
           {
             "source": "TG",
             "text": "kepo the style but make the form more dynamic",
             "date": "2026-05-24"
           }
         ],
+        "2026-05-25": [
+          {
+            "source": "BSKY",
+            "text": "is the symetry hideing a violent collision",
+            "date": "2026-05-25"
+          },
+          {
+            "source": "BSKY",
+            "text": "the metallic skin feels too conventional",
+            "date": "2026-05-25"
+          }
+        ],
         "2026-05-27": [
+          {
+            "source": "BSKY",
+            "text": "it looks like a giant letter opener",
+            "date": "2026-05-27"
+          },
           {
             "source": "IG",
             "text": "Love one and five",
@@ -9614,6 +10336,42 @@
             "source": "IG",
             "text": "the spine seems to destroy the building now",
             "date": "2026-05-27"
+          }
+        ],
+        "2026-05-28": [
+          {
+            "source": "BSKY",
+            "text": "honestly, good tear",
+            "date": "2026-05-28"
+          },
+          {
+            "source": "BSKY",
+            "text": "the central beam needs more dramatic tilt",
+            "date": "2026-05-28"
+          }
+        ],
+        "2026-05-29": [
+          {
+            "source": "BSKY",
+            "text": "hmm, the jagged edges feel too contained now",
+            "date": "2026-05-29"
+          },
+          {
+            "source": "BSKY",
+            "text": "hmm, the stairs look heavy",
+            "date": "2026-05-29"
+          }
+        ],
+        "2026-05-30": [
+          {
+            "source": "BSKY",
+            "text": "do the windows feel a bit crowded",
+            "date": "2026-05-30"
+          },
+          {
+            "source": "BSKY",
+            "text": "the fractured spine violently dissects the classical facade, a spatial rupture [like]",
+            "date": "2026-05-30"
           }
         ]
       }
