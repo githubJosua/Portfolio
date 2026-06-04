@@ -1350,6 +1350,24 @@
           "lens": "model image soft deconstructivist lamp.jpg",
           "mutationSummary": "Reintegrating jagged, piercing beams into the closed tensioned fabric canopy, emphasizing structural rupture and geometric tension.",
           "feedback": []
+        },
+        {
+          "day": 42,
+          "date": "2026-06-04",
+          "image": "media/01_urban_creatures/crown creature/day_42_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_42.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_42_reference.webp",
+          "angleImage": "media/01_urban_creatures/crown creature/day_42_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/crown creature/day_42_anchor_39.webp",
+            "media/01_urban_creatures/crown creature/day_42_anchor_40.webp",
+            "media/01_urban_creatures/crown creature/day_42_anchor_41.webp"
+          ],
+          "prompt": "A low-angle, ground-level view focusing on the tensile canopy unfolding like wings. Introduce a singular, sharp, jagged steel beam that aggressively pierces the central hexagonal core, skewering the structural geometry. The main frame should be refined and minimalist, shedding heavy mass, while the overhead fabric displays precise geometric patterns. Utilize high-contrast lighting to emphasize the intersection of the raw, deconstructivist jagged beam against the delicate, semi-translucent tensioned fabric. The aesthetic must remain industrial and precise, focusing on hard, angular lines and mechanical assembly rather than biological forms.",
+          "angle": "isolated_ground level perspective looking up clay day4.png",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "The canopy now unfolds like kinetic wings, integrating a jagged structural beam that pierces the core geometry.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -1865,9 +1883,21 @@
         ],
         "2026-06-01": [
           {
+            "source": "BSKY",
+            "text": "is that main mast too heavy",
+            "date": "2026-06-01"
+          },
+          {
             "source": "TG",
             "text": "bring the jagged beam back",
             "date": "2026-06-01"
+          }
+        ],
+        "2026-06-03": [
+          {
+            "source": "BSKY",
+            "text": "the new canopy forms look like unfolding wings",
+            "date": "2026-06-03"
           }
         ]
       }
@@ -3297,6 +3327,24 @@
               "date": "2026-06-03"
             }
           ]
+        },
+        {
+          "day": 43,
+          "date": "2026-06-04",
+          "image": "media/01_urban_creatures/glow creature/day_43_bw.webp",
+          "imageColor": "media/01_urban_creatures/glow creature/day_43.webp",
+          "reference": "media/01_urban_creatures/glow creature/day_43_reference.webp",
+          "angleImage": "media/01_urban_creatures/glow creature/day_43_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/glow creature/day_43_anchor_40.webp",
+            "media/01_urban_creatures/glow creature/day_43_anchor_41.webp",
+            "media/01_urban_creatures/glow creature/day_43_anchor_42.webp"
+          ],
+          "prompt": "A tight, low-angle shot focusing on the intersection of aggressive, sharp-edged steel struts and translucent glass panels. Eliminate all organic curves; prioritize rigid, violent geometry. The structure should appear as a fractured, unstable construction where panels are held by precarious, exposed mechanical joints. The interior core should radiate an intense, warm glow that bleeds through the edges of the semi-transparent glass. The background is a dark, high-contrast void to emphasize the glowing seams and the harsh, industrial materiality of the metallic frames, showcasing the architectural tension and the 'shattered lantern' aesthetic.",
+          "angle": "isolated_close up geometric architectural detail clay day5.png",
+          "lens": "model bent metal dynamic curved House.png",
+          "mutationSummary": "Intensifying urban fracturing through hyper-articulated, metallic joints that suspend glowing, translucent glass fragments in a high-tension, non-organic assembly.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -3849,7 +3897,19 @@
             "date": "2026-05-30"
           }
         ],
+        "2026-05-31": [
+          {
+            "source": "BSKY",
+            "text": "This makes me stop and look,see more images like this on www.fotogewoon.nl",
+            "date": "2026-05-31"
+          }
+        ],
         "2026-06-01": [
+          {
+            "source": "BSKY",
+            "text": "the botom shards look too heavy",
+            "date": "2026-06-01"
+          },
           {
             "source": "TG",
             "text": "a bit less brokenplease",
@@ -3858,12 +3918,32 @@
         ],
         "2026-06-02": [
           {
+            "source": "BSKY",
+            "text": "shards look like a shatterd lantern",
+            "date": "2026-06-02"
+          },
+          {
             "source": "TG",
             "text": "less small pieces",
             "date": "2026-06-02"
           }
         ],
         "2026-06-03": [
+          {
+            "source": "BSKY",
+            "text": "are those panels even ankored",
+            "date": "2026-06-03"
+          },
+          {
+            "source": "BSKY",
+            "text": "joints seem fragile",
+            "date": "2026-06-03"
+          },
+          {
+            "source": "BSKY",
+            "text": "okay but the base could imply more violent urban fracturing",
+            "date": "2026-06-03"
+          },
           {
             "source": "TG",
             "text": "more fragmented",
@@ -4488,6 +4568,30 @@
           "lens": "model image conceptual destruction to reconstruction.png",
           "mutationSummary": "Shattered the containment, shifting heavy metal plates into a weird, non-linear geometric sprawl to hide internal mechanical chaos.",
           "feedback": []
+        },
+        {
+          "day": 23,
+          "date": "2026-06-04",
+          "image": "media/01_urban_creatures/lines creature/day_23_bw.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_23.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_23_reference.webp",
+          "angleImage": "media/01_urban_creatures/lines creature/day_23_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/lines creature/day_23_anchor_20.webp",
+            "media/01_urban_creatures/lines creature/day_23_anchor_21.webp",
+            "media/01_urban_creatures/lines creature/day_23_anchor_22.webp"
+          ],
+          "prompt": "Render a high-contrast, deconstructivist geometric intervention on the Boulevard Voltaire facade. The metallic capsule is fractured into sharp, jagged plates that hover and shift, revealing a hollow core. Replace the clunky base with a series of aggressive, razor-sharp steel extrusions that pierce directly into the stone sidewalk, visually destabilizing the building's edge. Ensure all internal cables and machinery are concealed behind polished, reflective steel panels. The atmosphere should be cold and industrial, using deep, sharp shadows to emphasize the tension between the heavy stone environment and the fragmented, airborne metal form. No organic curves allowed; maintain strict, jagged, linear geometry.",
+          "angle": "site_clay_angle_day_17.png",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "Shattering the central volume into kinetic metallic shards, erupting from the Haussmann stone to defy gravity.",
+          "feedback": [
+            {
+              "source": "BSKY",
+              "text": "wait, stone looks crushed",
+              "date": "2026-06-04"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -4786,7 +4890,29 @@
             "date": "2026-05-30"
           }
         ],
+        "2026-05-31": [
+          {
+            "source": "BSKY",
+            "text": "looks like a crushed toaster",
+            "date": "2026-05-31"
+          },
+          {
+            "source": "BSKY",
+            "text": "the fragmented geometry lacks the necessary tension between volume and void",
+            "date": "2026-05-31"
+          }
+        ],
         "2026-06-01": [
+          {
+            "source": "BSKY",
+            "text": "it looks like a crashed metal satelite",
+            "date": "2026-06-01"
+          },
+          {
+            "source": "BSKY",
+            "text": "the sharp volume feels like a crushed spatial frame interrupting the street network",
+            "date": "2026-06-01"
+          },
           {
             "source": "TG",
             "text": "hide the cables",
@@ -4796,6 +4922,25 @@
             "source": "TG",
             "text": "make the form more weird and less contained",
             "date": "2026-06-01"
+          }
+        ],
+        "2026-06-02": [
+          {
+            "source": "BSKY",
+            "text": "honestly, those dark panels look way too heavy for that tiny little base",
+            "date": "2026-06-02"
+          },
+          {
+            "source": "BSKY",
+            "text": "the fragmented forms, do they tell a story of breaking or becoming",
+            "date": "2026-06-02"
+          }
+        ],
+        "2026-06-04": [
+          {
+            "source": "BSKY",
+            "text": "wait, stone looks crushed",
+            "date": "2026-06-04"
           }
         ]
       }
@@ -6112,6 +6257,30 @@
           "lens": "photograph structure deconstructivist additions.jpg",
           "mutationSummary": "Fragmented geometric plates erupting outward, revealing a complex, non-linear mechanical core in a high-contrast deconstructivist urban installation.",
           "feedback": []
+        },
+        {
+          "day": 44,
+          "date": "2026-06-04",
+          "image": "media/01_urban_creatures/mist creature/day_44_bw.webp",
+          "imageColor": "media/01_urban_creatures/mist creature/day_44.webp",
+          "reference": "media/01_urban_creatures/mist creature/day_44_reference.webp",
+          "angleImage": "media/01_urban_creatures/mist creature/day_44_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/mist creature/day_44_anchor_41.webp",
+            "media/01_urban_creatures/mist creature/day_44_anchor_42.webp",
+            "media/01_urban_creatures/mist creature/day_44_anchor_43.webp"
+          ],
+          "prompt": "A sharp, deconstructivist geometric study in bright, diffused Parisian daylight. The main structure features rigid, metallic exterior plates that are actively shattered and shifted, revealing an intricate, high-contrast mechanical core beneath. The composition avoids soft curves, favoring angular, broken planes and exposed structural joints. The core is composed of sharp, non-parallel metal conduits that poke through the deliberate gaps in the shell. The aesthetic emphasizes tectonic assembly, using a mix of weathered, oxidized steel and polished, reflective silver finish to highlight the structural disruption. No organic or biomorphic forms; the feeling is one of precise, industrial kinetic tension.",
+          "angle": "isolated_isometric axonometry front.png",
+          "lens": "model image conceptual destruction to reconstruction.png",
+          "mutationSummary": "Disrupted geometric plates reveal an aggressive metallic core, shifting from static mass to dynamic, deconstructivist structural fragmentation.",
+          "feedback": [
+            {
+              "source": "BSKY",
+              "text": "the shattered plates look too ordered for this collision",
+              "date": "2026-06-04"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -6612,6 +6781,11 @@
         ],
         "2026-05-31": [
           {
+            "source": "BSKY",
+            "text": "honestly, the interior space needs more sense of flow",
+            "date": "2026-05-31"
+          },
+          {
             "source": "TG",
             "text": "close the open hole",
             "date": "2026-05-31"
@@ -6620,6 +6794,34 @@
             "source": "TG",
             "text": "show it from the left side",
             "date": "2026-05-31"
+          }
+        ],
+        "2026-06-01": [
+          {
+            "source": "BSKY",
+            "text": "mass feels static",
+            "date": "2026-06-01"
+          }
+        ],
+        "2026-06-02": [
+          {
+            "source": "BSKY",
+            "text": "shel feels too open",
+            "date": "2026-06-02"
+          }
+        ],
+        "2026-06-03": [
+          {
+            "source": "BSKY",
+            "text": "do these cables feel too heavy",
+            "date": "2026-06-03"
+          }
+        ],
+        "2026-06-04": [
+          {
+            "source": "BSKY",
+            "text": "the shattered plates look too ordered for this collision",
+            "date": "2026-06-04"
           }
         ]
       }
@@ -10262,6 +10464,35 @@
           "lens": "rendering tech color vertical structure with insets.jpg",
           "mutationSummary": "Evolving the Haussmann crack into a rigid, tilted acoustic monolith with integrated, shutter-like metallic fins.",
           "feedback": []
+        },
+        {
+          "day": 41,
+          "date": "2026-06-04",
+          "image": "media/01_urban_creatures/voice creature/day_41_bw.webp",
+          "imageColor": "media/01_urban_creatures/voice creature/day_41.webp",
+          "reference": "media/01_urban_creatures/voice creature/day_41_reference.webp",
+          "angleImage": "media/01_urban_creatures/voice creature/day_41_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/voice creature/day_41_anchor_38.webp",
+            "media/01_urban_creatures/voice creature/day_41_anchor_39.webp",
+            "media/01_urban_creatures/voice creature/day_41_anchor_40.webp"
+          ],
+          "prompt": "A direct frontal elevation view of a vertical crack in a classic Parisian Haussmann facade. The masonry is violently split, with sharp, jagged stone edges. Inside the crack, a dense, asymmetric stack of brushed metallic panels creates a mechanical 'spine'. These panels are mounted via raw, exposed heavy-duty hardware and steel brackets that pierce the adjacent stone walls. The central core is tilted at a severe, non-symmetrical angle, replacing previous rhythmic slats with a chaotic, non-repeating array of bent metal blades. High-contrast, dramatic studio lighting emphasizes the sharp reflections on the metal and the deep shadows within the fissure. No organic or curved elements; strict adherence to industrial, functional-surrealist geometry.",
+          "angle": "site_straight on eye level view clay day16.png",
+          "lens": "model bent metal dynamic curved House.png",
+          "mutationSummary": "Violent vertical rupture, stripping back the Haussmann stone to reveal aggressive, asymmetric mechanical sound-harvesting panels.",
+          "feedback": [
+            {
+              "source": "BSKY",
+              "text": "do those horizontal slats look too rhythmic for us",
+              "date": "2026-06-04"
+            },
+            {
+              "source": "TG",
+              "text": "zoom in on the entrance",
+              "date": "2026-06-04"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -10830,6 +11061,56 @@
             "source": "BSKY",
             "text": "the fractured spine violently dissects the classical facade, a spatial rupture [like]",
             "date": "2026-05-30"
+          }
+        ],
+        "2026-05-31": [
+          {
+            "source": "BSKY",
+            "text": "metal splintr [like]",
+            "date": "2026-05-31"
+          }
+        ],
+        "2026-06-01": [
+          {
+            "source": "BSKY",
+            "text": "cables look like spaghetti",
+            "date": "2026-06-01"
+          },
+          {
+            "source": "BSKY",
+            "text": "we think the main spire looks like a crushed vertical elevator car",
+            "date": "2026-06-01"
+          }
+        ],
+        "2026-06-02": [
+          {
+            "source": "BSKY",
+            "text": "is the core too symetrical",
+            "date": "2026-06-02"
+          }
+        ],
+        "2026-06-03": [
+          {
+            "source": "BSKY",
+            "text": "rupture could be more violent",
+            "date": "2026-06-03"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, base stiff",
+            "date": "2026-06-03"
+          }
+        ],
+        "2026-06-04": [
+          {
+            "source": "BSKY",
+            "text": "do those horizontal slats look too rhythmic for us",
+            "date": "2026-06-04"
+          },
+          {
+            "source": "TG",
+            "text": "zoom in on the entrance",
+            "date": "2026-06-04"
           }
         ]
       }
