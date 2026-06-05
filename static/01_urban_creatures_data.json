@@ -1368,6 +1368,24 @@
           "lens": "photograph structure deconstructivist additions.jpg",
           "mutationSummary": "The canopy now unfolds like kinetic wings, integrating a jagged structural beam that pierces the core geometry.",
           "feedback": []
+        },
+        {
+          "day": 43,
+          "date": "2026-06-05",
+          "image": "media/01_urban_creatures/crown creature/day_43_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_43.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_43_reference.webp",
+          "angleImage": "media/01_urban_creatures/crown creature/day_43_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/crown creature/day_43_anchor_40.webp",
+            "media/01_urban_creatures/crown creature/day_43_anchor_41.webp",
+            "media/01_urban_creatures/crown creature/day_43_anchor_42.webp"
+          ],
+          "prompt": "A low-angle, architectural photograph of the structure in Jardin Truillot. The canopy has evolved into sweeping, wing-like tensile forms that stretch toward the sky. The heavy central mast is removed, replaced by a complex, light-weight steel framework that anchors to the perimeter walls. The fabric membrane is a semi-translucent, high-tech mesh with intricate geometric patterns that cast sharp, layered shadows on the park ground. The overall aesthetic is functional-surrealist, emphasizing the structural contrast between the cold, brushed stainless steel tensile elements and the light, porous canopy. The lighting is flat and diffused, highlighting the crystalline assembly of the joints and the elegant, soaring scale of the structure as it mediates the space between the city and the sky.",
+          "angle": "isolated_perspective from the middle open roof one person.png",
+          "lens": "photograph metal glass building on concrete plinth elegant dynamic form.jpg",
+          "mutationSummary": "Evolving into unfolding wing-like canopy geometry, replacing heavy masts with tension-driven, lightweight structural articulation and translucent solar-patterned membranes.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -3345,6 +3363,24 @@
           "lens": "model bent metal dynamic curved House.png",
           "mutationSummary": "Intensifying urban fracturing through hyper-articulated, metallic joints that suspend glowing, translucent glass fragments in a high-tension, non-organic assembly.",
           "feedback": []
+        },
+        {
+          "day": 44,
+          "date": "2026-06-05",
+          "image": "media/01_urban_creatures/glow creature/day_44_bw.webp",
+          "imageColor": "media/01_urban_creatures/glow creature/day_44.webp",
+          "reference": "media/01_urban_creatures/glow creature/day_44_reference.webp",
+          "angleImage": "media/01_urban_creatures/glow creature/day_44_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/glow creature/day_44_anchor_41.webp",
+            "media/01_urban_creatures/glow creature/day_44_anchor_42.webp",
+            "media/01_urban_creatures/glow creature/day_44_anchor_43.webp"
+          ],
+          "prompt": "A radical, low-angle perspective at the intersection of Boulevard Voltaire and Richard Lenoir. The central structure has evolved into a chaotic, fragmented cluster of sharp-edged, translucent glass shards and thin, exposed steel bracing that pierce the air. Replace the heavy, grounded base with a series of jagged, floating geometric planes that appear to be actively breaking apart. Intense, internal red light leaks from the gaps between these shards, casting long, sharp-edged shadows against the classical Parisian facade. Emphasize the collision between the brutal, sharp-edged geometric form and the surrounding historical stone. No organic or soft forms; maintain a strictly industrial, deconstructivist language of high-contrast metallic tension and luminous, bleeding light.",
+          "angle": "site_clay_angle_day_30.png",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "Shattering the central mass into aggressive, fragmented light-shards to dissolve static weight and force urban fracture.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -3948,6 +3984,13 @@
             "source": "TG",
             "text": "more fragmented",
             "date": "2026-06-03"
+          }
+        ],
+        "2026-06-04": [
+          {
+            "source": "BSKY",
+            "text": "hmm, glass looks heavy",
+            "date": "2026-06-04"
           }
         ]
       }
@@ -4592,6 +4635,35 @@
               "date": "2026-06-04"
             }
           ]
+        },
+        {
+          "day": 24,
+          "date": "2026-06-05",
+          "image": "media/01_urban_creatures/lines creature/day_24_bw.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_24.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_24_reference.webp",
+          "angleImage": "media/01_urban_creatures/lines creature/day_24_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/lines creature/day_24_anchor_21.webp",
+            "media/01_urban_creatures/lines creature/day_24_anchor_22.webp",
+            "media/01_urban_creatures/lines creature/day_24_anchor_23.webp"
+          ],
+          "prompt": "An architectural, high-contrast studio rendering of a geometric metal capsule embedded into a traditional Parisian Haussmann limestone wall. The metal structure shifts from a rigid cube into a series of fluid, overlapping, precision-engineered brushed-metal plates that flow down into the sidewalk like tectonic shifts. Replace the clunky, heavy base with a tapering, skeletal-braced transition that meets the ground with delicate, sharp, illuminated points. The metal surfaces should exhibit a 'breathing' effect via subtle, layered kinetic shifts. The ground plane should feature glowing, rhythmic lines extending from the capsule's base, integrating into the street. High-precision hardware joints, stark metallic textures, no organic shapes; focus on mechanical, urban-utopian precision.",
+          "angle": "site_clay_angle_day_21.png",
+          "lens": "model bent metal dynamic curved House.png",
+          "mutationSummary": "Evolving fluid-geometric skin transition, shedding heavy base weight while integrating pulsating luminous facets into the Haussmann stone facade.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "show me a side elevation",
+              "date": "2026-06-05"
+            },
+            {
+              "source": "TG",
+              "text": "no text",
+              "date": "2026-06-05"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -4939,8 +5011,25 @@
         "2026-06-04": [
           {
             "source": "BSKY",
+            "text": "the transition from wall to creature needs more fluidity",
+            "date": "2026-06-04"
+          },
+          {
+            "source": "BSKY",
             "text": "wait, stone looks crushed",
             "date": "2026-06-04"
+          }
+        ],
+        "2026-06-05": [
+          {
+            "source": "TG",
+            "text": "show me a side elevation",
+            "date": "2026-06-05"
+          },
+          {
+            "source": "TG",
+            "text": "no text",
+            "date": "2026-06-05"
           }
         ]
       }
@@ -6281,6 +6370,35 @@
               "date": "2026-06-04"
             }
           ]
+        },
+        {
+          "day": 45,
+          "date": "2026-06-05",
+          "image": "media/01_urban_creatures/mist creature/day_45_bw.webp",
+          "imageColor": "media/01_urban_creatures/mist creature/day_45.webp",
+          "reference": "media/01_urban_creatures/mist creature/day_45_reference.webp",
+          "angleImage": "media/01_urban_creatures/mist creature/day_45_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/mist creature/day_45_anchor_42.webp",
+            "media/01_urban_creatures/mist creature/day_45_anchor_43.webp",
+            "media/01_urban_creatures/mist creature/day_45_anchor_44.webp"
+          ],
+          "prompt": "A technical orthographic section drawing in high-contrast black and white. The central volume is deconstructed into shifting, non-aligned steel plates that break the previous monolithic form. The interior void is no longer static; long, aggressive gaps in the skin allow the internal metal apparatus to pierce through the outer shell. Cables are refined into precise, sharp lines\u2014avoiding thickness\u2014while the structural joints are highlighted with stark, technical precision. The overall aesthetic is a collision of fragmented, hard-edged geometric volumes, eschewing symmetry for a deliberate, functional-surrealist disruption. No organic curves or shadows; all forms must be sharp, planar, and architecturally rigid.",
+          "angle": "isolated_orthographic architectural section cut through the middle.png",
+          "lens": "building section geometric volumes hard shadows black and white.jpg",
+          "mutationSummary": "Shattered structural planes and aggressive, non-aligned geometric voids replace the heavy core to prioritize spatial flow and transparency.",
+          "feedback": [
+            {
+              "source": "BSKY",
+              "text": "the central cable looks too thin",
+              "date": "2026-06-05"
+            },
+            {
+              "source": "TG",
+              "text": "close the hole",
+              "date": "2026-06-05"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -6822,6 +6940,18 @@
             "source": "BSKY",
             "text": "the shattered plates look too ordered for this collision",
             "date": "2026-06-04"
+          }
+        ],
+        "2026-06-05": [
+          {
+            "source": "BSKY",
+            "text": "the central cable looks too thin",
+            "date": "2026-06-05"
+          },
+          {
+            "source": "TG",
+            "text": "close the hole",
+            "date": "2026-06-05"
           }
         ]
       }
@@ -10493,6 +10623,40 @@
               "date": "2026-06-04"
             }
           ]
+        },
+        {
+          "day": 42,
+          "date": "2026-06-05",
+          "image": "media/01_urban_creatures/voice creature/day_42_bw.webp",
+          "imageColor": "media/01_urban_creatures/voice creature/day_42.webp",
+          "reference": "media/01_urban_creatures/voice creature/day_42_reference.webp",
+          "angleImage": "media/01_urban_creatures/voice creature/day_42_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/voice creature/day_42_anchor_39.webp",
+            "media/01_urban_creatures/voice creature/day_42_anchor_40.webp",
+            "media/01_urban_creatures/voice creature/day_42_anchor_41.webp"
+          ],
+          "prompt": "A high-contrast architectural rendering in the style of Lebbeus Woods. The central vertical crack in the Parisian Haussmann facade is violently expanded by jagged, oxidized corten steel shards that rip through the masonry. The primary spire is tilted at a sharp, dramatic angle, destabilizing the symmetry. Horizontal metal fins are skewed and rotated, overlapping like serrated blades. The base of the crack is torn open to bleed onto the sidewalk with concrete rubble and exposed steel structural outriggers. Crisp white masonry surrounds the dark, metallic intrusion, with sharp lighting casting long, hard shadows to emphasize the geometric tension and gravity-defying collision.",
+          "angle": "site_clay_angle_day_40.png",
+          "lens": "illustration parasite building lebbeus woods.jpg",
+          "mutationSummary": "Violent jagged metal shards puncture the Haussmann stone, tilting the central spine into an aggressive, asymmetrical urban rupture.",
+          "feedback": [
+            {
+              "source": "BSKY",
+              "text": "the jagged metal is finally winning against the stone",
+              "date": "2026-06-05"
+            },
+            {
+              "source": "TG",
+              "text": "everything should speak the same aesthetic language",
+              "date": "2026-06-05"
+            },
+            {
+              "source": "TG",
+              "text": "tilt the horizontal fins",
+              "date": "2026-06-05"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -11111,6 +11275,23 @@
             "source": "TG",
             "text": "zoom in on the entrance",
             "date": "2026-06-04"
+          }
+        ],
+        "2026-06-05": [
+          {
+            "source": "BSKY",
+            "text": "the jagged metal is finally winning against the stone",
+            "date": "2026-06-05"
+          },
+          {
+            "source": "TG",
+            "text": "everything should speak the same aesthetic language",
+            "date": "2026-06-05"
+          },
+          {
+            "source": "TG",
+            "text": "tilt the horizontal fins",
+            "date": "2026-06-05"
           }
         ]
       }
