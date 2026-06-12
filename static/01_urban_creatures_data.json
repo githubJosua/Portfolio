@@ -1462,6 +1462,34 @@
           "lens": "photograph structure deconstructivist additions.jpg",
           "mutationSummary": "Structure now slants aggressively, featuring jagged, braced steel collisions and tensioned geometry to evoke raw, urban rupture.",
           "feedback": []
+        },
+        {
+          "day": 50,
+          "date": "2026-06-12",
+          "image": "media/01_urban_creatures/crown creature/day_50_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_50.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_50_reference.webp",
+          "angleImage": "media/01_urban_creatures/crown creature/day_50_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/crown creature/day_50_anchor_48.webp",
+            "media/01_urban_creatures/crown creature/day_50_anchor_49.webp"
+          ],
+          "prompt": "An architectural low-angle wide shot of a tensile structure in Jardin Truillot. The canopy is aggressively sliced, with the fabric pulled taut into sharp, angular gaps. Crisp, neo-futurist white steel members frame the structure, exhibiting jagged, non-linear collisions at the joints. The material is a clean, translucent technical membrane that reveals the intricate steel geometry beneath. No organic curves or soft shapes; all transitions are geometric and fragmented. High-contrast daylight casting sharp, precise shadows on the park ground, emphasizing the structural rupture and the tension of the cables against the sky.",
+          "angle": "isolated_low angle full view clay day6.png",
+          "lens": "photograph structure roof coop himmelblau.jpg",
+          "mutationSummary": "Snapping the tension structure open, the fabric slices into geometric voids, revealing a sharp, non-linear steel skeleton.",
+          "feedback": [
+            {
+              "source": "TG",
+              "text": "show it from the left side",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "TG",
+              "text": "less dark more playful",
+              "date": "2026-06-12"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -3389,6 +3417,75 @@
             "source": "TG",
             "text": "less shattered",
             "date": "2026-06-10"
+          }
+        ],
+        "2026-06-11": [
+          {
+            "source": "BSKY",
+            "text": "honestly, it needs more breaks, less solid",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "idk, looks kinda solid now, we need to snap it open",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "looks like a giant beetle",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "okay but, thin means it has to flex, keep transforming",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "that bottom joint feels heavy",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, pull it thin like a soap bubble",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, maybe stretch the skin to make it flow",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, the mid-section feels clunky",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah maya but if you snap it the steel ribs might look too thick, right?",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah pull the tent open",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true but maybe slice the shell",
+            "date": "2026-06-11"
+          }
+        ],
+        "2026-06-12": [
+          {
+            "source": "TG",
+            "text": "show it from the left side",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "TG",
+            "text": "less dark more playful",
+            "date": "2026-06-12"
           }
         ]
       }
@@ -7686,6 +7783,59 @@
           "lens": "rendering tech color isolated cyberpunk station.jpg",
           "mutationSummary": "The hub unfolds, extending kinetic plates into the street, dissolving its static container into a dynamic, shifting urban geometry.",
           "feedback": []
+        },
+        {
+          "day": 29,
+          "date": "2026-06-12",
+          "image": "media/01_urban_creatures/lines creature/day_29_bw.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_29.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_29_reference.webp",
+          "angleImage": "media/01_urban_creatures/lines creature/day_29_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/lines creature/day_29_anchor_27.webp",
+            "media/01_urban_creatures/lines creature/day_29_anchor_28.webp"
+          ],
+          "prompt": "Render the geometric capsule with a series of sharp, deliberate diagonal slices across the main volume. The metal panels should appear as if they are being mechanically pulled apart, revealing the precise internal gearing and structural framework. Tilt the entire structure aggressively to create a sense of tension against the Parisian masonry. Implement clean, high-contrast lighting to highlight the gap between the brushed stainless steel sheets. The base must transition into the pavement with jagged, intentional cuts that suggest the structure is physically embedded in the ground, rather than sitting on it. Emphasize the industrial, functional aesthetic by keeping the lines straight and crisp, avoiding any soft curves.",
+          "angle": "site_clay_angle_day_27.png",
+          "lens": "photograph structure roof coop himmelblau.jpg",
+          "mutationSummary": "Sliced, tilted metal planes unfolding to reveal mechanical guts, streamlining the heavy shell into a dynamic, angular urban intervention.",
+          "feedback": [
+            {
+              "source": "BSKY",
+              "text": "maybe just flatten the panels a bit",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "tilt more",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally, make it crooked",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally, open the gaps",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "yeah, and we need to open those gaps",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "yeah, slice",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "yeah, slice it, maybe that makes the whole thing sleeker",
+              "date": "2026-06-12"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -8956,6 +9106,110 @@
             "source": "BSKY",
             "text": "yeah, let it truly dissolve its container",
             "date": "2026-06-10"
+          }
+        ],
+        "2026-06-11": [
+          {
+            "source": "BSKY",
+            "text": "bottom parts could be less random, more intentional",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, just simplify shapes",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, open more",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, the top looks chunky",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "let light reveal guts",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "melt into pavement",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, let more light spill",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, looks like a heavy shell, we should thin the top plates out",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, maybe shave off the sides so it feels less heavy",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah and let those bottom panels reach the street",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, lean it",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, let it flow into the street",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, streamline the panels, too thick",
+            "date": "2026-06-11"
+          }
+        ],
+        "2026-06-12": [
+          {
+            "source": "BSKY",
+            "text": "maybe just flatten the panels a bit",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "tilt more",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, make it crooked",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, open the gaps",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, and we need to open those gaps",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, slice",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, slice it, maybe that makes the whole thing sleeker",
+            "date": "2026-06-12"
           }
         ]
       }
@@ -10376,6 +10630,23 @@
           "angle": "isolated_high angle isometric perspective clay day23.png",
           "lens": "model image soft deconstructivist lamp.jpg",
           "mutationSummary": "Origami-inspired shifting plates create a kinetic, water-like ripple, concealing the heavy core behind thin, sliding metallic layers.",
+          "feedback": []
+        },
+        {
+          "day": 50,
+          "date": "2026-06-12",
+          "image": "media/01_urban_creatures/mist creature/day_50_bw.webp",
+          "imageColor": "media/01_urban_creatures/mist creature/day_50.webp",
+          "reference": "media/01_urban_creatures/mist creature/day_50_reference.webp",
+          "angleImage": "media/01_urban_creatures/mist creature/day_50_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/mist creature/day_50_anchor_48.webp",
+            "media/01_urban_creatures/mist creature/day_50_anchor_49.webp"
+          ],
+          "prompt": "A sharp, symmetrical front-facing view of the Mist Creature in bright Parisian daylight. The structure consists of thin, interlocking geometric metal plates that slide and overlap, forming an origami-like shell. The central core is partially revealed through thin, jagged gaps between the plates. Joints are clean and neat, featuring visible, precise mechanical connections. No organic forms, blobs, or soft curves. The overall aesthetic is functional-surrealist, emphasizing the tension of the shifting, paper-thin metallic planes that generate dense mist from their faceted edges. Focus on structural articulation and the contrast between the rigid metal shell and the ephemeral mist.",
+          "angle": "isolated_front facing symmetrical view clay day20.png",
+          "lens": "rendering tech color vertical structure with insets.jpg",
+          "mutationSummary": "The Mist Creature evolves into a kinetic origami assembly, featuring sliding, paper-thin plates that ripple with mechanical precision.",
           "feedback": []
         }
       ],
@@ -13355,6 +13626,33 @@
             "source": "BSKY",
             "text": "yeah, thin plates reveal its true origami heart",
             "date": "2026-06-10"
+          }
+        ],
+        "2026-06-11": [
+          {
+            "source": "BSKY",
+            "text": "is it just me or is that antenna too long",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "the core's plates need more dynamic edges",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "the pipes inside look a bit too crowded for the tiny people",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "untie those knots",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, tangle",
+            "date": "2026-06-11"
           }
         ]
       }
@@ -19811,6 +20109,114 @@
               "date": "2026-06-11"
             }
           ]
+        },
+        {
+          "day": 47,
+          "date": "2026-06-12",
+          "image": "media/01_urban_creatures/voice creature/day_47_bw.webp",
+          "imageColor": "media/01_urban_creatures/voice creature/day_47.webp",
+          "reference": "media/01_urban_creatures/voice creature/day_47_reference.webp",
+          "angleImage": "media/01_urban_creatures/voice creature/day_47_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/voice creature/day_47_anchor_45.webp",
+            "media/01_urban_creatures/voice creature/day_47_anchor_46.webp"
+          ],
+          "prompt": "A direct eye-level elevation of the Parisian Haussmann facade featuring a vertical, tectonic rupture. The central installation consists of layered, ultra-thin metal sheets that appear as an unfolding, crooked accordion of silver and gunmetal plating. The plates are physically detached from the masonry, appearing to float through subtle, jagged gaps. The connection points are intentionally thin, minimalist brackets that emphasize the lightness of the shifting layers. The overall composition is sharp, angular, and industrial; the metal panels are warped and slightly tilted to create a sense of movement. The masonry remains static and weathered, providing a stark, high-contrast backdrop to the precise, mechanical articulation of the floating metal shards. No organic forms, no moss, no wires.",
+          "angle": "site_straight on eye level view clay day16.png",
+          "lens": "model bent metal dynamic curved House.png",
+          "mutationSummary": "Thinning metallic sheets into an accordion of floating, crooked layers, peeling back the Haussmann facade like industrial foil.",
+          "feedback": [
+            {
+              "source": "BSKY",
+              "text": "honestly, layers would help it look less heavy",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "honestly, make it look lighter",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "honestly, thin layers would let it ripple and adapt to the flow",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "honestly, thin metal sheets would ripple",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally and what if the inner layers were crooked",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally, but make the layers look more crooked",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally, curve thos big plates",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally, like a metal acordion",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally, like liquid metal",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally, like loose paper sheets just sliding",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally, maybe the ripples should look like soft metal",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "wait, thin like foil",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "wait, tilt them",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "yeah no, soft metal allows for more active unfolding",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "yeah thinner layers",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "yeah true, and those thin layers could shift with sound",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "yeah true, tilt them for flow",
+              "date": "2026-06-12"
+            },
+            {
+              "source": "BSKY",
+              "text": "yes, an audible creature",
+              "date": "2026-06-12"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -24200,7 +24606,27 @@
         "2026-06-11": [
           {
             "source": "BSKY",
+            "text": "do the metal plates feel a bit too thick",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
             "text": "drift crooked",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "exactly, almost like unfolding layers",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "hmm, let them hum when they slide",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "the connection at the wall looks way too stiff, make it float instead",
             "date": "2026-06-11"
           },
           {
@@ -24215,8 +24641,145 @@
           },
           {
             "source": "BSKY",
+            "text": "totally, and those shifting layers could be a proper instrument",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, more dynamic thin layers",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
             "text": "totally, thinning stones makes the wall look like a stack of community flyers for change",
             "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah maybe make those layers slide past light",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah no, just flowing",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true, shifting layers could feel more active, like it\u2019s responding to pressure",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true, then it could actually ripple, reacting to sound maybe",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true, they do feel a bit chunky, what if it was more like shifting layers instead",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, like the facade is peeling back, revealing what's inside",
+            "date": "2026-06-11"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, thin them out like fabric",
+            "date": "2026-06-11"
+          }
+        ],
+        "2026-06-12": [
+          {
+            "source": "BSKY",
+            "text": "honestly, layers would help it look less heavy",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, make it look lighter",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, thin layers would let it ripple and adapt to the flow",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, thin metal sheets would ripple",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally and what if the inner layers were crooked",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, but make the layers look more crooked",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, curve thos big plates",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, like a metal acordion",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, like liquid metal",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, like loose paper sheets just sliding",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, maybe the ripples should look like soft metal",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, thin like foil",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, tilt them",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah no, soft metal allows for more active unfolding",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah thinner layers",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true, and those thin layers could shift with sound",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true, tilt them for flow",
+            "date": "2026-06-12"
+          },
+          {
+            "source": "BSKY",
+            "text": "yes, an audible creature",
+            "date": "2026-06-12"
           }
         ]
       }
