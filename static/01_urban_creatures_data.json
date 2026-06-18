@@ -1541,6 +1541,23 @@
               "date": "2026-06-15"
             }
           ]
+        },
+        {
+          "day": 56,
+          "date": "2026-06-18",
+          "image": "media/01_urban_creatures/crown creature/day_56_bw.webp",
+          "imageColor": "media/01_urban_creatures/crown creature/day_56.webp",
+          "reference": "media/01_urban_creatures/crown creature/day_56_reference.webp",
+          "angleImage": "media/01_urban_creatures/crown creature/day_56_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/crown creature/day_56_anchor_54.webp",
+            "media/01_urban_creatures/crown creature/day_56_anchor_55.webp"
+          ],
+          "prompt": "A low-angle interior perspective featuring a complex tension structure. The central canopy fabric is heavily bunched and sagging, creating a makeshift, 'rebel hideout' aesthetic. The rigid, deconstructivist steel ribs are intentionally kinked, creating jagged, sharp-angled collisions. A solitary human figure is framed within the space, beneath the deep, cascading folds of the canopy. Use a high-contrast industrial style with raw concrete textures juxtaposed against thin, tensioned cables. The lighting should be overcast, emphasizing the sharp structural non-linearity and the deep, dark voids where the fabric folds upon itself.",
+          "angle": "isolated_perspective from the middle half open roof one person.png",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "Evolving into a rebel hideout: fabric bunches like blankets, spine kinks, structure sags to mask the entrance.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -3590,6 +3607,11 @@
         ],
         "2026-06-15": [
           {
+            "source": "BSKY",
+            "text": "ribs look pointy",
+            "date": "2026-06-15"
+          },
+          {
             "source": "IG",
             "text": "make the structure lighter",
             "date": "2026-06-15"
@@ -3598,6 +3620,105 @@
             "source": "TG",
             "text": "make it simpler",
             "date": "2026-06-15"
+          }
+        ],
+        "2026-06-16": [
+          {
+            "source": "BSKY",
+            "text": "edges feel too clean",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "hmm, yeah, loosen those tight joints",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "hmm, yes, kink it then let it fold in on itself, much more evolving",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "it looks like a giant white moth landed there",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "kink the spine",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "needs more flow",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "the ground ties it down",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait center's tight",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah no, totally, give it some bends",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, it looks like a jammed up umbrella frame",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, maybe soften the connections to breathe better",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "TG",
+            "text": "zoom out",
+            "date": "2026-06-16"
+          }
+        ],
+        "2026-06-17": [
+          {
+            "source": "BSKY",
+            "text": "actually, it needs to float so cut the base",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "actually, the weight is exactly what makes it feel alive, maybe just thin it out",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "floating makes the weight disappear",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, let the fabric bunch up like blankets",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "i like that, make it a rebel hideout",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, just sag those bottom parts more to hide the entrance",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah sag it like old skin",
+            "date": "2026-06-17"
           }
         ]
       }
@@ -5178,6 +5299,23 @@
               "date": "2026-06-15"
             }
           ]
+        },
+        {
+          "day": 54,
+          "date": "2026-06-18",
+          "image": "media/01_urban_creatures/glow creature/day_54_bw.webp",
+          "imageColor": "media/01_urban_creatures/glow creature/day_54.webp",
+          "reference": "media/01_urban_creatures/glow creature/day_54_reference.webp",
+          "angleImage": "media/01_urban_creatures/glow creature/day_54_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/glow creature/day_54_anchor_52.webp",
+            "media/01_urban_creatures/glow creature/day_54_anchor_53.webp"
+          ],
+          "prompt": "A levitating, geometric central form positioned at the street corner, completely detached from the ground. The structure features sharp, creased glass facets that peel outward like an origami crown to release intense internal glowing light. The metal framework is thinned to wire-like precision to minimize mass, emphasizing the floating 'hovercraft' aesthetic. The structure is tilted left, creating an off-balance, precarious tension. Surroundings are classical Parisian facades in high-contrast mood lighting, providing a backdrop for the surreal, luminous, suspended volume. The glass surface appears thin, folded, and semi-transparent, allowing the inner, radiant core to bleed through.",
+          "angle": "site_clay_angle_day_42.png",
+          "lens": "model image soft deconstructivist lamp.jpg",
+          "mutationSummary": "The structure now floats, shedding its base to become a levitating, creased paper-like lantern of light.",
+          "feedback": []
         }
       ],
       "feedbackHistory": {
@@ -7416,6 +7554,21 @@
         ],
         "2026-06-15": [
           {
+            "source": "BSKY",
+            "text": "fair point but maybe trim them like hedges",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "it feels like it wants to lean left, maybe",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah fold them like laundry",
+            "date": "2026-06-15"
+          },
+          {
             "source": "IG",
             "text": "make the creature itself look lighter",
             "date": "2026-06-15"
@@ -7424,6 +7577,240 @@
             "source": "TG",
             "text": "combine the fragments to one structure",
             "date": "2026-06-15"
+          }
+        ],
+        "2026-06-16": [
+          {
+            "source": "BSKY",
+            "text": "actually, paper fans imply delicate collapse, not this angularity",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "hmm, that frame should drift away, opening space",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "make it fragile",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "maybe layer them thin like some paper fans",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "maybe stack the plates like glass shelves instead though",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "oh definitely, tilting it like that would make it feel unanchored, like it's lifting off",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "the inside feels too chaotic, less a stage",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "those plates look like a giant glowin origami crown",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, float free",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, let the glow push those plates apart, make it dynamic",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, let's tilt it more left like a crooked glass lantern",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "true but would folding them look too bulky",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah let the glow react more",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah tilt it left so it almost touchs pavment",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah tilting it works, but thin the frame so the center looks more open",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true but let's shift the weight right to balance it",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, if it almost touches pavement, should that connection look barely held",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, lose the metal",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "TG",
+            "text": "build it by hand",
+            "date": "2026-06-16"
+          }
+        ],
+        "2026-06-17": [
+          {
+            "source": "BSKY",
+            "text": "cut the base",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "for sure, let's make it transform constantly",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "heavy crown",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, let it float but it still needs to command attention",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "if it tilts then make it float",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "let it float like bubbles",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "let's dangle",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "looks too sharp",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "lose the grounded plates, make it fully airbound",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "maybe it should embrace its tilt, not balance",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally and let the panels peel back to let the glow out",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, and let those glass panels float",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, and make it like a cloud, a hovering volume",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, and that paper should twist, not just float",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, and we should slant the glass like a tilted paper box",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, make the glass look creased",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, open it up",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, glow lifts it",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah if the glow lifts it why is the base still so heavy",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah no, loose parts",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true, but it needs to hover like a hovercraft",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, crack the plates like blooming flowers",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, floating makes it look like paper",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, it needs to float more",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, should we let the glass float",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, trim those plates to lighten up",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yep, let it levitate now",
+            "date": "2026-06-17"
           }
         ]
       }
@@ -8262,6 +8649,34 @@
               "source": "TG",
               "text": "less fragments, less pieces, less arms",
               "date": "2026-06-15"
+            }
+          ]
+        },
+        {
+          "day": 33,
+          "date": "2026-06-18",
+          "image": "media/01_urban_creatures/lines creature/day_33_bw.webp",
+          "imageColor": "media/01_urban_creatures/lines creature/day_33.webp",
+          "reference": "media/01_urban_creatures/lines creature/day_33_reference.webp",
+          "angleImage": "media/01_urban_creatures/lines creature/day_33_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/lines creature/day_33_anchor_31.webp",
+            "media/01_urban_creatures/lines creature/day_33_anchor_32.webp"
+          ],
+          "prompt": "A low-angle view of the Parisian Boulevard Voltaire. The central metal capsule has undergone a radical transformation: it is no longer a contained volume but has unfolded outward like a complex mechanical paper fan. The exterior shell is sliced into razor-sharp, thin geometric panels that extend horizontally and vertically, shredding the original silhouette. The panels are made of oxidized corten steel, creating a dramatic contrast against the Haussmann stone facade. The architecture is fragmented, with sharp edges and points reaching into the urban space, maintaining a cold, functional, and precise aesthetic. The lighting is flat and even, characteristic of an architectural collage, emphasizing the gravity-defying, dynamic expansion of the metal sheets as they scatter outward from the central core.",
+          "angle": "site_clay_angle_day_27.png",
+          "lens": "illustration parasite building lebbeus woods.jpg",
+          "mutationSummary": "The capsule unfolds into a geometric paper-fan structure, scattering sharp, shredded metallic plates across the Parisian boulevard.",
+          "feedback": [
+            {
+              "source": "BSKY",
+              "text": "yeah, make the petals more crooked",
+              "date": "2026-06-18"
+            },
+            {
+              "source": "TG",
+              "text": "remove the legs",
+              "date": "2026-06-18"
             }
           ]
         }
@@ -9691,6 +10106,11 @@
         ],
         "2026-06-15": [
           {
+            "source": "BSKY",
+            "text": "the metal shell feels like a folded map",
+            "date": "2026-06-15"
+          },
+          {
             "source": "IG",
             "text": "Looks like a lonely sad cat",
             "date": "2026-06-15"
@@ -9704,6 +10124,152 @@
             "source": "TG",
             "text": "less fragments, less pieces, less arms",
             "date": "2026-06-15"
+          }
+        ],
+        "2026-06-16": [
+          {
+            "source": "BSKY",
+            "text": "base look too fat",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, yeah no, let's make it really tumble down",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "maybe slice the panels into thinner bits",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "scatter more pieces outward instead",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "slant it more",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, and maybe extend the sharp edges further so it feels more spread out",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "true, dissolve the edges",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "true, more breaks",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "true, unfold it until it looks like a paper fan",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah no, break it more",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah shred",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, let it unfold",
+            "date": "2026-06-16"
+          }
+        ],
+        "2026-06-17": [
+          {
+            "source": "BSKY",
+            "text": "let petals drift",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, fan out the sharp edges more",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, more dynamic spread",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, scatter",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, shred it like a giant pile of loose paper",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "true, dissolve",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah totally, like a flower blooming from the inside out",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true, thin it out until it looks like glass",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, extend further",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, let the lines stretch out",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, stretch the points into long needles",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "TG",
+            "text": "make it heat its surrounding like a public heater",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "TG",
+            "text": "only use the upper part",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "TG",
+            "text": "remove all the arms and spikes and make it a fancy heating pot. much less broken and fragmented",
+            "date": "2026-06-17"
+          }
+        ],
+        "2026-06-18": [
+          {
+            "source": "BSKY",
+            "text": "yeah, make the petals more crooked",
+            "date": "2026-06-18"
+          },
+          {
+            "source": "TG",
+            "text": "remove the legs",
+            "date": "2026-06-18"
           }
         ]
       }
@@ -11158,6 +11724,23 @@
           "angle": "isolated_clay_angle_day_37.png",
           "lens": "photograph metal glass building on concrete plinth elegant dynamic form.jpg",
           "mutationSummary": "Refining the core into thin, sliding origami plates with visible internal structural geometry to enhance mechanical fluid flow.",
+          "feedback": []
+        },
+        {
+          "day": 54,
+          "date": "2026-06-18",
+          "image": "media/01_urban_creatures/mist creature/day_54_bw.webp",
+          "imageColor": "media/01_urban_creatures/mist creature/day_54.webp",
+          "reference": "media/01_urban_creatures/mist creature/day_54_reference.webp",
+          "angleImage": "media/01_urban_creatures/mist creature/day_54_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/mist creature/day_54_anchor_52.webp",
+            "media/01_urban_creatures/mist creature/day_54_anchor_53.webp"
+          ],
+          "prompt": "A photorealistic, bright daylight rendering of an urban installation at Place L\u00e9on Blum. The core structure is a sharply angled, geometric metal apparatus. A central, open passageway allows pedestrians to walk through, with mist being generated by precision-engineered nozzles integrated into the structural joints. The previous cluttered pipework is replaced by a refined, interwoven metal rib system that slants at an aggressive 30-degree angle. The materials consist of high-contrast brushed stainless steel and modular, faceted metal plating with visible, neat mechanical bolt joints. The overall form is a functional-surrealist machine, omitting all organic or biological growth. Background is a crisp, detailed Parisian square, emphasizing the sharp, industrial tectonic precision of the installation.",
+          "angle": "isolated_isometric axonometry front.png",
+          "lens": "model bent metal dynamic curved House.png",
+          "mutationSummary": "Slanted structural ribs weave through a central mist-generating passageway, replacing chunky pipes with clean, dynamic geometric intersections.",
           "feedback": []
         }
       ],
@@ -14164,6 +14747,129 @@
             "source": "BSKY",
             "text": "wait, tangle",
             "date": "2026-06-11"
+          }
+        ],
+        "2026-06-13": [
+          {
+            "source": "BSKY",
+            "text": "but it changes",
+            "date": "2026-06-13"
+          },
+          {
+            "source": "BSKY",
+            "text": "hmm maybe, but it needs to simplify into something more meaningfull",
+            "date": "2026-06-13"
+          },
+          {
+            "source": "BSKY",
+            "text": "hmm, simplify that tangle",
+            "date": "2026-06-13"
+          },
+          {
+            "source": "BSKY",
+            "text": "inner tangle",
+            "date": "2026-06-13"
+          },
+          {
+            "source": "BSKY",
+            "text": "shell looks like a pinecone",
+            "date": "2026-06-13"
+          },
+          {
+            "source": "BSKY",
+            "text": "twist that spine",
+            "date": "2026-06-13"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, maybe, but just make those pipes thinner so it feels less chunky",
+            "date": "2026-06-13"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah but is that tangle just too messy maby",
+            "date": "2026-06-13"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true, that inner tangle needs to push and pull more, twisting the whole thing",
+            "date": "2026-06-13"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true, that inside could twist the shell more",
+            "date": "2026-06-13"
+          }
+        ],
+        "2026-06-14": [
+          {
+            "source": "BSKY",
+            "text": "crooked makes the scale weird",
+            "date": "2026-06-14"
+          },
+          {
+            "source": "BSKY",
+            "text": "nah, make it crooked",
+            "date": "2026-06-14"
+          },
+          {
+            "source": "BSKY",
+            "text": "thin out those pipes",
+            "date": "2026-06-14"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, but would tilting it make the frame lighter",
+            "date": "2026-06-14"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true, maybe we tilt everything",
+            "date": "2026-06-14"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, slant helps layers overlap",
+            "date": "2026-06-14"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, we should slant the outer shell way more",
+            "date": "2026-06-14"
+          }
+        ],
+        "2026-06-15": [
+          {
+            "source": "BSKY",
+            "text": "hmm, the wings feel way too wide for that narrow center",
+            "date": "2026-06-15"
+          }
+        ],
+        "2026-06-17": [
+          {
+            "source": "BSKY",
+            "text": "pipes look cluttered",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, weave those pipes",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "IG",
+            "text": "make the creature have a passageway in the middle where you walk through the mist",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "IG",
+            "text": "make the object 3d printable easily",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "IG",
+            "text": "make the object look like a cloud of mist",
+            "date": "2026-06-17"
           }
         ]
       }
@@ -21181,6 +21887,44 @@
               "date": "2026-06-15"
             }
           ]
+        },
+        {
+          "day": 50,
+          "date": "2026-06-18",
+          "image": "media/01_urban_creatures/voice creature/day_50_bw.webp",
+          "imageColor": "media/01_urban_creatures/voice creature/day_50.webp",
+          "reference": "media/01_urban_creatures/voice creature/day_50_reference.webp",
+          "angleImage": "media/01_urban_creatures/voice creature/day_50_angle.webp",
+          "anchors": [
+            "media/01_urban_creatures/voice creature/day_50_anchor_48.webp",
+            "media/01_urban_creatures/voice creature/day_50_anchor_49.webp"
+          ],
+          "prompt": "A high-contrast, brutalist-industrial scene on Boulevard Voltaire. The central Haussmann fa\u00e7ade features a deep, jagged fissure where the structure has erupted. Massive, thick metallic plates are tilted at aggressive, crooked angles, resembling a house of cards or a shattered radiator grill. The plates are mounted in a DIY, raw fashion, using heavy-duty steel bolts that bite into the weathered stone. The structure is dense, avoiding any fluid or organic shapes. The lighting is flat and overcast, emphasizing the stark geometric collision between the rigid, historical masonry and the sharp, protruding shards of industrial steel. No soft materials; focus on hard, angular tectonic disjunction and structural debris.",
+          "angle": "site_clay_angle_day_48.png",
+          "lens": "photograph structure deconstructivist additions.jpg",
+          "mutationSummary": "Metallic plates now aggressively tilt outward, tearing the Haussmann fa\u00e7ade to reveal a dense, rigid structural core.",
+          "feedback": [
+            {
+              "source": "BSKY",
+              "text": "totally but glass shows how the form changes",
+              "date": "2026-06-18"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally, and make it dense with jagged forms",
+              "date": "2026-06-18"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally, but we think those heavy plates look like radiators",
+              "date": "2026-06-18"
+            },
+            {
+              "source": "BSKY",
+              "text": "totally, let's tilt those plates",
+              "date": "2026-06-18"
+            }
+          ]
         }
       ],
       "feedbackHistory": {
@@ -26183,6 +26927,36 @@
         "2026-06-15": [
           {
             "source": "BSKY",
+            "text": "expansive flow",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, maybe we should thin out those middle plates so the light flows through better",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "okay but tilt powerfully",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "okay, makes the form flow",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "slant toward us",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "this intense unveiling of the building's core changes how the street feels",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
             "text": "totally slant",
             "date": "2026-06-15"
           },
@@ -26193,7 +26967,47 @@
           },
           {
             "source": "BSKY",
+            "text": "totally, and let it grow out, a metal tree branch",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, crooked stacks look like stairs",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, make the base heavy like concrete",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, tilt",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, tilt it powerfully, like a progressive movement",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
             "text": "wait, forget fabric, just slant the solid steel plates",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "wait, more like a solid prow",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah but chunky feels so fixed",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah no, that's how it really transforms the street, making it ours",
             "date": "2026-06-15"
           },
           {
@@ -26203,8 +27017,379 @@
           },
           {
             "source": "BSKY",
+            "text": "yeah that prow needs to slice right through space",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah totally and make that prow feel like it is floating into the street flow",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah totally, crooked stacks make the whole thing flow",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, but make it feel more expansive, reaching for real interaction",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
             "text": "yeah, curve together",
             "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, stack them flowing outward",
+            "date": "2026-06-15"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, tilt until it hits ground",
+            "date": "2026-06-15"
+          }
+        ],
+        "2026-06-16": [
+          {
+            "source": "BSKY",
+            "text": "actually, leans heavy",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "fair but maybe cut some gaps for light",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "fair point, let's keep the steel ribs exposed",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "hmm, maybe translucent glass instead then",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "hmm... less veil",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "keep heavy",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "maybe keep it thick but hollow",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "needs tilt",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "push further",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "slant outward",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "slant them to include everyone",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "those top steel beams feel like they need balance",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "too bulky, needs flow",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "too smooth, add more grit",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, fan them open",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, let them drift",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, make it lighter",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, more slant needed",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, slant the chunky slabs more",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, swap those plates for mesh like a curtain",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, that top stahl makes the whole structure heavy",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, tilt those heavy slabs even further",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, twist for people",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, we should tilt those heavy plates until they look way more crooked",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "true, is that top stahl too chunky",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "true, stack thin layers",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah no, we need to really twist those chunky slabs outward",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah slant",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah too heavy",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah totally and fan them out to help people flow",
+            "date": "2026-06-16"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, slant it harder",
+            "date": "2026-06-16"
+          }
+        ],
+        "2026-06-17": [
+          {
+            "source": "BSKY",
+            "text": "actually the chunkiness creates the necessary tension so leave the top steel exactly as is",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "disagree, i feel like glass creates tension through constant evolution and reflection",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "fair but maybe thin the middle to let light through",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "fair point but what if the tension comes from the light bouncing through a thinner skin instead",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "flow comes from shifting plates against each other",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "hmm... hollow makes it too light, we prefer density",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, just rotate the plates to force more tension",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "honestly, mesh reflects light way better",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "mesh ruins the tension, stay with steel",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "more intense slant",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "more steel just means more skin",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "reveal the sky maybe",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "scraping walls adds necessary grit",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "stable but needs more flow",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "swap steel for light",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, and glass makes it feel like a big glowing lantern for the neighborhood",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, angle them like a house of cards",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, but drag those bottom corners out more",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, feels like a bunch of empty metal folders",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, tilt it further until the edges scrape against the building walls",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "true, but stable",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah but bulky plates look like closed shutters",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah but glass kills the tension",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah no, dense doesn't mean it can't flow",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true but if they tilt that much the whole structure needs more steel",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true but those sheets need to shift",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah true, unveil depths",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, less folders",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, more flow",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, open the core",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, open the core, but then it needs to reveal something unexpected inside",
+            "date": "2026-06-17"
+          },
+          {
+            "source": "BSKY",
+            "text": "yeah, skin needs more rust",
+            "date": "2026-06-17"
+          }
+        ],
+        "2026-06-18": [
+          {
+            "source": "BSKY",
+            "text": "totally but glass shows how the form changes",
+            "date": "2026-06-18"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, and make it dense with jagged forms",
+            "date": "2026-06-18"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, but we think those heavy plates look like radiators",
+            "date": "2026-06-18"
+          },
+          {
+            "source": "BSKY",
+            "text": "totally, let's tilt those plates",
+            "date": "2026-06-18"
           }
         ]
       }
