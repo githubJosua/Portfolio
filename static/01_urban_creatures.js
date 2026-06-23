@@ -307,7 +307,17 @@
 
       let inlineFeedback = '';
       if (feedbackArray.length > 0) {
-        const itemsHtml = feedbackArray.map(fb => {
+        // Sort feedback by source order: IG, WEB, TG, BSKY
+        const sourceOrder = { 'ig': 0, 'web': 1, 'tg': 2, 'bsky': 3 };
+        feedbackArray.sort((a, b) => {
+          const sourceA = (a.source || 'BSKY').toLowerCase();
+          const sourceB = (b.source || 'BSKY').toLowerCase();
+          const orderA = sourceOrder[sourceA] !== undefined ? sourceOrder[sourceA] : 99;
+          const orderB = sourceOrder[sourceB] !== undefined ? sourceOrder[sourceB] : 99;
+          return orderA - orderB;
+        });
+
+        const renderComment = fb => {
           const sourceStr = (fb && fb.source) ? fb.source.toString() : 'BSKY';
           const src = sourceStr.toLowerCase() === 'bsky' ? 'bsky'
             : sourceStr.toLowerCase() === 'ig' ? 'ig'
@@ -317,10 +327,26 @@
             <span class="badge ${src}">${sourceStr}</span>
             <span class="day-card-feedback-text">"${textStr}"</span>
           </li>`;
-        }).join('');
+        };
+
+        const visibleComments = feedbackArray.slice(0, 3);
+        const hiddenComments = feedbackArray.slice(3);
+
+        const visibleHtml = visibleComments.map(renderComment).join('');
+        let hiddenHtml = '';
+        let showMoreBtnHtml = '';
+
+        if (hiddenComments.length > 0) {
+          const hiddenItemsHtml = hiddenComments.map(renderComment).join('');
+          hiddenHtml = `<ul class="day-card-feedback-list extra-comments-list" style="display: none; margin-top: 0.75rem;">${hiddenItemsHtml}</ul>`;
+          showMoreBtnHtml = `<button class="show-more-comments-btn" data-count="${hiddenComments.length}">Show more (+${hiddenComments.length})</button>`;
+        }
+
         inlineFeedback = `
           <div class="day-card-feedback-label">Feedback Influenced This Step</div>
-          <ul class="day-card-feedback-list">${itemsHtml}</ul>
+          <ul class="day-card-feedback-list">${visibleHtml}</ul>
+          ${hiddenHtml}
+          ${showMoreBtnHtml}
         `;
       }
 
@@ -371,6 +397,19 @@
       entry.querySelectorAll('.timeline-item[data-idx]').forEach(el => {
         const dayIdx = parseInt(el.getAttribute('data-idx'));
         el.addEventListener('click', () => openDetailPanel(creatureIdx, dayIdx));
+      });
+
+      // Attach event to show more comments button
+      entry.querySelectorAll('.show-more-comments-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const extraList = entry.querySelector('.extra-comments-list');
+          if (extraList) {
+            const isHidden = extraList.style.display === 'none';
+            extraList.style.display = isHidden ? 'flex' : 'none';
+            const count = btn.getAttribute('data-count');
+            btn.textContent = isHidden ? 'Show less' : `Show more (+${count})`;
+          }
+        });
       });
 
       dayList.appendChild(entry);

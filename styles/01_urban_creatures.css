@@ -1496,3 +1496,24 @@ section {
   height: auto;
   margin-top: 1rem;
 }
+
+/* Show More Comments Button */
+.show-more-comments-btn {
+  font-family: var(--font-head);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--purple);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 0.5rem;
+  transition: color 0.2s ease;
+  align-self: flex-end;
+  text-transform: uppercase;
+}
+
+.show-more-comments-btn:hover {
+  color: var(--orange);
+}
