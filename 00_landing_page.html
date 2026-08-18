@@ -6,14 +6,31 @@
     <title>Josua Hefti - Portfolio</title>
     <link rel="stylesheet" href="styles/00_landing_page.css">
     <link rel="icon" type="image/png" sizes="32x32" href="media/favicon.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_Bellevue.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_Oasis.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_Voluntary_Exile.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_SyntheticExodus.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_behind_closed_doors.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_GlacialRemnants.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_pulse_motion.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_breating_down_your_neck.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_FlowerToilet.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_presence_absence.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_NewHeart.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_Opera.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_iTree.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_PinaBausch.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_Tianfu.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_Heilbronn.png">
+    <link rel="preload" as="image" href="media/00_landing_page/Icons/Icon_Matrix.png">
 </head>
 <body>
     <div id="background_image">
-        <img src="media/00_landing_page/0001.jpg" alt="">
+        <img src="media/00_landing_page/0001.webp" alt="" decoding="async">
     </div>
     <div id="video_container">
         <video autoplay muted loop id="background-video">
-            <source src="media/00_landing_page/3_shadows_reverse.mp4" type="video/mp4">
+            <source src="media/00_landing_page/3_shadows_reverse_optimized.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -25,7 +42,6 @@
             <h1 class="typed_text" data-text='COMPUTATION' data-delay="2600" data-speed="70"></h1>
         </div> 
     </div>
-    <a href="01_urban_creatures.html"><h2 id="current_project" class="typed_text" data-text='// URBAN CREATURES COLLECTIVE //' data-delay="3500" data-speed="40"></h2></a>
     <div id="question_block" class="text_block">
         <p id="faded_text"></p>
     </div>
@@ -37,35 +53,507 @@
     <div id="scrolling_container">
         <div id="scroller"></div>
     </div>
-    <div id="menu_left" class="hidden-menu">
-        <ul>
-            <li class="menu_element"><a href="01_synthetic_exodus.html"><img src="media/00_landing_page/Icons/Icon_SyntheticExodus.png" alt="">Synthetic Exodus</a></li>
-            <li class="menu_element"><a href="01_behind_closed_doors.html"><img src="media/00_landing_page/Icons/Icon_behind_closed_doors.png" alt="">Behind Closed Doors</a></li>
-            <li class="menu_element"><a href="01_glacial_investigations.html"><img src="media/00_landing_page/Icons/Icon_GlacialRemnants.png" alt="">Glacial Remnants</a></li>
-            <li class="menu_element"><a href="01_voluntary_exile.html"><img src="media/00_landing_page/Icons/Icon_Voluntary_Exile.png" alt="">Voluntary Exile</a></li>
-            <li class="menu_element"><a href="01_pulse_motion.html"><img src="media/00_landing_page/Icons/Icon_pulse_motion.png" alt="">Of Pulse and Motion</a></li>
-            <li class="menu_element"><a href="01_oasis.html"><img src="media/00_landing_page/Icons/Icon_Oasis.png" alt="">Oasis</a></li>
-            <li class="menu_element"><a href="01_breating_down_your_neck.html"><img src="media/00_landing_page/Icons/Icon_breating_down_your_neck.png" alt="">Breathing Down Your Neck</a></li>
-            <li class="menu_element"><a href="01_flower_toilet.html"><img src="media/00_landing_page/Icons/Icon_FlowerToilet.png" alt="">Flower Toilet</a></li>
-            <li class="menu_element"><a href="01_presence_absence.html"><img src="media/00_landing_page/Icons/Icon_presence_absence.png" alt="">The Presence in Absence</a></li>
-            <!--li class="menu_element"><a href="01_mofa.html"><img src="media/00_landing_page/Icons/Icon_MOFA.png" alt="">Museum of Flying Art</a></li-->
-            <!--li class="menu_element"><a href="01_bellevue_hospital.html"><img src="media/00_landing_page/Icons/Icon_Bellevue.png" alt="">Bellevue Hospital</a></li-->
-        </ul>
+
+    <!-- Reusable SVG Gradients (Standard Indigo & Warm Highlight Orange) -->
+    <svg width="0" height="0" style="position:absolute; width:0; height:0; pointer-events:none;" aria-hidden="true">
+        <defs>
+            <!-- Left Shelf Standard (Indigo) -->
+            <linearGradient id="tabGradLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="rgba(14, 10, 36, 0.12)"/>
+                <stop offset="60%" stop-color="rgba(22, 16, 56, 0.5)"/>
+                <stop offset="100%" stop-color="rgba(28, 20, 72, 0.9)"/>
+            </linearGradient>
+
+            <!-- Right Shelf Standard (Indigo - Flipped) -->
+            <linearGradient id="tabGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="rgba(28, 20, 72, 0.9)"/>
+                <stop offset="40%" stop-color="rgba(22, 16, 56, 0.5)"/>
+                <stop offset="100%" stop-color="rgba(14, 10, 36, 0.12)"/>
+            </linearGradient>
+
+            <!-- Left Shelf Highlight (Subtle Orange #D7542C) -->
+            <linearGradient id="tabGradLeftOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="rgba(14, 10, 36, 0.12)"/>
+                <stop offset="60%" stop-color="rgba(145, 55, 26, 0.40)"/>
+                <stop offset="100%" stop-color="rgba(215, 84, 44, 0.88)"/>
+            </linearGradient>
+
+            <!-- Right Shelf Highlight (Subtle Orange #D7542C - Flipped) -->
+            <linearGradient id="tabGradRightOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="rgba(215, 84, 44, 0.88)"/>
+                <stop offset="40%" stop-color="rgba(145, 55, 26, 0.40)"/>
+                <stop offset="100%" stop-color="rgba(14, 10, 36, 0.12)"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- LEFT SHELF (PERSONAL) -->
+    <div id="menu_left" class="folder-shelf">
+        <div class="folder folder-cover" data-index="0" style="--i:0; --z:50">
+            <div class="folder-spine cover-spine">
+                <div class="side-label">
+                    <span>P</span><span>E</span><span>R</span><span>S</span><span>O</span><span>N</span><span>A</span><span>L</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DIAGONAL CYCLE 1 (Folders 1 to 7 - spans from top edge to 80vh) -->
+
+        <a href="01_abyssora.html" class="folder folder-highlight">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_abyssora/Title Image.webp" alt="" decoding="async">
+                <span class="folder-title">ABYSSORA</span>
+                <div class="folder-footer"><span>COMPUTATIONAL ARCHITECTURE</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_Oasis.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">ABYSSORA</span>
+            </div>
+        </a>
+
+        <a href="01_artificially_unreasonable_cities.html" class="folder">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_artificially unreasonable cities/Wall 3 - Title Image.webp" alt="" decoding="async">
+                <span class="folder-title">AU CITIES</span>
+                <div class="folder-footer"><span>CRITICAL THEORY</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_SyntheticExodus.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">AU CITIES</span>
+            </div>
+        </a>
+
+        <a href="01_artificially_intelligent_cities.html" class="folder folder-highlight">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_artificially intelligent cities/board 1 - cover - web.webp" alt="" decoding="async">
+                <span class="folder-title">ARTIFICIALLY INTELLIGENT CITIES</span>
+                <div class="folder-footer"><span>URBAN ALGORITHMS</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_Voluntary_Exile.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">AI CITIES</span>
+            </div>
+        </a>
+
+        <a href="01_urban_creatures.html" class="folder">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_urban_creatures/glow creature/day_30.webp" alt="" decoding="async">
+                <span class="folder-title">URBAN CREATURES</span>
+                <div class="folder-footer"><span>COLLECTIVE ARCHITECTURE</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_Bellevue.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">URBAN CREATURES</span>
+            </div>
+        </a>
+
+        <a href="01_synthetic_exodus.html" class="folder folder-highlight">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_synthetic_exodus/Title_Image_Final_website.webp" alt="" decoding="async">
+                <span class="folder-title">SYNTHETIC EXODUS</span>
+                <div class="folder-footer"><span>SYNTHETIC HABITAT</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_SyntheticExodus.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">SYNTHETIC EXODUS</span>
+            </div>
+        </a>
+
+        <a href="01_behind_closed_doors.html" class="folder">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_behind_closed_doors/header.webp" alt="" decoding="async">
+                <span class="folder-title">CLOSED DOORS</span>
+                <div class="folder-footer"><span>SPATIAL THRESHOLDS</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_behind_closed_doors.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">CLOSED DOORS</span>
+            </div>
+        </a>
+
+        <a href="01_glacial_investigations.html" class="folder">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_glacial_remnants/glacial_investigations.webp" alt="" decoding="async">
+                <span class="folder-title">GLACIAL REMNANTS</span>
+                <div class="folder-footer"><span>GEOLOGICAL MOTION</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_GlacialRemnants.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">GLACIAL REMNANTS</span>
+            </div>
+        </a>
+
+        <!-- DIAGONAL CYCLE 2 (Folders 8 to 13 - wraps back to top) -->
+        <a href="01_voluntary_exile.html" class="folder folder-highlight">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_voluntary_exile/movie_poster.webp" alt="" decoding="async">
+                <span class="folder-title">VOLUNTARY EXILE</span>
+                <div class="folder-footer"><span>NARRATIVE SPACE</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_Voluntary_Exile.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">VOLUNTARY EXILE</span>
+            </div>
+        </a>
+
+        <a href="01_pulse_motion.html" class="folder">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_pulse_motion/header_narrative_section.webp" alt="" decoding="async">
+                <span class="folder-title">PULSE &amp; MOTION</span>
+                <div class="folder-footer"><span>DYNAMIC FORM</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_pulse_motion.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">PULSE &amp; MOTION</span>
+            </div>
+        </a>
+
+        <a href="01_oasis.html" class="folder">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_oasis/Aussenansicht_Final.webp" alt="" decoding="async">
+                <span class="folder-title">OASIS</span>
+                <div class="folder-footer"><span>ENVIRONMENTAL FORM</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_Oasis.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">OASIS</span>
+            </div>
+        </a>
+
+        <a href="01_breating_down_your_neck.html" class="folder">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_breathing_down_your_neck/header_dark.webp" alt="" decoding="async">
+                <span class="folder-title">BREATHING NECK</span>
+                <div class="folder-footer"><span>SENSORY DESIGN</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_breating_down_your_neck.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">BREATHING NECK</span>
+            </div>
+        </a>
+
+        <a href="01_flower_toilet.html" class="folder">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_flower_toilet/Abgabe Toilette Collage final.webp" alt="" decoding="async">
+                <span class="folder-title">FLOWER TOILET</span>
+                <div class="folder-footer"><span>ECOLOGICAL UTILITY</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_FlowerToilet.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">FLOWER TOILET</span>
+            </div>
+        </a>
+
+        <a href="01_presence_absence.html" class="folder">
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_presence_absence/elevation.webp" alt="" decoding="async">
+                <span class="folder-title">PRESENCE ABSENCE</span>
+                <div class="folder-footer"><span>ARCHITECTURAL THEORY</span><span>PERSONAL</span></div>
+            </div>
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100 Z" fill="url(#tabGradLeft)"/>
+                        <path d="M 0,0 C 0,28 100,28 100,50 C 100,72 0,72 0,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_presence_absence.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">PRESENCE ABSENCE</span>
+            </div>
+        </a>
     </div>
-    <div id="menu_right" class="hidden-menu">
-        <ul>
-            <li class="menu_element"><a href="01_matrix.html">Matrix<img src="media/00_landing_page/Icons/Icon_Matrix.png" alt=""></a></li>
-            <li class="menu_element"><a href="01_heilbronn.html">AI Campus Heilbronn<img src="media/00_landing_page/Icons/Icon_Heilbronn.png" alt=""></a></li>
-            <li class="menu_element"><a href="01_tianfu.html">Tianfu Software Park<img src="media/00_landing_page/Icons/Icon_Tianfu.png" alt=""></a></li>
-            <li class="menu_element"><a href="01_pina_bausch.html">Pina Bausch Theatre<img src="media/00_landing_page/Icons/Icon_PinaBausch.png" alt=""></a></li>
-            <li class="menu_element"><a href="01_itree.html">iTree<img src="media/00_landing_page/Icons/Icon_iTree.png" alt=""></a></li>
-            <li class="menu_element"><a href="01_opera_duesseldorf.html">Opera Düsseldorf<img src="media/00_landing_page/Icons/Icon_Opera.png" alt=""></a></li>
-            <li class="menu_element"><a href="01_new_heart.html">New Heart Düsseldorf<img src="media/00_landing_page/Icons/Icon_NewHeart.png" alt=""></a></li>
-            <!-- li class="menu_element"><a href="project2.html">View Analysis<img src="media/00_landing_page/Icons/Icon_ViewAnalysis.png" alt=""></a></li -->
-        </ul>
+
+    <!-- RIGHT SHELF (PROFESSIONAL) -->
+    <div id="menu_right" class="folder-shelf">
+        <div class="folder folder-cover" data-index="0" style="--i:0; --z:50">
+            <div class="folder-spine cover-spine">
+                <div class="side-label">
+                    <span>P</span><span>R</span><span>O</span><span>F</span><span>E</span><span>S</span><span>S</span><span>I</span><span>O</span><span>N</span><span>A</span><span>L</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DIAGONAL CYCLE (Folders 1 to 7 - spans from top edge to 80vh) -->
+        <a href="01_new_heart.html" class="folder">
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100 Z" fill="url(#tabGradRight)"/>
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_NewHeart.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">NEW HEART</span>
+            </div>
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_new_heart/05 New Heart - South-East entrance.webp" alt="" decoding="async">
+                <span class="folder-title">NEW HEART</span>
+                <div class="folder-footer"><span>DÜSSELDORF MASTERPLAN</span><span>PROFESSIONAL</span></div>
+            </div>
+        </a>
+
+        <a href="01_opera_duesseldorf.html" class="folder">
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100 Z" fill="url(#tabGradRight)"/>
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_Opera.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">OPERA DÜSSELDORF</span>
+            </div>
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_opera_duesseldorf/opera_choice.webp" alt="" decoding="async">
+                <span class="folder-title">OPERA DÜSSELDORF</span>
+                <div class="folder-footer"><span>OPERA HOUSE COMPETITION</span><span>PROFESSIONAL</span></div>
+            </div>
+        </a>
+
+        <a href="01_itree.html" class="folder">
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100 Z" fill="url(#tabGradRight)"/>
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_iTree.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">ITREE</span>
+            </div>
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_itree/itree_circle.webp" alt="" decoding="async">
+                <span class="folder-title">ITREE</span>
+                <div class="folder-footer"><span>TREE CANOPY MODEL</span><span>PROFESSIONAL</span></div>
+            </div>
+        </a>
+    
+        <a href="01_matrix.html" class="folder folder-highlight">
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100 Z" fill="url(#tabGradRight)"/>
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_Matrix.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">MATRIX</span>
+            </div>
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_matrix/matrix explode.webp" alt="" decoding="async">
+                <span class="folder-title">MATRIX</span>
+                <div class="folder-footer"><span>MODULAR INVENTORY</span><span>PROFESSIONAL</span></div>
+            </div>
+        </a>
+
+
+        <a href="01_pina_bausch.html" class="folder">
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100 Z" fill="url(#tabGradRight)"/>
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_PinaBausch.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">PINA BAUSCH</span>
+            </div>
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_pina_bausch/01 Street View Glow 50x100 MVRDV.webp" alt="" decoding="async">
+                <span class="folder-title">PINA BAUSCH</span>
+                <div class="folder-footer"><span>PERFORMING ARTS CENTER</span><span>PROFESSIONAL</span></div>
+            </div>
+        </a>
+
+        <a href="01_tianfu.html" class="folder">
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100 Z" fill="url(#tabGradRight)"/>
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_Tianfu.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">TIANFU PARK</span>
+            </div>
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_tianfu/Front_view.webp" alt="" decoding="async">
+                <span class="folder-title">TIANFU PARK</span>
+                <div class="folder-footer"><span>SOFTWARE PARK HQ</span><span>PROFESSIONAL</span></div>
+            </div>
+        </a>
+
+        <a href="01_heilbronn.html" class="folder folder-highlight">
+            <div class="folder-spine">
+                <div class="spine-line-top"></div>
+                <div class="folder-tab">
+                    <svg class="tab-curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100 Z" fill="url(#tabGradRight)"/>
+                        <path d="M 100,0 C 100,28 0,28 0,50 C 0,72 100,72 100,100" fill="none" stroke="rgba(225, 225, 245, 0.45)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+                    </svg>
+                </div>
+                <div class="folder-icon-wrap">
+                    <img class="folder-icon" src="media/00_landing_page/Icons/Icon_Heilbronn.png" alt="" loading="eager" decoding="sync">
+                </div>
+                <div class="spine-line-bottom"></div>
+                <span class="folder-name">HEILBRONN CAMPUS</span>
+            </div>
+            <div class="folder-body">
+                <img class="folder-img" data-src="media/01_heilbronn/01_Aerial.webp" alt="" decoding="async">
+                <span class="folder-title">HEILBRONN</span>
+                <div class="folder-footer"><span>AI INNOVATION HUB</span><span>PROFESSIONAL</span></div>
+            </div>
+        </a>
     </div>
-    <div id="left-label" class="side-label" data-text="PERSONAL"></div>
-    <div id="right-label" class="side-label" data-text="PROFESSIONAL"></div>
+
     <div id="warning">
         <p>This website was designed for your laptop.</p>
     </div>

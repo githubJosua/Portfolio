@@ -1,7 +1,7 @@
 // transitions
 document.addEventListener('DOMContentLoaded', function() {
-  const content = document.getElementById('content')
-  content.classList.add('fade-in');
+  const content = document.getElementById('content');
+  if (content) content.classList.add('fade-in');
 });
 
 window.addEventListener('pageshow', function(event) {
@@ -14,57 +14,56 @@ window.addEventListener('pageshow', function(event) {
   }, 0);
 });
 
-
-
-const cursorPath = 'media/00_cursor/square.png';
-const divs = document.querySelectorAll('div')
-
 document.addEventListener('DOMContentLoaded', () => {
-  // Custom Cursor
+  // Global custom cursor (30px, glowing on interactive hover)
   const customCursor = document.createElement('div');
   document.body.appendChild(customCursor);
-  customCursor.style.position = 'absolute';
+  customCursor.style.position = 'fixed';
   customCursor.style.pointerEvents = 'none';
-  customCursor.style.height = '50px';
-  customCursor.style.width = '50px';
-  customCursor.style.backgroundSize = 'cover';
-  customCursor.style.zIndex = '1000';
+  customCursor.style.height = '30px';
+  customCursor.style.width = '30px';
+  customCursor.style.backgroundSize = 'contain';
+  customCursor.style.backgroundRepeat = 'no-repeat';
+  customCursor.style.backgroundPosition = 'center';
+  customCursor.style.zIndex = '10000';
   customCursor.style.display = 'none';
+  customCursor.style.transform = 'translate(-50%, -50%)';
+  customCursor.style.opacity = '1';
+  customCursor.style.transition = 'filter 0.2s ease, transform 0.18s ease';
 
-  divs.forEach((div) => {
-    div.style.cursor = 'none'
-    div.addEventListener('mousemove', (e) => {
-      
-      customCursor.style.display = 'block';
-      customCursor.style.left = `${e.pageX}px`;
-      customCursor.style.top = `${e.pageY}px`;
-  
-      customCursor.style.backgroundImage = `url(${cursorPath})`;
-    });
+  const squarePath = 'media/00_cursor/square.png';
+  customCursor.style.backgroundImage = `url(${squarePath})`;
+
+  window.addEventListener('mousemove', (e) => {
+    customCursor.style.display = 'block';
+    customCursor.style.left = `${e.clientX}px`;
+    customCursor.style.top = `${e.clientY}px`;
+
+    const isInteractive = e.target.closest('a') || e.target.closest('button') || e.target.closest('#name') || e.target.closest('.interactive');
+    if (isInteractive) {
+      customCursor.style.filter = 'brightness(2.4) drop-shadow(0 0 6px rgba(230, 220, 255, 1)) drop-shadow(0 0 16px rgba(160, 140, 255, 0.95)) drop-shadow(0 0 28px rgba(110, 95, 255, 0.7))';
+      customCursor.style.transform = 'translate(-50%, -50%) scale(1.2)';
+    } else {
+      customCursor.style.filter = 'brightness(1) drop-shadow(0 0 0px transparent)';
+      customCursor.style.transform = 'translate(-50%, -50%) scale(1)';
+    }
   });
 
-  document.body.addEventListener('mousemove', (e) => {
-    customCursor.style.display = 'block';
-    customCursor.style.left = `${e.pageX}px`;
-    customCursor.style.top = `${e.pageY}px`;
-
-    customCursor.style.backgroundImage = `url(${cursorPath})`;
+  window.addEventListener('mouseleave', () => {
+    customCursor.style.display = 'none';
   });
 });
 
-
 // arrangement for orientation
 function checkOrientation() {
-  const content = document.getElementById('content')
+  const content = document.getElementById('content');
+  if (!content) return;
   if (window.innerHeight > window.innerWidth) {
-      content.style.flexDirection = 'column'
+      content.style.flexDirection = 'column';
   } else {
-    content.style.flexDirection = 'row'
+      content.style.flexDirection = 'row';
   }
 }
 
-// Check on initial load
 checkOrientation();
-
-// Add event listener for changes, e.g., when the user rotates their device
 window.addEventListener('resize', checkOrientation);

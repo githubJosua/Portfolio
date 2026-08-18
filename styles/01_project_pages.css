@@ -5,6 +5,7 @@
 * {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    cursor: none !important;
 }
 
 
@@ -70,13 +71,10 @@ body {
 #scrolling_container {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 
 .snap_section {
-    scroll-snap-align: start;
     overflow: hidden;
 }
 
@@ -294,4 +292,71 @@ body {
     to {
       transform: rotate(360deg);
     }
-  }
+}
+
+/* ==========================================================================
+   CORNER PROJECT NAVIGATION (PREV / NEXT)
+   ========================================================================== */
+
+.project-corner-nav {
+  position: fixed;
+  bottom: 2.2vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 0.75vw;
+  padding: 0.6vh 1.1vw;
+  background-color: rgba(14, 10, 36, 0.55);
+  border: 1px solid rgba(225, 225, 245, 0.25);
+  border-radius: 999px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: "Josefin Sans bold", Arial, sans-serif;
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s cubic-bezier(0.18, 1, 0.32, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.project-corner-nav:hover {
+  background-color: rgba(28, 20, 72, 0.9);
+  border-color: rgba(225, 225, 245, 0.6);
+  transform: scale(1.08);
+}
+
+.nav-prev {
+  left: 2vw;
+}
+
+.nav-next {
+  right: 2vw;
+}
+
+.corner-nav-icon {
+  height: 3.6vh;
+  width: auto;
+  max-width: 3.6vh;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.85));
+}
+
+.corner-nav-label {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.corner-nav-dir {
+  font-size: 0.8vh;
+  opacity: 0.6;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.corner-nav-title {
+  font-size: 1.1vh;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
