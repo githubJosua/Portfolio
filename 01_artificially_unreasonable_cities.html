@@ -5,35 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josua Hefti - Artificially Unreasonable Cities</title>
     <link rel="stylesheet" href="styles/01_project_pages.css">
+    <link rel="stylesheet" href="styles/01_panorama.css">
     <link rel="icon" type="image/png" sizes="32x32" href="media/favicon.png">
 </head>
 <body>
-    <a href="00_landing_page.html" class="circle-link"></a>
+    <a href="00_landing_page.html" class="circle-link" aria-label="Menu — back to landing page">MENU</a>
     <div id="scrolling_container">
         <header class="snap_section current_section" id="page_header_container">
             <img src="media/01_artificially unreasonable cities/Wall 3 - Title Image.webp" id="title_image">
             <div id="page_header">
-                <h1 style="color: #ffffff;">CAN ARCHITECTURE BECOME ARTIFICIALLY UNREASONABLE?</h1>
+                <h1 style="color: #ffffff;">CAN ARCHITECTURE MAKE CITIES ARTIFICIALLY UNREASONABLE?</h1>
             </div>
         </header>
         <section class="snap_section" id="project_intro_container">
             <div id="project_intro">
                 <h2>// ARTIFICIALLY UNREASONABLE CITIES //</h2>
-                <h3>CONFLUENCE INSTITUTE</h3>
-                <p>What happens when architecture resists the hyper-rationalization of algorithmic urbanism? 
-                    Artificially Unreasonable Cities explores spatial interventions engineered to provoke unpredictability, sensory friction, and human spontaneity.
+                <h3>CONFLUENCE INSTITUTE - DIPLOMA PROJECT</h3>
+                <p>The urban public space is perhaps the most important space of collective political life. It is the breeding ground for negotiation that enables our democracîes. But it is currently being automized by private companies with their own incentives. We all share the responsibility to decide: What do we want our future "smart" cities to be?
                     <br><br>
-                    Through multi-level sectional cuts, acoustic microphone arrays, olfactory channels, and elevated balcony perches, the building creates zones of uncalculated interaction. The structure operates as an anti-machine—disrupting seamless surveillance and inviting raw, unscripted urban life back into the streetscape.
+                    The project was developed in dialogue with my dissertation on "Artificially Intelligent Cities". It explores the possibility of designing the public urban space of the smart city around three principles: participation, transparency, and friction.
                 </p>
             </div>
         </section>
 
-        <!-- PANORAMA EXPLORER SECTION FOR PATCHED PRINTED -->
-        <section class="snap_section" id="panorama_section" style="background-color: #050505; overflow-x: auto; overflow-y: hidden; display: flex; align-items: center; justify-content: flex-start; height: 100vh; position: relative;">
-            <div style="position: absolute; top: 3vh; left: 3vw; z-index: 10; color: #ffffff; background: rgba(0, 0, 0, 0.75); padding: 0.6rem 1.2rem; border-radius: 4px; font-family: 'Josefin Sans bold', sans-serif; font-size: 1.5vh; letter-spacing: 0.05rem;">
-                // PANORAMIC EXPLORER — SCROLL HORIZONTALLY TO INSPECT //
+        <!-- PANORAMA EXPLORER -->
+        <section class="snap_section" id="panorama_section" aria-label="Panoramic explorer">
+            <div class="panorama-viewport" tabindex="0" role="region" aria-label="Panorama. Drag, swipe, or use the left and right arrow keys to explore.">
+                <img src="media/01_artificially unreasonable cities/Patched Printed.webp" alt="Patched Printed Panorama" draggable="false">
             </div>
-            <img src="media/01_artificially unreasonable cities/Patched Printed.webp" alt="Patched Printed Panorama" style="height: 100vh; width: auto; max-width: none; object-fit: contain; display: block;">
+            <div class="panorama-controls">
+                <div class="panorama-position">
+                    <label for="panorama-position">DRAG</label>
+                    <input id="panorama-position" type="range" min="0" max="100" value="0" step="0.1">
+                </div>
+            </div>
         </section>
 
         <section class="snap_section gallery_container" id="gallery">
@@ -54,7 +59,6 @@
         </section>
     </div>
     <footer class="page-footer">
-        <p>// click //</p>
     </footer>
     <script>
         window.onload = function() {
@@ -62,5 +66,7 @@
         };
     </script>
     <script src="static/01_project_pages.js"></script>
+    <script src="static/01_panorama.js"></script>
+    <script src="static/01_project_navigation.js"></script>
 </body>
 </html>

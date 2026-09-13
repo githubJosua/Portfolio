@@ -1,3 +1,4 @@
+@import url('01_project_navigation.css');
 ::-webkit-scrollbar {
     display: none;
 }
@@ -298,65 +299,48 @@ body {
    CORNER PROJECT NAVIGATION (PREV / NEXT)
    ========================================================================== */
 
-.project-corner-nav {
-  position: fixed;
-  bottom: 2.2vh;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  gap: 0.75vw;
-  padding: 0.6vh 1.1vw;
-  background-color: rgba(14, 10, 36, 0.55);
-  border: 1px solid rgba(225, 225, 245, 0.25);
-  border-radius: 999px;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.95);
-  font-family: "Josefin Sans bold", Arial, sans-serif;
-  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s cubic-bezier(0.18, 1, 0.32, 1);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-  user-select: none;
+/* Keep the menu label upright and readable at every screen size. */
+.circle-link {
+    position: fixed;
+    top: max(12px, 1.5vw);
+    left: max(12px, 1.5vw);
+    width: max(48px, calc(3vw + 3vh));
+    height: max(48px, calc(3vw + 3vh));
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(to right, #c592e7a6, #563c9175, #c592e7a6);
+    border: 1px solid #fff;
+    border-radius: 50%;
+    z-index: 1000;
+    animation: none;
+    color: #fff;
+    text-decoration: none;
+    font: 700 clamp(10px, 0.8vw, 14px) Arial, sans-serif;
+    letter-spacing: 0.08em;
+}
+.circle-link:focus-visible { outline: 3px solid #9d7ce9; outline-offset: 4px; }
+/* Show background arrows only when the gallery contains more than one image.
+   The mirrored chevrons are centered vertically behind the images and preserve click handling. */
+.gallery_container:has(.gallery_item ~ .gallery_item)::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2060%20100%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27fade%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%270%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%23e3e3e3%27%20stop-opacity%3D%270%27%2F%3E%3Cstop%20offset%3D%270.5%27%20stop-color%3D%27%23e3e3e3%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%23e3e3e3%27%20stop-opacity%3D%270%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%27M10%2010L50%2050L10%2090%27%20fill%3D%27none%27%20stroke%3D%27url%28%23fade%29%27%20stroke-width%3D%276%27%2F%3E%3C%2Fsvg%3E"),
+        url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2060%20100%27%3E%3Cdefs%3E%3ClinearGradient%20id%3D%27fade%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%270%27%20y2%3D%271%27%3E%3Cstop%20offset%3D%270%27%20stop-color%3D%27%23e3e3e3%27%20stop-opacity%3D%270%27%2F%3E%3Cstop%20offset%3D%270.5%27%20stop-color%3D%27%23e3e3e3%27%2F%3E%3Cstop%20offset%3D%271%27%20stop-color%3D%27%23e3e3e3%27%20stop-opacity%3D%270%27%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%27M50%2010L10%2050L50%2090%27%20fill%3D%27none%27%20stroke%3D%27url%28%23fade%29%27%20stroke-width%3D%276%27%2F%3E%3C%2Fsvg%3E");
+    background-position: right 10vw center, left 10vw center;
+    background-size: clamp(42px, 6vw, 90px) clamp(70px, 10vw, 150px);
+    background-repeat: no-repeat;
+    z-index: 1;
+    pointer-events: none;
 }
 
-.project-corner-nav:hover {
-  background-color: rgba(28, 20, 72, 0.9);
-  border-color: rgba(225, 225, 245, 0.6);
-  transform: scale(1.08);
+/* Dissertation and other project documents. */
+.project-document-link {
+    color: #7355be;
+    font: 500 15px/1.4 Arial, sans-serif;
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
-
-.nav-prev {
-  left: 2vw;
-}
-
-.nav-next {
-  right: 2vw;
-}
-
-.corner-nav-icon {
-  height: 3.6vh;
-  width: auto;
-  max-width: 3.6vh;
-  object-fit: contain;
-  display: block;
-  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.85));
-}
-
-.corner-nav-label {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.15;
-}
-
-.corner-nav-dir {
-  font-size: 0.8vh;
-  opacity: 0.6;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.corner-nav-title {
-  font-size: 1.1vh;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  white-space: nowrap;
-  text-transform: uppercase;
-}
+.project-document-link:focus-visible { outline: 2px solid #7355be; outline-offset: 4px; }

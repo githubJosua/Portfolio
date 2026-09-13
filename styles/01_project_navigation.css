@@ -1,0 +1,81 @@
+.project-corner-nav {
+  position: fixed;
+  bottom: 2.2vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 0.75vw;
+  padding: 0.6vh 1.1vw;
+  background: linear-gradient(to right, #c592e7a6, #563c9175, #c592e7a6);
+  border: 1px solid #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: "Josefin Sans bold", Arial, sans-serif;
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s cubic-bezier(0.18, 1, 0.32, 1);
+  box-shadow: none;
+  user-select: none;
+}
+
+.project-corner-nav:hover {
+  background-color: transparent;
+  border-color: #fff;
+  transform: scale(1.08);
+}
+
+.nav-prev {
+  left: 2vw;
+}
+
+.nav-next {
+  right: 2vw;
+}
+
+.corner-nav-icon {
+  height: 3.6vh;
+  width: auto;
+  max-width: 3.6vh;
+  object-fit: contain;
+  display: block;
+  filter: none;
+}
+
+.corner-nav-label {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.corner-nav-dir {
+  font-size: 0.8vh;
+  opacity: 0.6;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.corner-nav-title {
+  font-size: 1.1vh;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+/* Larger project links, with room for long titles on narrow screens. */
+.project-corner-nav {
+    gap: clamp(8px, 0.8vw, 15px);
+    padding: 10px clamp(12px, 1.2vw, 23px);
+    min-height: 48px;
+    max-width: 44vw;
+    box-sizing: border-box;
+}
+.corner-nav-icon { height: clamp(28px, 4.2vh, 46px); max-width: clamp(28px, 4.2vh, 46px); }
+.corner-nav-label { min-width: 0; }
+.corner-nav-dir { font-size: clamp(10px, 1.2vh, 14px); }
+.corner-nav-title { font-size: clamp(11px, 1.4vh, 16px); white-space: normal; overflow-wrap: anywhere; }
+.project-corner-nav:focus-visible { outline: 3px solid #9d7ce9; outline-offset: 4px; }
+
+@media (max-width: 600px) {
+    .project-corner-nav { gap: 7px; padding: 8px 10px; }
+    .corner-nav-icon { height: 28px; max-width: 28px; }
+    .corner-nav-title { font-size: 10px; letter-spacing: 0.04em; }
+}
