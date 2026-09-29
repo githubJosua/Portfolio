@@ -412,27 +412,37 @@ body {
     }
 }
 
-/* Phones (portrait and landscape): menu circle shows a hamburger instead of the word */
+/* Menu circle shows a hamburger instead of the word (text stays for screen readers via aria-label) */
+.circle-link {
+    position: fixed;
+    font-size: 0;
+    letter-spacing: 0;
+}
+
+.circle-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 2px;
+    border-radius: 1px;
+    background: #fff;
+    box-shadow: 0 -8px 0 #fff, 0 8px 0 #fff;
+}
+
+/* Phones (portrait and landscape): smaller menu circle */
 @media (max-width: 700px), (max-height: 500px) {
     .circle-link {
         top: 14px;
         left: 14px;
         width: 44px;
         height: 44px;
-        font-size: 0;
-        letter-spacing: 0;
     }
 
     .circle-link::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         width: 18px;
-        height: 2px;
-        border-radius: 1px;
-        background: #fff;
         box-shadow: 0 -6px 0 #fff, 0 6px 0 #fff;
     }
 }

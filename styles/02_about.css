@@ -18,8 +18,10 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
     -ms-overflow-style: none;
     background-color: #000000;
     color: #000000;
@@ -37,15 +39,17 @@ body {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     filter: blur(3vw) saturate(2);
 }
 
 
 
 #content {
-    position: absolute;
-    left: 10vw;
+    position: relative;
+    margin-left: 10vw;
     width: 80vw;
     top: 0;
     height: 100vh;
@@ -169,6 +173,210 @@ p {
     }
 }
 /* ==========================================================================
+   CV — timeline below the introduction
+   ========================================================================== */
+
+#scroll_hint {
+    position: absolute;
+    top: 94vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: "Josefin Sans bold", Arial, sans-serif;
+    font-size: 1.5vh;
+    color: rgba(150, 142, 240, 0.7);
+}
+
+#cv {
+    position: relative;
+    width: min(780px, 84vw);
+    margin: 0 auto;
+    padding: 12vh 0 20vh;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    color: #fff;
+}
+
+.cv-section + .cv-section {
+    margin-top: 10vh;
+}
+
+.cv-heading {
+    margin: 0 0 3vh 174px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: rgb(150, 142, 240);
+}
+
+.cv-list {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Timeline */
+.cv-list::before {
+    content: '';
+    position: absolute;
+    left: 152px;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.cv-item {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    grid-template-columns: 130px 1fr auto;
+    column-gap: 44px;
+    padding: 14px 0;
+}
+
+.cv-item::before {
+    content: '';
+    position: absolute;
+    left: 149px;
+    top: 20px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+/* Highlight bar behind the name, as on the printed CV */
+.cv-highlight::after {
+    content: '';
+    position: absolute;
+    left: 164px;
+    right: -3vw;
+    top: 13px;
+    height: 22px;
+    background: linear-gradient(to right, rgba(150, 130, 240, 0) 0%, rgba(150, 130, 240, 0.2) 45%, rgba(170, 150, 255, 0.55) 100%);
+    z-index: -1;
+}
+
+.cv-date,
+.cv-place {
+    padding-top: 3px;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    white-space: nowrap;
+}
+
+.cv-date {
+    text-align: right;
+}
+
+.cv-body {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.cv-name {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.cv-role {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.cv-detail {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cv-link {
+    color: rgb(170, 160, 255);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+}
+
+.cv-link:hover {
+    color: #fff;
+}
+
+/* Reveal while scrolling (class set in 02_about.js) */
+.cv-reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cv-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Phones: one column, date and place above the entry */
+@media (max-width: 700px) {
+    #cv {
+        width: auto;
+        padding: 6vh 8vw 14vh;
+    }
+
+    .cv-heading {
+        margin-left: 26px;
+        font-size: 12px;
+        letter-spacing: 0.14em;
+    }
+
+    .cv-name {
+        font-size: 13.5px;
+        letter-spacing: 0.04em;
+    }
+
+    .cv-list::before {
+        left: 6px;
+    }
+
+    .cv-item {
+        grid-template-columns: auto 1fr;
+        column-gap: 10px;
+        row-gap: 4px;
+        padding: 12px 0 12px 26px;
+    }
+
+    .cv-item::before {
+        left: 3px;
+        top: 17px;
+    }
+
+    .cv-date {
+        text-align: left;
+    }
+
+    .cv-date,
+    .cv-place {
+        padding-top: 0;
+    }
+
+    .cv-place::before {
+        content: '·  ';
+    }
+
+    .cv-body {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .cv-highlight::after {
+        left: 18px;
+        right: -8vw;
+        top: 31px;
+    }
+}
+
+/* ==========================================================================
    PORTRAIT (PHONES) - stacked and scrollable, readable text
    ========================================================================== */
 @media (orientation: portrait) {
@@ -188,6 +396,7 @@ p {
     #content {
         position: relative;
         left: 0;
+        margin-left: 0;
         width: auto;
         height: auto;
         min-height: 100vh;
@@ -197,6 +406,10 @@ p {
 
     #portrait {
         width: min(60vw, 320px);
+    }
+
+    #scroll_hint {
+        display: none;
     }
 
     h2 {

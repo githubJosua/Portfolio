@@ -68,3 +68,22 @@ function checkOrientation() {
 
 checkOrientation();
 window.addEventListener('resize', checkOrientation);
+
+// CV entries fade in while scrolling
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.cv-heading, .cv-item');
+  if (!items.length || !('IntersectionObserver' in window)) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach((item) => {
+    item.classList.add('cv-reveal');
+    observer.observe(item);
+  });
+});
