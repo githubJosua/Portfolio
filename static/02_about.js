@@ -15,7 +15,8 @@ window.addEventListener('pageshow', function(event) {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Global custom cursor (30px, glowing on interactive hover)
+  // Global custom cursor (30px, glowing on interactive hover) - mouse only
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
   const customCursor = document.createElement('div');
   document.body.appendChild(customCursor);
   customCursor.style.position = 'fixed';

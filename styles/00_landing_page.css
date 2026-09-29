@@ -229,6 +229,10 @@ a:-webkit-any-link {
   transform: translate3d(var(--hover-offset, 0px), 0, 0);
 }
 
+/* Folders from the previewed one onward slide aside (class set from JS) */
+#menu_left .folder.is-shifted { --hover-offset: 22vw; }
+#menu_right .folder.is-shifted { --hover-offset: -22vw; }
+
 .folder.is-entering,
 .folder.is-exiting {
   will-change: transform;
@@ -554,27 +558,6 @@ a:-webkit-any-link {
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.85));
 }
 
-/* --- Warning --- */
-#warning {
-  display: none;
-  position: fixed;
-  bottom: 25vh;
-  height: 12vh;
-  width: 30vw;
-  z-index: 1000;
-  justify-content: center;
-  align-items: center;
-}
-
-#warning p {
-  font-family: "Josefin Sans bold", Arial, sans-serif;
-  font-size: 1.5vh;
-  color: rgb(162, 159, 214);
-  text-align: center;
-  justify-self: center;
-  opacity: 0.4;
-}
-
 /* ==========================================================================
    WARM ORANGE HIGHLIGHT THEME (#D7542C on Curve Tab Only)
    ========================================================================== */
@@ -591,4 +574,301 @@ a:-webkit-any-link {
 /* Bézier curve contour line */
 .folder.folder-highlight .tab-curve-svg path:last-child {
   stroke: rgba(240, 135, 95, 0.6) !important;
+}
+
+/* ==========================================================================
+   PORTRAIT (PHONES & TABLETS) — the shelves turn 90°: spines become
+   horizontal strips, PERSONAL stacks from the top, PROFESSIONAL from the bottom
+   ========================================================================== */
+
+@media (orientation: portrait) {
+  :root {
+    --screen-h: 100vh;
+    --cover: 40px;
+    /* Both covers, all 20 strips and the bumps below/above the outermost strips fit the screen */
+    --strip: min(40px, calc((var(--screen-h) - 2 * var(--cover) - 8px) / 22.4));
+    --body: calc(var(--screen-h) * 0.4);
+    --tab-w: 44vw;
+    --tab-d: calc(var(--strip) * 1.2);
+  }
+
+  @supports (height: 100dvh) {
+    :root { --screen-h: 100dvh; }
+  }
+
+  body,
+  #background_image,
+  #video_container,
+  #scrolling_container {
+    height: var(--screen-h);
+  }
+
+  .text_block h1 {
+    font-size: min(5vh, 10.5vw);
+  }
+
+  #question_block {
+    width: 88vw;
+  }
+
+  /* --- Shelves --- */
+  #menu_left,
+  #menu_right {
+    left: 0;
+    right: auto;
+    width: 100vw;
+  }
+
+  #menu_left {
+    top: 0;
+    height: calc(var(--cover) + 13 * var(--strip));
+  }
+
+  #menu_right {
+    top: auto;
+    bottom: 0;
+    height: calc(var(--cover) + 7 * var(--strip));
+  }
+
+  /* The shelves fill the screen, so the title steps back while they are open */
+  #landing-page,
+  #name,
+  #question_block,
+  .copyright-wrapper {
+    transition: opacity 0.3s ease;
+  }
+
+  body:has(.show-shelf) #landing-page,
+  body:has(.show-shelf) #name,
+  body:has(.show-shelf) #question_block,
+  body:has(.show-shelf) .copyright-wrapper {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* While one shelf previews a folder, the other one steps back */
+  body:has(#menu_left .is-shifted) #menu_right,
+  body:has(#menu_right .is-shifted) #menu_left {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  /* --- Folders: body and spine stacked vertically --- */
+  .folder {
+    --tab-left: calc(var(--tab-step, 0) * 6.5vw + 14vw - var(--tab-w) / 2);
+    width: 100vw;
+    height: calc(var(--body) + var(--strip));
+    flex-direction: column;
+  }
+
+  #menu_left .folder {
+    top: 0;
+    bottom: auto;
+    transform: translate3d(0, -125vh, 0);
+  }
+
+  #menu_right .folder {
+    top: auto;
+    bottom: 0;
+    transform: translate3d(0, 125vh, 0);
+  }
+
+  #menu_left .folder.is-entering,
+  #menu_left .folder.is-settled,
+  #menu_right .folder.is-entering,
+  #menu_right .folder.is-settled {
+    transform: translate3d(0, var(--hover-offset, 0px), 0);
+  }
+
+  #menu_left .folder.is-shifted { --hover-offset: var(--body); }
+  #menu_right .folder.is-shifted { --hover-offset: calc(-1 * var(--body)); }
+
+  #menu_left .folder:not(.folder-cover) {
+    left: 0;
+    top: calc(var(--cover) + (var(--i) - 1) * var(--strip) - var(--body));
+  }
+
+  #menu_right .folder:not(.folder-cover) {
+    right: auto;
+    left: 0;
+    bottom: calc(var(--cover) + (var(--i) - 1) * var(--strip) - var(--body));
+  }
+
+  /* --- Cover bars --- */
+  #menu_left .folder-cover,
+  #menu_right .folder-cover {
+    left: 0 !important;
+    right: auto !important;
+    width: 100vw !important;
+    height: var(--cover);
+  }
+
+  .cover-spine {
+    width: 100vw !important;
+    height: var(--cover);
+  }
+
+  #menu_left .cover-spine {
+    border-right: none;
+    border-bottom: 1px solid rgba(225, 225, 245, 0.32);
+  }
+
+  #menu_right .cover-spine {
+    border-left: none;
+    border-top: 1px solid rgba(225, 225, 245, 0.32);
+  }
+
+  .side-label {
+    flex-direction: row;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 0.3em;
+  }
+
+  /* --- Image panel --- */
+  .folder-body {
+    width: 100vw;
+    height: var(--body);
+    flex-shrink: 0;
+    box-sizing: border-box;
+  }
+
+  .folder-img {
+    height: 100%;
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.65) 25%,
+      rgba(0, 0, 0, 0.75) 50%,
+      rgba(0, 0, 0, 0.65) 75%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.65) 25%,
+      rgba(0, 0, 0, 0.75) 50%,
+      rgba(0, 0, 0, 0.65) 75%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  }
+
+  .folder-title {
+    top: 2.5vh;
+    padding: 0 16px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  .folder-footer {
+    bottom: 2.5vh;
+    left: 16px;
+    right: 16px;
+    font-size: 9px;
+  }
+
+  /* --- Spine strip --- */
+  .folder-spine {
+    width: 100vw;
+    height: var(--strip);
+  }
+
+  #menu_left .spine-line-top,
+  #menu_left .spine-line-bottom,
+  #menu_right .spine-line-top,
+  #menu_right .spine-line-bottom {
+    width: auto;
+    height: 1px;
+  }
+
+  #menu_left .spine-line-top,
+  #menu_left .spine-line-bottom {
+    top: auto;
+    bottom: 0;
+  }
+
+  #menu_right .spine-line-top,
+  #menu_right .spine-line-bottom {
+    top: 0;
+    bottom: auto;
+  }
+
+  #menu_left .spine-line-top,
+  #menu_right .spine-line-top {
+    left: 0;
+    right: auto;
+    width: max(0px, var(--tab-left));
+  }
+
+  #menu_left .spine-line-bottom,
+  #menu_right .spine-line-bottom {
+    left: calc(var(--tab-left) + var(--tab-w));
+    right: 0;
+  }
+
+  .folder-name {
+    top: 50%;
+    bottom: auto;
+    left: auto;
+    right: 14px;
+    transform: translateY(-50%);
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    font-size: clamp(9px, calc(var(--strip) * 0.32), 12px);
+    letter-spacing: 0.2em;
+  }
+
+  /* --- Tab: same S-curve, transposed to hang off the strip --- */
+  #menu_left .folder-tab,
+  #menu_right .folder-tab {
+    left: var(--tab-left);
+    right: auto;
+    width: var(--tab-w);
+    min-width: 0;
+    height: var(--tab-d);
+  }
+
+  #menu_left .folder-tab {
+    top: 100%;
+  }
+
+  #menu_right .folder-tab {
+    top: auto;
+    bottom: 100%;
+  }
+
+  .tab-curve-svg {
+    inset: auto;
+    top: 0;
+    left: 0;
+    width: var(--tab-d);
+    height: var(--tab-w);
+    transform-origin: 0 0;
+    transform: matrix(0, 1, 1, 0, 0, 0);
+  }
+
+  /* Icon sits inside the bump */
+  #menu_left .folder-icon-wrap,
+  #menu_right .folder-icon-wrap {
+    left: var(--tab-left);
+    right: auto;
+    width: var(--tab-w);
+    height: var(--tab-d);
+    transform: none;
+  }
+
+  #menu_left .folder-icon-wrap {
+    top: calc(100% - var(--tab-d) * 0.1);
+  }
+
+  #menu_right .folder-icon-wrap {
+    top: auto;
+    bottom: calc(100% - var(--tab-d) * 0.1);
+  }
+
+  .folder-icon {
+    height: calc(var(--tab-d) * 0.7);
+    max-width: 9vw;
+  }
 }

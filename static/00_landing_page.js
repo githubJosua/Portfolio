@@ -179,8 +179,7 @@ function clearAllShelfTimers() {
 function resetShelfState() {
     clearAllShelfTimers();
     document.querySelectorAll('.folder').forEach((folder) => {
-        folder.classList.remove('is-entering', 'is-settled', 'is-hovered', 'is-exiting');
-        folder.style.removeProperty('--hover-offset');
+        folder.classList.remove('is-entering', 'is-settled', 'is-hovered', 'is-exiting', 'is-shifted');
     });
 }
 
@@ -229,9 +228,8 @@ function hideStaggeredShelves() {
         const delay = (maxIndex - idx) * SHELF_EXIT_STAGGER_MS;
 
         shelfTimers.push(window.setTimeout(() => {
-            folder.classList.remove('is-settled', 'is-entering', 'is-hovered');
+            folder.classList.remove('is-settled', 'is-entering', 'is-hovered', 'is-shifted');
             folder.classList.add('is-exiting');
-            folder.style.removeProperty('--hover-offset');
         }, delay));
     });
 
@@ -265,6 +263,12 @@ document.body.addEventListener('click', (e) => {
     if (isAnimating) return;
 
     if (menu_shown === 1 && !e.target.closest('.folder') && !e.target.closest('#scrolling_container')) {
+        // Touch: first tap outside only closes an open preview
+        const previewed = document.querySelector('.folder.is-hovered');
+        if (previewed && lastPointerType !== 'mouse') {
+            clearShelfPreview(previewed.closest('.folder-shelf').id);
+            return;
+        }
         hideStaggeredShelves();
         scrolling_container.style.opacity = 0;
         scrolling_container.style.pointerEvents = 'auto';
@@ -277,6 +281,26 @@ document.body.addEventListener('click', (e) => {
    FOLDER HOVER SLIDING
    ========================================================================== */
 
+// Mouse previews on hover; touch previews on the first tap and opens on the second
+let lastPointerType = 'mouse';
+window.addEventListener('pointerdown', (e) => { lastPointerType = e.pointerType; }, true);
+
+function previewFolder(folder, shelfId) {
+    if (isAnimating || menu_shown !== 1) return;
+    const folders = Array.from(document.getElementById(shelfId).querySelectorAll('.folder'));
+    const index = parseInt(folder.getAttribute('data-index'), 10);
+    folders.forEach(f => f.classList.remove('is-hovered'));
+    folder.classList.add('is-hovered');
+    queueShelfImage(folder.querySelector('.folder-img'), true);
+    updateShelfTransforms(folders, index);
+}
+
+function clearShelfPreview(shelfId) {
+    const folders = Array.from(document.getElementById(shelfId).querySelectorAll('.folder'));
+    folders.forEach((folder) => folder.classList.remove('is-hovered'));
+    updateShelfTransforms(folders, -1);
+}
+
 function setupShelfHover(shelfId) {
     const shelf = document.getElementById(shelfId);
     if (!shelf) return;
@@ -286,32 +310,28 @@ function setupShelfHover(shelfId) {
     folders.forEach(folder => {
         if (folder.classList.contains('folder-cover')) return;
 
-        folder.addEventListener('mouseenter', () => {
-            if (isAnimating || menu_shown !== 1) return;
-            const index = parseInt(folder.getAttribute('data-index'), 10);
-            folders.forEach(f => f.classList.remove('is-hovered'));
-            folder.classList.add('is-hovered');
-            queueShelfImage(folder.querySelector('.folder-img'), true);
-            updateShelfTransforms(folders, index, shelfId);
+        folder.addEventListener('pointerenter', (e) => {
+            if (e.pointerType === 'mouse') previewFolder(folder, shelfId);
+        });
+
+        // Registered before the page-transition handler, so it can hold back navigation
+        folder.addEventListener('click', (e) => {
+            if (lastPointerType === 'mouse' || folder.classList.contains('is-hovered')) return;
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            ['menu_left', 'menu_right'].forEach(clearShelfPreview);
+            previewFolder(folder, shelfId);
         });
     });
 
-    shelf.addEventListener('mouseleave', () => {
-        folders.forEach((folder) => folder.classList.remove('is-hovered'));
-        updateShelfTransforms(folders, -1, shelfId);
+    shelf.addEventListener('pointerleave', (e) => {
+        if (e.pointerType === 'mouse') clearShelfPreview(shelfId);
     });
 }
 
-function updateShelfTransforms(folders, hoverIndex, shelfId) {
-    const isLeft = shelfId === 'menu_left';
-    const slideOffset = isLeft ? '22vw' : '-22vw';
-
+function updateShelfTransforms(folders, hoverIndex) {
     folders.forEach((folder, i) => {
-        if (hoverIndex !== -1 && i >= hoverIndex) {
-            folder.style.setProperty('--hover-offset', slideOffset);
-        } else {
-            folder.style.removeProperty('--hover-offset');
-        }
+        folder.classList.toggle('is-shifted', hoverIndex !== -1 && i >= hoverIndex);
     });
 }
 
@@ -337,18 +357,7 @@ function autoIndexShelves() {
             folder.style.setProperty('--i', num);
             folder.style.setProperty('--z', 25 - num);
             folder.style.setProperty('--tab-top', `${tabTop}vh`);
-
-            const lineTop = folder.querySelector('.spine-line-top');
-            if (lineTop) lineTop.style.height = `max(0px, ${tabTop}vh)`;
-
-            const lineBottom = folder.querySelector('.spine-line-bottom');
-            if (lineBottom) lineBottom.style.top = `${tabTop + 36}vh`;
-
-            const tab = folder.querySelector('.folder-tab');
-            if (tab) tab.style.top = `${tabTop}vh`;
-
-            const iconWrap = folder.querySelector('.folder-icon-wrap');
-            if (iconWrap) iconWrap.style.top = `${tabTop + 18}vh`;
+            folder.style.setProperty('--tab-step', idx % 7);
         });
     });
 }
@@ -358,7 +367,14 @@ document.addEventListener('DOMContentLoaded', () => {
     setupShelfHover('menu_left');
     setupShelfHover('menu_right');
 
-    // Global custom cursor (30px, glowing on interactive hover)
+    // Touch screens: adapt the hint
+    if (!window.matchMedia('(hover: hover)').matches) {
+        const hint = document.querySelector('#copyright p');
+        if (hint) hint.textContent = '// tap // swipe //';
+    }
+
+    // Global custom cursor (30px, glowing on interactive hover) - mouse only
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
     const customCursor = document.createElement('div');
     document.body.appendChild(customCursor);
     customCursor.style.position = 'fixed';
@@ -395,6 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('mouseleave', () => {
         customCursor.style.display = 'none';
     });
+    }
 
     // Smooth page navigation transitions
     const hyperlinks = document.querySelectorAll('a');
@@ -409,16 +426,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
-// Orientation check
-function checkOrientation() {
-    const warning = document.getElementById('warning');
-    if (window.innerHeight > window.innerWidth) {
-        warning.style.display = 'block';
-    } else {
-        warning.style.display = 'none';
-    }
-}
-
-checkOrientation();
-window.addEventListener('resize', checkOrientation);

@@ -168,3 +168,84 @@ p {
       transform: rotate(360deg);
     }
 }
+/* ==========================================================================
+   PORTRAIT (PHONES) - stacked and scrollable, readable text
+   ========================================================================== */
+@media (orientation: portrait) {
+    body, html {
+        height: auto;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #title_image {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #content {
+        position: relative;
+        left: 0;
+        width: auto;
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 8vw 60px;
+        gap: 5vh;
+    }
+
+    #portrait {
+        width: min(60vw, 320px);
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .quote {
+        margin: 5vh 0;
+    }
+
+    #description {
+        text-align: left;
+    }
+
+    .icon-link {
+        font-size: 28px;
+        margin: 12px 18px;
+    }
+}
+
+/* Phones (portrait and landscape): menu circle shows a hamburger instead of the word */
+@media (max-width: 700px), (max-height: 500px) {
+    .circle-link {
+        top: 14px;
+        left: 14px;
+        width: 44px;
+        height: 44px;
+        display: grid;
+        place-items: center;
+        border: 1px solid #fff;
+        animation: none;
+        font-size: 0;
+        letter-spacing: 0;
+    }
+
+    .circle-link::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 18px;
+        height: 2px;
+        border-radius: 1px;
+        background: #fff;
+        box-shadow: 0 -6px 0 #fff, 0 6px 0 #fff;
+    }
+}

@@ -1538,3 +1538,32 @@ section {
     letter-spacing: 0.08em;
 }
 .circle-link:focus-visible { outline: 3px solid #9d7ce9; outline-offset: 4px; }
+
+/* Phones (portrait and landscape): menu circle shows a hamburger instead of the word */
+@media (max-width: 700px), (max-height: 500px) {
+    .circle-link {
+        top: 14px;
+        left: 14px;
+        width: 44px;
+        height: 44px;
+        display: grid;
+        place-items: center;
+        border: 1px solid #fff;
+        animation: none;
+        font-size: 0;
+        letter-spacing: 0;
+    }
+
+    .circle-link::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 18px;
+        height: 2px;
+        border-radius: 1px;
+        background: #fff;
+        box-shadow: 0 -6px 0 #fff, 0 6px 0 #fff;
+    }
+}

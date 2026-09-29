@@ -32,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  // Custom Cursor (30px square, glowing on interactive & gallery hover)
+  // Custom Cursor (30px square, glowing on interactive & gallery hover) - mouse only
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
   const customCursor = document.createElement('div');
   document.body.appendChild(customCursor);
   customCursor.style.position = 'fixed';
@@ -83,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('mouseleave', () => {
     customCursor.style.display = 'none';
   });
+  }
 
   // GALLERIES
   setupGallery(gallery);
@@ -162,22 +164,35 @@ document.addEventListener('DOMContentLoaded', () => {
 function setupGallery(targetGallery) {
   if (!targetGallery) return;
 
-  targetGallery.addEventListener('click', (e) => {
+  function step(direction) {
     const images = targetGallery.querySelectorAll('.gallery_item');
     if (!images.length) return;
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+    updateGallery(images, currentIndex);
+  }
+
+  targetGallery.addEventListener('click', (e) => {
     const galleryRect = targetGallery.getBoundingClientRect();
     const mouseXRelative = e.clientX - galleryRect.left;
 
-    if (mouseXRelative < galleryRect.width / 2) {
-        // Move to the previous image
-        currentIndex = currentIndex - 1 < 0 ? images.length - 1 : currentIndex - 1;
-    } else {
-        // Move to the next image
-        currentIndex = (currentIndex + 1) % images.length;
-    }
-    
-    updateGallery(images, currentIndex);
+    // Left half: previous image, right half: next image
+    step(mouseXRelative < galleryRect.width / 2 ? -1 : 1);
   });
+
+  // Touch: swipe left / right
+  let touchStartX = null;
+  let touchStartY = null;
+  targetGallery.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+  targetGallery.addEventListener('touchend', (e) => {
+    if (touchStartX === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    const dy = e.changedTouches[0].clientY - touchStartY;
+    touchStartX = null;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) step(dx < 0 ? 1 : -1);
+  }, { passive: true });
 
   let images = targetGallery.querySelectorAll('.gallery_item');
   if (images.length) {
@@ -198,3 +213,27 @@ function updateGallery(images, targetIndex) {
     }
   });
 }
+
+// PHONES: scale a long project intro down until it fits on one screen
+function fitIntroToScreen() {
+  const container = document.getElementById('project_intro_container');
+  const introBox = document.getElementById('project_intro');
+  if (!container || !introBox) return;
+
+  const texts = introBox.querySelectorAll('p');
+  texts.forEach((p) => p.style.removeProperty('font-size'));
+  if (!texts.length || !window.matchMedia('(max-width: 700px)').matches) return;
+
+  const style = getComputedStyle(container);
+  const available = container.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom);
+  let size = parseFloat(getComputedStyle(texts[0]).fontSize);
+
+  while (introBox.getBoundingClientRect().height > available && size > 9) {
+    size -= 0.25;
+    texts.forEach((p) => p.style.fontSize = `${size}px`);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', fitIntroToScreen);
+window.addEventListener('load', fitIntroToScreen);
+window.addEventListener('resize', fitIntroToScreen);
