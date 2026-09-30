@@ -104,8 +104,8 @@ let menu_shown = 0;
 let isAnimating = false;
 const video = document.getElementById('background-video');
 const background_image = document.getElementById('background_image');
-let shelfPreloadTimer;
-let shelfImageLoading = false;
+let shelfImagesInFlight = 0;
+const SHELF_IMAGE_PARALLEL = 3;
 const shelfImageQueue = [];
 
 // Deliberate smooth entrance parameters
@@ -119,43 +119,51 @@ const SHELF_EXIT_STAGGER_MS = 20;
 const shelfTimers = [];
 let shelfFrame;
 
+// Every folder shows a tiny preview (~1 KB) at once; the sharp image replaces it when ready
+function showShelfPreviews() {
+    document.querySelectorAll('.folder-img').forEach((image) => {
+        image.src = image.dataset.src.replace('/folders/', '/folders/tiny/');
+    });
+}
+
 function loadShelfImage(image) {
     if (!image || image.dataset.imageState) return Promise.resolve();
 
     image.dataset.imageState = 'loading';
-    image.src = image.dataset.src;
+    const full = new Image();
+    full.src = image.dataset.src;
 
-    return image.decode()
+    return full.decode()
         .catch(() => {})
         .then(() => {
+            image.src = full.src;
             image.dataset.imageState = 'loaded';
             image.classList.add('is-loaded');
         });
 }
 
+// A few downloads in parallel, back to back
 function processShelfImageQueue() {
-    if (shelfImageLoading || shelfImageQueue.length === 0) return;
-
-    shelfImageLoading = true;
-    const image = shelfImageQueue.shift();
-
-    loadShelfImage(image).finally(() => {
-        shelfImageLoading = false;
-        if ('requestIdleCallback' in window) {
-            window.requestIdleCallback(processShelfImageQueue, { timeout: 1500 });
-        } else {
-            window.setTimeout(processShelfImageQueue, 150);
-        }
-    });
+    while (shelfImagesInFlight < SHELF_IMAGE_PARALLEL && shelfImageQueue.length) {
+        const image = shelfImageQueue.shift();
+        if (image.dataset.imageState) continue;
+        shelfImagesInFlight++;
+        loadShelfImage(image).finally(() => {
+            shelfImagesInFlight--;
+            processShelfImageQueue();
+        });
+    }
 }
 
 function queueShelfImage(image, priority = false) {
-    if (!image || image.dataset.imageState || shelfImageQueue.includes(image)) return;
+    if (!image || image.dataset.imageState) return;
 
     if (priority) {
-        shelfImageQueue.unshift(image);
-        processShelfImageQueue();
-    } else {
+        // The folder being opened loads right away, not behind the queue
+        const queued = shelfImageQueue.indexOf(image);
+        if (queued !== -1) shelfImageQueue.splice(queued, 1);
+        loadShelfImage(image);
+    } else if (!shelfImageQueue.includes(image)) {
         shelfImageQueue.push(image);
     }
 }
@@ -163,11 +171,6 @@ function queueShelfImage(image, priority = false) {
 function preloadShelfImages() {
     document.querySelectorAll('.folder-img').forEach((image) => queueShelfImage(image));
     processShelfImageQueue();
-}
-
-function scheduleShelfImagePreload(delay) {
-    window.clearTimeout(shelfPreloadTimer);
-    shelfPreloadTimer = window.setTimeout(preloadShelfImages, delay);
 }
 
 function clearAllShelfTimers() {
@@ -210,12 +213,11 @@ function showStaggeredShelves() {
         isAnimating = false;
     }, totalEntranceTime));
 
-    scheduleShelfImagePreload(totalEntranceTime + 200);
+    preloadShelfImages();
 }
 
 function hideStaggeredShelves() {
     isAnimating = true;
-    window.clearTimeout(shelfPreloadTimer);
     clearAllShelfTimers();
 
     const shelves = [document.getElementById('menu_left'), document.getElementById('menu_right')];
@@ -364,6 +366,7 @@ function autoIndexShelves() {
 
 document.addEventListener('DOMContentLoaded', () => {
     autoIndexShelves();
+    showShelfPreviews();
     setupShelfHover('menu_left');
     setupShelfHover('menu_right');
 
@@ -426,3 +429,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Folder images load in the background as soon as the page itself is ready,
+// so they are already there when a folder opens
+window.addEventListener('load', preloadShelfImages);
