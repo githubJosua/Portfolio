@@ -15,20 +15,23 @@
   transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s cubic-bezier(0.18, 1, 0.32, 1);
   box-shadow: none;
   user-select: none;
+  transform: scale(0.8);
 }
 
 .project-corner-nav:hover {
   background-color: transparent;
   border-color: #fff;
-  transform: scale(1.08);
+  transform: scale(0.864);
 }
 
 .nav-prev {
   left: 2vw;
+  transform-origin: bottom left;
 }
 
 .nav-next {
   right: 2vw;
+  transform-origin: bottom right;
 }
 
 .corner-nav-icon {

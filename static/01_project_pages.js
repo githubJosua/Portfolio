@@ -163,6 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function setupGallery(targetGallery) {
   if (!targetGallery) return;
+  let currentIndex = 0;
 
   function step(direction) {
     const images = targetGallery.querySelectorAll('.gallery_item');
