@@ -9,11 +9,9 @@
   let activeCreatureIdx = null;
   let panelShowColor = false;
 
-  const PROXY_URL = 'https://creature-comment-proxy.jojo-hefti-jh.workers.dev/';
-
   // ── Boot ──────────────────────────────────
-  document.addEventListener('DOMContentLoaded', async () => {
-    await loadData();
+  document.addEventListener('DOMContentLoaded', () => {
+    loadData();
     initHeroCanvas();
     initStepTabs('manifesto-tabs', 'manifesto-panels');
     initStepTabs('pipeline-grid', 'pipeline-panels');
@@ -22,9 +20,8 @@
     wireEvents();
   });
 
-  async function loadData() {
-    const res = await fetch('static/01_urban_creatures_data.json');
-    DATA = await res.json();
+  function loadData() {
+    DATA = window.URBAN_CREATURES_DATA;
     if (DATA && DATA.creatures) {
       DATA.creatures.forEach(creature => {
         if (creature.days) {
@@ -174,73 +171,6 @@
       <div class="evolution-creature-purpose">${creature.purpose}</div>
     `;
     innerEl.appendChild(header);
-
-    // ——— Comment box ———
-    const commentCard = document.createElement('div');
-    commentCard.className = 'comment-card';
-    commentCard.innerHTML = `
-      <div class="comment-title">
-        <span class="comment-title-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 21a9 9 0 1 0-9-9c0 2.15.95 4.16 2.46 5.68L4 21l5.32-1.46A8.93 8.93 0 0 0 12 21z" />
-            <path d="M12 7L13.29 10.71L17 12L13.29 13.29L12 17L10.71 13.29L7 12L10.71 10.71Z" />
-          </svg>
-        </span>
-        Influence this creature
-      </div>
-      <div class="comment-input-row">
-        <input type="text" class="comment-input" placeholder="I think it should…" />
-        <button class="comment-submit">Send</button>
-      </div>
-      <div class="comment-sent">✓ Sent</div>
-    `;
-    innerEl.appendChild(commentCard);
-
-    const inputEl = commentCard.querySelector('.comment-input');
-    const submitBtn = commentCard.querySelector('.comment-submit');
-    const sentMsg = commentCard.querySelector('.comment-sent');
-
-    const handleSubmit = async () => {
-      const text = inputEl.value.trim();
-      if (!text) return;
-
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending…';
-
-      try {
-        const response = await fetch(PROXY_URL, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            creature_id: creature.id,
-            creature_name: creature.name,
-            comment: text,
-            timestamp: new Date().toISOString()
-          })
-        });
-
-        if (response.ok) {
-          sentMsg.classList.add('show');
-          setTimeout(() => sentMsg.classList.remove('show'), 3000);
-          inputEl.value = '';
-        } else {
-          alert('Could not send comment. Try again.');
-        }
-      } catch (err) {
-        console.error(err);
-        alert('Network error — make sure the server is running.');
-      } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send';
-      }
-    };
-
-    submitBtn.addEventListener('click', handleSubmit);
-    inputEl.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') handleSubmit();
-    });
 
     // Day entries
     const dayList = document.createElement('div');

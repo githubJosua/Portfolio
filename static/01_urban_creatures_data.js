@@ -1,4 +1,5 @@
-{
+// Loaded before 01_urban_creatures.js; works over file:// and HTTP.
+window.URBAN_CREATURES_DATA = {
   "creatures": [
     {
       "id": "crown-creature",
@@ -27169,4 +27170,4 @@
       }
     }
   ]
-}
+};

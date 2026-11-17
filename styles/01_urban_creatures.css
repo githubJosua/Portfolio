@@ -238,6 +238,126 @@ section {
   line-height: 1.85;
 }
 
+.chapter-section {
+  padding: 0 2rem;
+}
+
+.chapter-section:first-of-type {
+  padding-top: 4rem;
+}
+
+.chapter {
+  border-bottom: 1px solid var(--card-border);
+}
+
+.chapter-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  cursor: pointer;
+  list-style: none;
+}
+
+.chapter-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.chapter-toggle .section-label {
+  display: block;
+}
+
+.chapter-toggle .section-title {
+  display: block;
+  margin: 0;
+  transition: color 0.3s var(--ease);
+}
+
+.chapter-toggle:hover .section-title {
+  color: var(--purple);
+}
+
+.chapter-toggle:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 6px;
+}
+
+.chapter-action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  font-family: var(--font-head);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text2);
+}
+
+.chapter-indicator {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--purple-dim);
+  border-radius: 50%;
+}
+
+.chapter-indicator::before,
+.chapter-indicator::after {
+  content: '';
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 12px;
+  height: 1px;
+  background: var(--text);
+  transform: translate(-50%, -50%);
+}
+
+.chapter-indicator::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.chapter-close-label,
+.chapter[open] .chapter-open-label,
+.chapter[open] .chapter-indicator::after {
+  display: none;
+}
+
+.chapter[open] .chapter-close-label {
+  display: inline;
+}
+
+.chapter-content {
+  padding-bottom: 2.5rem;
+}
+
+.chapter-content > :last-child {
+  margin-bottom: 0;
+}
+
+.pipeline-diagram {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  padding: 0 2rem;
+}
+
+.pipeline-diagram img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .chapter-open-label,
+  .chapter[open] .chapter-close-label {
+    display: none;
+  }
+
+  .chapter-toggle {
+    gap: 1rem;
+  }
+}
+
 /* ============================================
    SHARED STEP GRID (manifesto + pipeline)
    ============================================ */
@@ -378,6 +498,7 @@ section {
 .social-links img {
   width: 32px;
   height: 32px;
+  object-fit: contain;
   filter: brightness(0) invert(1);
   opacity: 0.55;
 }
@@ -1367,135 +1488,6 @@ section {
   .detail-panel {
     width: 100vw;
   }
-}
-
-/* ============================================
-   GLASSMORPHISM COMMENT BOX
-   ============================================ */
-.comment-card {
-  margin: 0 auto 3rem auto;
-  max-width: 600px;
-  padding: 24px 22px 20px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--card-border);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-  color: var(--text);
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s var(--ease);
-}
-
-.comment-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--orange), var(--purple));
-  opacity: 0.7;
-}
-
-.comment-card:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: var(--purple-dim);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
-}
-
-.comment-title {
-  font-family: var(--font-head);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
-  color: var(--text2);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.comment-title-icon {
-  width: 18px;
-  height: 18px;
-  color: var(--orange);
-}
-
-.comment-input-row {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-end;
-}
-
-.comment-input {
-  flex: 1;
-  background: rgba(0, 0, 0, 0.3);
-  border: none;
-  border-bottom: 1px solid var(--card-border);
-  padding: 0.75rem 0.5rem;
-  font-size: 0.9rem;
-  color: var(--text);
-  outline: none;
-  font-family: var(--font-body);
-  transition: all 0.3s var(--ease);
-}
-
-.comment-input::placeholder {
-  color: var(--text-muted);
-}
-
-.comment-input:focus {
-  border-bottom-color: var(--purple);
-  background: rgba(115, 85, 190, 0.05);
-}
-
-.comment-submit {
-  background: transparent;
-  border: 1px solid var(--purple-dim);
-  color: var(--purple);
-  padding: 0.6rem 1.5rem;
-  border-radius: 20px;
-  font-family: var(--font-head);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  cursor: pointer;
-  transition: all 0.3s var(--ease);
-}
-
-.comment-submit:hover {
-  background: var(--purple);
-  border-color: var(--purple);
-  color: #000;
-  box-shadow: 0 0 20px var(--purple-glow);
-}
-
-.comment-submit:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.comment-sent {
-  margin-top: 1rem;
-  font-size: 0.7rem;
-  font-family: var(--font-head);
-  letter-spacing: 0.05em;
-  color: #a0ffb8;
-  opacity: 0;
-  transform: translateY(5px);
-  transition: all 0.3s var(--ease);
-  height: 0;
-  overflow: hidden;
-}
-
-.comment-sent.show {
-  opacity: 1;
-  transform: translateY(0);
-  height: auto;
-  margin-top: 1rem;
 }
 
 /* Show More Comments Button */

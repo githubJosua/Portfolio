@@ -24,6 +24,7 @@ const FALLBACK_PORTFOLIO_PROJECTS = [
 ];
 
 async function getDynamicProjectList() {
+  if (window.location.protocol === 'file:') return FALLBACK_PORTFOLIO_PROJECTS;
   try {
     const res = await fetch('00_landing_page.html');
     if (!res.ok) throw new Error('Fetch status ' + res.status);
