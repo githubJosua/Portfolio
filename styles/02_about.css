@@ -53,10 +53,11 @@ body {
     width: 80vw;
     top: 0;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    align-content: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -105,11 +106,40 @@ h2 {
 
 #description {
     text-align: justify;
+    line-height: 1.65;
+}
+
+.section-button {
+    display: inline-block;
+    padding: 0 0.45em;
+    border: 1px solid rgba(150, 142, 240, 0.35);
+    border-radius: 2px;
+    background: transparent;
+    color: rgb(190, 182, 255);
+    font: inherit;
+    font-size: 0.9em;
+    line-height: 1.35;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.section-button:hover,
+.section-button:focus-visible {
+    border-color: rgba(150, 142, 240, 0.7);
+    background: rgba(150, 142, 240, 0.1);
+    color: #fff;
+}
+
+#cv,
+#manifesto {
+    scroll-margin-top: 4vh;
 }
 
 .quote {
     font-style: italic;
-    margin: 7vh 0;
+    margin: 3.5vh 0;
     text-align: center;
 }
 
@@ -135,7 +165,7 @@ p {
 }
 
 #icons {
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
 .icon-link {
@@ -317,6 +347,61 @@ p {
     transform: none;
 }
 
+/* Manifesto below the CV */
+#manifesto {
+    position: relative;
+    width: min(680px, 84vw);
+    margin: 0 auto;
+    padding-bottom: 20vh;
+    color: #fff;
+}
+
+#manifesto .manifesto-label {
+    margin-bottom: 3vh;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: rgb(150, 142, 240);
+    text-align: center;
+}
+
+#manifesto-title {
+    margin-bottom: 3vh;
+    font-size: clamp(17px, 1.6vw, 21px);
+    text-align: center;
+}
+
+.manifesto-text {
+    width: 100%;
+}
+
+.manifesto-text p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.manifesto-text a {
+    color: rgb(190, 182, 255);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.manifesto-text a:hover,
+.manifesto-text a:focus-visible {
+    color: #fff;
+}
+
+.manifesto-text p + p {
+    margin-top: 1.5em;
+}
+
+#manifesto .manifesto-signature {
+    margin-top: 4vh;
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 /* Phones: one column, date and place above the entry */
 @media (max-width: 700px) {
     #cv {
@@ -394,6 +479,9 @@ p {
     }
 
     #content {
+        display: flex;
+        align-items: center;
+        align-content: normal;
         position: relative;
         left: 0;
         margin-left: 0;
@@ -421,10 +509,11 @@ p {
     }
 
     .quote {
-        margin: 5vh 0;
+        margin: 2.5vh 0;
     }
 
-    #description {
+    #description,
+    .manifesto-text p {
         text-align: left;
     }
 
